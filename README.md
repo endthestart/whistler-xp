@@ -9,10 +9,12 @@ costume.
 It's a hobby project made for fun and nostalgia. No roadmap, no support contract, no warranty,
 and no promise that it won't make you want to download Winamp again.
 
+![Start menu](docs/screenshots/startmenu.png)
+
 | | |
 | --- | --- |
-| ![Welcome screen](docs/screenshots/welcome.png) | ![Start menu](docs/screenshots/startmenu.png) |
-| ![My Computer](docs/screenshots/mycomputer.png) | ![Wine Center](docs/screenshots/winecenter.png) |
+| ![Welcome screen](docs/screenshots/welcome.png) | ![My Computer](docs/screenshots/mycomputer.png) |
+| ![Control Panel](docs/screenshots/controlpanel.png) | ![Wine Center](docs/screenshots/winecenter.png) |
 
 ## What's in the box
 

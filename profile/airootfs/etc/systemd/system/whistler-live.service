@@ -1,0 +1,12 @@
+[Unit]
+Description=Create the Whistler XP live session user
+Before=display-manager.service systemd-user-sessions.service
+ConditionPathExists=/run/archiso
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/whistler-live-setup
+
+[Install]
+WantedBy=multi-user.target

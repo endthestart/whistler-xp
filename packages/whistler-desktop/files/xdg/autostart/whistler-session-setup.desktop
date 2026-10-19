@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Whistler Session Setup
+Exec=whistler-session-setup
+OnlyShowIn=XFCE;
+NoDisplay=true

@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+"""Write renamed/regrouped copies of stock desktop files (see app-overrides.conf)."""
+import configparser
+import os
+import sys
+
+SRC = "/usr/share/applications"
+DEST = "/usr/share/whistler/xdg-data/applications"
+CONF = "/usr/share/whistler/app-overrides.conf"
+
+
+def main():
+    rules = configparser.ConfigParser(interpolation=None, strict=False)
+    rules.optionxform = str
+    rules.read(CONF)
+    os.makedirs(DEST, exist_ok=True)
+    wanted = set()
+    for app_id in rules.sections():
+        src = os.path.join(SRC, app_id)
+        if not os.path.isfile(src):
+            continue
+        entry = configparser.RawConfigParser(strict=False)
+        entry.optionxform = str
+        try:
+            entry.read(src, encoding="utf-8")
+        except configparser.Error as e:
+            print("whistler-app-overrides: skipping %s: %s" % (app_id, e), file=sys.stderr)
+            continue
+        if not entry.has_section("Desktop Entry"):
+            continue
+        group = entry["Desktop Entry"]
+        for key, value in rules[app_id].items():
+            if key in ("Name", "GenericName", "Comment"):
+                for k in [k for k in group if k.startswith(key + "[")]:
+                    del group[k]
+            group[key] = value
+        out = os.path.join(DEST, app_id)
+        tmp = out + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            entry.write(f, space_around_delimiters=False)
+        os.replace(tmp, out)
+        wanted.add(app_id)
+    for f in os.listdir(DEST):
+        if f.endswith(".desktop") and f not in wanted and f in rules.sections():
+            os.unlink(os.path.join(DEST, f))
+    if os.path.exists("/usr/bin/update-desktop-database"):
+        os.system("update-desktop-database -q %s" % DEST)
+
+
+if __name__ == "__main__":
+    main()

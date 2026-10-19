@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="28" y1="0" x2="32" y2="0"><stop offset="0" stop-color="#6A7280"/><stop offset="1" stop-color="#2A2F38"/></linearGradient>
+<clipPath id="c2"><path d="M 29 0 H 31 A 1 1 0 0 1 32 1 V 5 A 1 1 0 0 1 31 6 H 29 A 1 1 0 0 1 28 5 V 1 A 1 1 0 0 1 29 0 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="12" y1="4" x2="36" y2="44"><stop offset="0" stop-color="#E9EEF5"/><stop offset="0.5" stop-color="#A9B6C8"/><stop offset="1" stop-color="#6C7A90"/></linearGradient>
+<linearGradient id="l4" gradientUnits="userSpaceOnUse" x1="12" y1="4" x2="36" y2="44"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<clipPath id="c5"><path d="M 16 4 H 32 A 4 4 0 0 1 36 8 V 40 A 4 4 0 0 1 32 44 H 16 A 4 4 0 0 1 12 40 V 8 A 4 4 0 0 1 16 4 Z"/></clipPath>
+<linearGradient id="l6" gradientUnits="userSpaceOnUse" x1="0" y1="8" x2="0" y2="20"><stop offset="0" stop-color="#B9F0E6"/><stop offset="1" stop-color="#3FA8B8"/></linearGradient>
+<clipPath id="c7"><path d="M 16.5 8 H 31.5 A 0.5 0.5 0 0 1 32 8.5 V 19.5 A 0.5 0.5 0 0 1 31.5 20 H 16.5 A 0.5 0.5 0 0 1 16 19.5 V 8.5 A 0.5 0.5 0 0 1 16.5 8 Z"/></clipPath>
+<linearGradient id="l8" gradientUnits="userSpaceOnUse" x1="0" y1="24" x2="0" y2="28.3"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2DE"/></linearGradient>
+<clipPath id="c9"><path d="M 16.8 24 H 19.733 A 0.8 0.8 0 0 1 20.533 24.8 V 26.3 A 0.8 0.8 0 0 1 19.733 27.1 H 16.8 A 0.8 0.8 0 0 1 16 26.3 V 24.8 A 0.8 0.8 0 0 1 16.8 24 Z"/></clipPath>
+<linearGradient id="l10" gradientUnits="userSpaceOnUse" x1="0" y1="24" x2="0" y2="28.3"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2DE"/></linearGradient>
+<clipPath id="c11"><path d="M 22.533 24 H 25.467 A 0.8 0.8 0 0 1 26.267 24.8 V 26.3 A 0.8 0.8 0 0 1 25.467 27.1 H 22.533 A 0.8 0.8 0 0 1 21.733 26.3 V 24.8 A 0.8 0.8 0 0 1 22.533 24 Z"/></clipPath>
+<linearGradient id="l12" gradientUnits="userSpaceOnUse" x1="0" y1="24" x2="0" y2="28.3"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2DE"/></linearGradient>
+<clipPath id="c13"><path d="M 28.267 24 H 31.2 A 0.8 0.8 0 0 1 32 24.8 V 26.3 A 0.8 0.8 0 0 1 31.2 27.1 H 28.267 A 0.8 0.8 0 0 1 27.467 26.3 V 24.8 A 0.8 0.8 0 0 1 28.267 24 Z"/></clipPath>
+<linearGradient id="l14" gradientUnits="userSpaceOnUse" x1="0" y1="28.3" x2="0" y2="32.6"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2DE"/></linearGradient>
+<clipPath id="c15"><path d="M 16.8 28.3 H 19.733 A 0.8 0.8 0 0 1 20.533 29.1 V 30.6 A 0.8 0.8 0 0 1 19.733 31.4 H 16.8 A 0.8 0.8 0 0 1 16 30.6 V 29.1 A 0.8 0.8 0 0 1 16.8 28.3 Z"/></clipPath>
+<linearGradient id="l16" gradientUnits="userSpaceOnUse" x1="0" y1="28.3" x2="0" y2="32.6"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2DE"/></linearGradient>
+<clipPath id="c17"><path d="M 22.533 28.3 H 25.467 A 0.8 0.8 0 0 1 26.267 29.1 V 30.6 A 0.8 0.8 0 0 1 25.467 31.4 H 22.533 A 0.8 0.8 0 0 1 21.733 30.6 V 29.1 A 0.8 0.8 0 0 1 22.533 28.3 Z"/></clipPath>
+<linearGradient id="l18" gradientUnits="userSpaceOnUse" x1="0" y1="28.3" x2="0" y2="32.6"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2DE"/></linearGradient>
+<clipPath id="c19"><path d="M 28.267 28.3 H 31.2 A 0.8 0.8 0 0 1 32 29.1 V 30.6 A 0.8 0.8 0 0 1 31.2 31.4 H 28.267 A 0.8 0.8 0 0 1 27.467 30.6 V 29.1 A 0.8 0.8 0 0 1 28.267 28.3 Z"/></clipPath>
+<linearGradient id="l20" gradientUnits="userSpaceOnUse" x1="0" y1="32.6" x2="0" y2="36.9"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2DE"/></linearGradient>
+<clipPath id="c21"><path d="M 16.8 32.6 H 19.733 A 0.8 0.8 0 0 1 20.533 33.4 V 34.9 A 0.8 0.8 0 0 1 19.733 35.7 H 16.8 A 0.8 0.8 0 0 1 16 34.9 V 33.4 A 0.8 0.8 0 0 1 16.8 32.6 Z"/></clipPath>
+<linearGradient id="l22" gradientUnits="userSpaceOnUse" x1="0" y1="32.6" x2="0" y2="36.9"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2DE"/></linearGradient>
+<clipPath id="c23"><path d="M 22.533 32.6 H 25.467 A 0.8 0.8 0 0 1 26.267 33.4 V 34.9 A 0.8 0.8 0 0 1 25.467 35.7 H 22.533 A 0.8 0.8 0 0 1 21.733 34.9 V 33.4 A 0.8 0.8 0 0 1 22.533 32.6 Z"/></clipPath>
+<linearGradient id="l24" gradientUnits="userSpaceOnUse" x1="0" y1="32.6" x2="0" y2="36.9"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2DE"/></linearGradient>
+<clipPath id="c25"><path d="M 28.267 32.6 H 31.2 A 0.8 0.8 0 0 1 32 33.4 V 34.9 A 0.8 0.8 0 0 1 31.2 35.7 H 28.267 A 0.8 0.8 0 0 1 27.467 34.9 V 33.4 A 0.8 0.8 0 0 1 28.267 32.6 Z"/></clipPath>
+<linearGradient id="l26" gradientUnits="userSpaceOnUse" x1="0" y1="36.9" x2="0" y2="41.2"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2DE"/></linearGradient>
+<clipPath id="c27"><path d="M 16.8 36.9 H 19.733 A 0.8 0.8 0 0 1 20.533 37.7 V 39.2 A 0.8 0.8 0 0 1 19.733 40 H 16.8 A 0.8 0.8 0 0 1 16 39.2 V 37.7 A 0.8 0.8 0 0 1 16.8 36.9 Z"/></clipPath>
+<linearGradient id="l28" gradientUnits="userSpaceOnUse" x1="0" y1="36.9" x2="0" y2="41.2"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2DE"/></linearGradient>
+<clipPath id="c29"><path d="M 22.533 36.9 H 25.467 A 0.8 0.8 0 0 1 26.267 37.7 V 39.2 A 0.8 0.8 0 0 1 25.467 40 H 22.533 A 0.8 0.8 0 0 1 21.733 39.2 V 37.7 A 0.8 0.8 0 0 1 22.533 36.9 Z"/></clipPath>
+<linearGradient id="l30" gradientUnits="userSpaceOnUse" x1="0" y1="36.9" x2="0" y2="41.2"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2DE"/></linearGradient>
+<clipPath id="c31"><path d="M 28.267 36.9 H 31.2 A 0.8 0.8 0 0 1 32 37.7 V 39.2 A 0.8 0.8 0 0 1 31.2 40 H 28.267 A 0.8 0.8 0 0 1 27.467 39.2 V 37.7 A 0.8 0.8 0 0 1 28.267 36.9 Z"/></clipPath></defs>
+<g transform="translate(2 2)">
+<path d="M 29 0 H 31 A 1 1 0 0 1 32 1 V 5 A 1 1 0 0 1 31 6 H 29 A 1 1 0 0 1 28 5 V 1 A 1 1 0 0 1 29 0 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 29 0 H 31 A 1 1 0 0 1 32 1 V 5 A 1 1 0 0 1 31 6 H 29 A 1 1 0 0 1 28 5 V 1 A 1 1 0 0 1 29 0 Z" fill="url(#l1)"/>
+<path d="M 29 0 H 31 A 1 1 0 0 1 32 1 V 5 A 1 1 0 0 1 31 6 H 29 A 1 1 0 0 1 28 5 V 1 A 1 1 0 0 1 29 0 Z" fill="none" stroke="#1E2228" stroke-width="4" stroke-linejoin="round" clip-path="url(#c2)"/>
+<g transform="translate(2 2)">
+<path d="M 16 4 H 32 A 4 4 0 0 1 36 8 V 40 A 4 4 0 0 1 32 44 H 16 A 4 4 0 0 1 12 40 V 8 A 4 4 0 0 1 16 4 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 16 4 H 32 A 4 4 0 0 1 36 8 V 40 A 4 4 0 0 1 32 44 H 16 A 4 4 0 0 1 12 40 V 8 A 4 4 0 0 1 16 4 Z" fill="url(#l3)"/>
+<path d="M 16 4 H 32 A 4 4 0 0 1 36 8 V 40 A 4 4 0 0 1 32 44 H 16 A 4 4 0 0 1 12 40 V 8 A 4 4 0 0 1 16 4 Z" fill="none" stroke="url(#l4)" stroke-width="8" stroke-linejoin="round" clip-path="url(#c5)"/>
+<path d="M 16 4 H 32 A 4 4 0 0 1 36 8 V 40 A 4 4 0 0 1 32 44 H 16 A 4 4 0 0 1 12 40 V 8 A 4 4 0 0 1 16 4 Z" fill="none" stroke="#3B4658" stroke-width="4" stroke-linejoin="round" clip-path="url(#c5)"/>
+<path d="M 16.5 8 H 31.5 A 0.5 0.5 0 0 1 32 8.5 V 19.5 A 0.5 0.5 0 0 1 31.5 20 H 16.5 A 0.5 0.5 0 0 1 16 19.5 V 8.5 A 0.5 0.5 0 0 1 16.5 8 Z" fill="url(#l6)"/>
+<path d="M 16.5 8 H 31.5 A 0.5 0.5 0 0 1 32 8.5 V 19.5 A 0.5 0.5 0 0 1 31.5 20 H 16.5 A 0.5 0.5 0 0 1 16 19.5 V 8.5 A 0.5 0.5 0 0 1 16.5 8 Z" fill="none" stroke="#24364A" stroke-width="4" stroke-linejoin="round" clip-path="url(#c7)"/>
+<path d="M20 14 L26 14 L26 16 L20 16 Z" fill="#1F5A68"/>
+<path d="M 16.8 24 H 19.733 A 0.8 0.8 0 0 1 20.533 24.8 V 26.3 A 0.8 0.8 0 0 1 19.733 27.1 H 16.8 A 0.8 0.8 0 0 1 16 26.3 V 24.8 A 0.8 0.8 0 0 1 16.8 24 Z" fill="url(#l8)"/>
+<path d="M 16.8 24 H 19.733 A 0.8 0.8 0 0 1 20.533 24.8 V 26.3 A 0.8 0.8 0 0 1 19.733 27.1 H 16.8 A 0.8 0.8 0 0 1 16 26.3 V 24.8 A 0.8 0.8 0 0 1 16.8 24 Z" fill="none" stroke="#5B6A80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c9)"/>
+<path d="M 22.533 24 H 25.467 A 0.8 0.8 0 0 1 26.267 24.8 V 26.3 A 0.8 0.8 0 0 1 25.467 27.1 H 22.533 A 0.8 0.8 0 0 1 21.733 26.3 V 24.8 A 0.8 0.8 0 0 1 22.533 24 Z" fill="url(#l10)"/>
+<path d="M 22.533 24 H 25.467 A 0.8 0.8 0 0 1 26.267 24.8 V 26.3 A 0.8 0.8 0 0 1 25.467 27.1 H 22.533 A 0.8 0.8 0 0 1 21.733 26.3 V 24.8 A 0.8 0.8 0 0 1 22.533 24 Z" fill="none" stroke="#5B6A80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c11)"/>
+<path d="M 28.267 24 H 31.2 A 0.8 0.8 0 0 1 32 24.8 V 26.3 A 0.8 0.8 0 0 1 31.2 27.1 H 28.267 A 0.8 0.8 0 0 1 27.467 26.3 V 24.8 A 0.8 0.8 0 0 1 28.267 24 Z" fill="url(#l12)"/>
+<path d="M 28.267 24 H 31.2 A 0.8 0.8 0 0 1 32 24.8 V 26.3 A 0.8 0.8 0 0 1 31.2 27.1 H 28.267 A 0.8 0.8 0 0 1 27.467 26.3 V 24.8 A 0.8 0.8 0 0 1 28.267 24 Z" fill="none" stroke="#5B6A80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c13)"/>
+<path d="M 16.8 28.3 H 19.733 A 0.8 0.8 0 0 1 20.533 29.1 V 30.6 A 0.8 0.8 0 0 1 19.733 31.4 H 16.8 A 0.8 0.8 0 0 1 16 30.6 V 29.1 A 0.8 0.8 0 0 1 16.8 28.3 Z" fill="url(#l14)"/>
+<path d="M 16.8 28.3 H 19.733 A 0.8 0.8 0 0 1 20.533 29.1 V 30.6 A 0.8 0.8 0 0 1 19.733 31.4 H 16.8 A 0.8 0.8 0 0 1 16 30.6 V 29.1 A 0.8 0.8 0 0 1 16.8 28.3 Z" fill="none" stroke="#5B6A80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c15)"/>
+<path d="M 22.533 28.3 H 25.467 A 0.8 0.8 0 0 1 26.267 29.1 V 30.6 A 0.8 0.8 0 0 1 25.467 31.4 H 22.533 A 0.8 0.8 0 0 1 21.733 30.6 V 29.1 A 0.8 0.8 0 0 1 22.533 28.3 Z" fill="url(#l16)"/>
+<path d="M 22.533 28.3 H 25.467 A 0.8 0.8 0 0 1 26.267 29.1 V 30.6 A 0.8 0.8 0 0 1 25.467 31.4 H 22.533 A 0.8 0.8 0 0 1 21.733 30.6 V 29.1 A 0.8 0.8 0 0 1 22.533 28.3 Z" fill="none" stroke="#5B6A80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c17)"/>
+<path d="M 28.267 28.3 H 31.2 A 0.8 0.8 0 0 1 32 29.1 V 30.6 A 0.8 0.8 0 0 1 31.2 31.4 H 28.267 A 0.8 0.8 0 0 1 27.467 30.6 V 29.1 A 0.8 0.8 0 0 1 28.267 28.3 Z" fill="url(#l18)"/>
+<path d="M 28.267 28.3 H 31.2 A 0.8 0.8 0 0 1 32 29.1 V 30.6 A 0.8 0.8 0 0 1 31.2 31.4 H 28.267 A 0.8 0.8 0 0 1 27.467 30.6 V 29.1 A 0.8 0.8 0 0 1 28.267 28.3 Z" fill="none" stroke="#5B6A80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c19)"/>
+<path d="M 16.8 32.6 H 19.733 A 0.8 0.8 0 0 1 20.533 33.4 V 34.9 A 0.8 0.8 0 0 1 19.733 35.7 H 16.8 A 0.8 0.8 0 0 1 16 34.9 V 33.4 A 0.8 0.8 0 0 1 16.8 32.6 Z" fill="url(#l20)"/>
+<path d="M 16.8 32.6 H 19.733 A 0.8 0.8 0 0 1 20.533 33.4 V 34.9 A 0.8 0.8 0 0 1 19.733 35.7 H 16.8 A 0.8 0.8 0 0 1 16 34.9 V 33.4 A 0.8 0.8 0 0 1 16.8 32.6 Z" fill="none" stroke="#5B6A80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c21)"/>
+<path d="M 22.533 32.6 H 25.467 A 0.8 0.8 0 0 1 26.267 33.4 V 34.9 A 0.8 0.8 0 0 1 25.467 35.7 H 22.533 A 0.8 0.8 0 0 1 21.733 34.9 V 33.4 A 0.8 0.8 0 0 1 22.533 32.6 Z" fill="url(#l22)"/>
+<path d="M 22.533 32.6 H 25.467 A 0.8 0.8 0 0 1 26.267 33.4 V 34.9 A 0.8 0.8 0 0 1 25.467 35.7 H 22.533 A 0.8 0.8 0 0 1 21.733 34.9 V 33.4 A 0.8 0.8 0 0 1 22.533 32.6 Z" fill="none" stroke="#5B6A80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c23)"/>
+<path d="M 28.267 32.6 H 31.2 A 0.8 0.8 0 0 1 32 33.4 V 34.9 A 0.8 0.8 0 0 1 31.2 35.7 H 28.267 A 0.8 0.8 0 0 1 27.467 34.9 V 33.4 A 0.8 0.8 0 0 1 28.267 32.6 Z" fill="url(#l24)"/>
+<path d="M 28.267 32.6 H 31.2 A 0.8 0.8 0 0 1 32 33.4 V 34.9 A 0.8 0.8 0 0 1 31.2 35.7 H 28.267 A 0.8 0.8 0 0 1 27.467 34.9 V 33.4 A 0.8 0.8 0 0 1 28.267 32.6 Z" fill="none" stroke="#5B6A80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c25)"/>
+<path d="M 16.8 36.9 H 19.733 A 0.8 0.8 0 0 1 20.533 37.7 V 39.2 A 0.8 0.8 0 0 1 19.733 40 H 16.8 A 0.8 0.8 0 0 1 16 39.2 V 37.7 A 0.8 0.8 0 0 1 16.8 36.9 Z" fill="url(#l26)"/>
+<path d="M 16.8 36.9 H 19.733 A 0.8 0.8 0 0 1 20.533 37.7 V 39.2 A 0.8 0.8 0 0 1 19.733 40 H 16.8 A 0.8 0.8 0 0 1 16 39.2 V 37.7 A 0.8 0.8 0 0 1 16.8 36.9 Z" fill="none" stroke="#5B6A80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c27)"/>
+<path d="M 22.533 36.9 H 25.467 A 0.8 0.8 0 0 1 26.267 37.7 V 39.2 A 0.8 0.8 0 0 1 25.467 40 H 22.533 A 0.8 0.8 0 0 1 21.733 39.2 V 37.7 A 0.8 0.8 0 0 1 22.533 36.9 Z" fill="url(#l28)"/>
+<path d="M 22.533 36.9 H 25.467 A 0.8 0.8 0 0 1 26.267 37.7 V 39.2 A 0.8 0.8 0 0 1 25.467 40 H 22.533 A 0.8 0.8 0 0 1 21.733 39.2 V 37.7 A 0.8 0.8 0 0 1 22.533 36.9 Z" fill="none" stroke="#5B6A80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c29)"/>
+<path d="M 28.267 36.9 H 31.2 A 0.8 0.8 0 0 1 32 37.7 V 39.2 A 0.8 0.8 0 0 1 31.2 40 H 28.267 A 0.8 0.8 0 0 1 27.467 39.2 V 37.7 A 0.8 0.8 0 0 1 28.267 36.9 Z" fill="url(#l30)"/>
+<path d="M 28.267 36.9 H 31.2 A 0.8 0.8 0 0 1 32 37.7 V 39.2 A 0.8 0.8 0 0 1 31.2 40 H 28.267 A 0.8 0.8 0 0 1 27.467 39.2 V 37.7 A 0.8 0.8 0 0 1 28.267 36.9 Z" fill="none" stroke="#5B6A80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c31)"/>
+</svg>

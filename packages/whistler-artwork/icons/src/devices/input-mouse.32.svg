@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><radialGradient id="r1" gradientUnits="userSpaceOnUse" cx="19" cy="20" r="26"><stop offset="0" stop-color="#FFFFFA"/><stop offset="0.5" stop-color="#F6F1E1"/><stop offset="1" stop-color="#C9BC98"/></radialGradient>
+<clipPath id="c2"><path d="M 24 12 C 34 12 37 20 37 29 C 37 39 31 45 24 45 C 17 45 11 39 11 29 C 11 20 14 12 24 12 Z"/></clipPath>
+<clipPath id="c3"><path d="M 24 12 C 34 12 37 20 37 29 C 37 39 31 45 24 45 C 17 45 11 39 11 29 C 11 20 14 12 24 12 Z"/></clipPath>
+<linearGradient id="l4" gradientUnits="userSpaceOnUse" x1="0" y1="15" x2="0" y2="22"><stop offset="0" stop-color="#8E8E96"/><stop offset="1" stop-color="#3A3A42"/></linearGradient>
+<clipPath id="c5"><path d="M 24 15 H 24 A 2 2 0 0 1 26 17 V 20 A 2 2 0 0 1 24 22 H 24 A 2 2 0 0 1 22 20 V 17 A 2 2 0 0 1 24 15 Z"/></clipPath></defs>
+<path d="M 24 13 C 24 6 32 3 38 6 C 43 9 42 14 45 15" fill="none" stroke="#6E6650" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M 24 13 C 24 6 32 3 38 6 C 43 9 42 14 45 15" fill="none" stroke="#D9D1BA" stroke-width="1" stroke-linecap="round"/>
+<g transform="translate(2.25 2.25)">
+<path d="M 24 12 C 34 12 37 20 37 29 C 37 39 31 45 24 45 C 17 45 11 39 11 29 C 11 20 14 12 24 12 Z" fill="none" stroke="#000000" stroke-width="4.8" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M 24 12 C 34 12 37 20 37 29 C 37 39 31 45 24 45 C 17 45 11 39 11 29 C 11 20 14 12 24 12 Z" fill="none" stroke="#000000" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M 24 12 C 34 12 37 20 37 29 C 37 39 31 45 24 45 C 17 45 11 39 11 29 C 11 20 14 12 24 12 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 24 12 C 34 12 37 20 37 29 C 37 39 31 45 24 45 C 17 45 11 39 11 29 C 11 20 14 12 24 12 Z" fill="url(#r1)"/>
+<path d="M 24 12 C 34 12 37 20 37 29 C 37 39 31 45 24 45 C 17 45 11 39 11 29 C 11 20 14 12 24 12 Z" fill="none" stroke="#8C8064" stroke-width="3" stroke-linejoin="round" clip-path="url(#c2)"/>
+<g clip-path="url(#c3)">
+<path d="M10 26 L38 26" fill="none" stroke="#8C8064" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+<path d="M24 10 L24 26" fill="none" stroke="#8C8064" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+<path d="M10 10 L24 10 L24 26 L10 26 Z" fill="#FFFFFF" opacity="0.25"/>
+</g>
+<path d="M 24 15 H 24 A 2 2 0 0 1 26 17 V 20 A 2 2 0 0 1 24 22 H 24 A 2 2 0 0 1 22 20 V 17 A 2 2 0 0 1 24 15 Z" fill="url(#l4)"/>
+<path d="M 24 15 H 24 A 2 2 0 0 1 26 17 V 20 A 2 2 0 0 1 24 22 H 24 A 2 2 0 0 1 22 20 V 17 A 2 2 0 0 1 24 15 Z" fill="none" stroke="#2A2A30" stroke-width="3" stroke-linejoin="round" clip-path="url(#c5)"/>
+</svg>

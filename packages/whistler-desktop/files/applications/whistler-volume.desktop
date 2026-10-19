@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Volume Control
+Comment=Adjust the volume of your speakers and programs
+Exec=whistler-volume
+Icon=multimedia-volume-control
+Categories=AudioVideo;Audio;Mixer;
+X-Whistler-Folder=Accessories/Entertainment

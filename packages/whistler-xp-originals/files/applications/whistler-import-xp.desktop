@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Import Windows XP Files
+Comment=Use the original Windows XP artwork, fonts and sounds from your own XP CD or files
+Exec=whistler-import-xp %f
+Icon=system-software-install
+Categories=Settings;DesktopSettings;
+X-Whistler-Folder=Accessories/System Tools
+MimeType=application/x-cd-image;application/x-iso9660-image;

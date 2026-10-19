@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=FreeCell
+Comment=Play FreeCell
+Exec=sol --variation freecell
+Icon=whistler-freecell
+Categories=Game;CardGame;
+X-Whistler-Folder=Games

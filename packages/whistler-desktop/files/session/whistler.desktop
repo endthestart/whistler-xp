@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Whistler
+Comment=The Whistler XP-style desktop
+Exec=whistler-session
+TryExec=whistler-session
+Icon=whistler-logo
+Type=Application
+DesktopNames=XFCE

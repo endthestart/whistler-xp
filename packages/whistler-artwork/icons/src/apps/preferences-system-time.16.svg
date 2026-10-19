@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="3" y1="6" x2="33" y2="39"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D9E0EA"/></linearGradient>
+<clipPath id="c2"><path d="M3 6 L33 6 L33 39 L3 39 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="0" y1="6" x2="0" y2="15"><stop offset="0" stop-color="#FF8A66"/><stop offset="0.5" stop-color="#E5432A"/><stop offset="1" stop-color="#B32213"/></linearGradient>
+<clipPath id="c4"><path d="M 3 6 Q 3 6 4 6 H 32 Q 33 6 33 7 V 15 H 3 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="18" y1="17" x2="46" y2="45"><stop offset="0" stop-color="#7AB4FA"/><stop offset="0.5" stop-color="#2F74E0"/><stop offset="1" stop-color="#1B4FB8"/></linearGradient>
+<clipPath id="c6"><path d="M 18 31 A 14 14 0 1 0 46 31 A 14 14 0 1 0 18 31 Z"/></clipPath>
+<radialGradient id="r7" gradientUnits="userSpaceOnUse" cx="28.64" cy="27.64" r="15.68"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.7" stop-color="#F2F4F7"/><stop offset="1" stop-color="#C8D0DA"/></radialGradient>
+<clipPath id="c8"><path d="M 20.8 31 A 11.2 11.2 0 1 0 43.2 31 A 11.2 11.2 0 1 0 20.8 31 Z"/></clipPath></defs>
+<g transform="translate(3 3)">
+<path d="M3 6 L33 6 L33 39 L3 39 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M3 6 L33 6 L33 39 L3 39 Z" fill="url(#l1)"/>
+<path d="M3 6 L33 6 L33 39 L3 39 Z" fill="none" stroke="#6E7A8C" stroke-width="6" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M 3 6 Q 3 6 4 6 H 32 Q 33 6 33 7 V 15 H 3 Z" fill="url(#l3)"/>
+<path d="M 3 6 Q 3 6 4 6 H 32 Q 33 6 33 7 V 15 H 3 Z" fill="none" stroke="#86190E" stroke-width="6" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M9 21 L27 21 L27 24 L9 24 Z" fill="#8C9AB0"/>
+<path d="M9 27 L27 27 L27 30 L9 30 Z" fill="#8C9AB0"/>
+<g transform="translate(3 3)">
+<path d="M 18 31 A 14 14 0 1 0 46 31 A 14 14 0 1 0 18 31 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 18 31 A 14 14 0 1 0 46 31 A 14 14 0 1 0 18 31 Z" fill="url(#l5)"/>
+<path d="M 18 31 A 14 14 0 1 0 46 31 A 14 14 0 1 0 18 31 Z" fill="none" stroke="#173F8C" stroke-width="6" stroke-linejoin="round" clip-path="url(#c6)"/>
+<path d="M 20.8 31 A 11.2 11.2 0 1 0 43.2 31 A 11.2 11.2 0 1 0 20.8 31 Z" fill="url(#r7)"/>
+<path d="M 20.8 31 A 11.2 11.2 0 1 0 43.2 31 A 11.2 11.2 0 1 0 20.8 31 Z" fill="none" stroke="#11367E" stroke-width="6" stroke-linejoin="round" clip-path="url(#c8)"/>
+<path d="M32 31 L27.15 28.2" fill="none" stroke="#1E2A3C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 31 L39.275 26.8" fill="none" stroke="#1E2A3C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

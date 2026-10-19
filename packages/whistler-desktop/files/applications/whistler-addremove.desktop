@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Add or Remove Programs
+Comment=Install and remove programs
+Exec=whistler-addremove
+Icon=system-software-install
+Categories=Settings;
+X-Whistler-Folder=-

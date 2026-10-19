@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="16" y1="1" x2="32" y2="21"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#C2C9D3"/><stop offset="1" stop-color="#7E8896"/></linearGradient>
+<linearGradient id="l2" gradientUnits="userSpaceOnUse" x1="16" y1="1" x2="32" y2="21"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#C2C9D3"/><stop offset="1" stop-color="#7E8896"/></linearGradient>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="0" y1="21" x2="0" y2="35"><stop offset="0" stop-color="#FF8A66"/><stop offset="1" stop-color="#B32213"/></linearGradient>
+<linearGradient id="l4" gradientUnits="userSpaceOnUse" x1="7" y1="27.5" x2="22" y2="42.5"><stop offset="0" stop-color="#FF8A66"/><stop offset="0.5" stop-color="#E5432A"/><stop offset="1" stop-color="#B32213"/></linearGradient>
+<clipPath id="c5"><path d="M 7 35 A 7.5 7.5 0 1 0 22 35 A 7.5 7.5 0 1 0 7 35 Z M 10.5 35 A 4 4 0 1 0 18.5 35 A 4 4 0 1 0 10.5 35 Z" clip-rule="evenodd"/></clipPath>
+<linearGradient id="l6" gradientUnits="userSpaceOnUse" x1="0" y1="21" x2="0" y2="35"><stop offset="0" stop-color="#FF8A66"/><stop offset="1" stop-color="#B32213"/></linearGradient>
+<linearGradient id="l7" gradientUnits="userSpaceOnUse" x1="26" y1="27.5" x2="41" y2="42.5"><stop offset="0" stop-color="#FF8A66"/><stop offset="0.5" stop-color="#E5432A"/><stop offset="1" stop-color="#B32213"/></linearGradient>
+<clipPath id="c8"><path d="M 26 35 A 7.5 7.5 0 1 0 41 35 A 7.5 7.5 0 1 0 26 35 Z M 29.5 35 A 4 4 0 1 0 37.5 35 A 4 4 0 1 0 29.5 35 Z" clip-rule="evenodd"/></clipPath>
+<linearGradient id="l9" gradientUnits="userSpaceOnUse" x1="22" y1="21" x2="26" y2="25"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#6E7784"/></linearGradient>
+<clipPath id="c10"><path d="M 22 23.5 A 2 2 0 1 0 26 23.5 A 2 2 0 1 0 22 23.5 Z"/></clipPath></defs>
+<g transform="translate(2 2)">
+<path d="M24 25 L21.8 19 L14.5 1 L16.5 0.5 L25.5 18 L26 24 Z" fill="#000000" fill-opacity="0.2"/>
+</g>
+<path d="M 23.828 24.531 L 21.972 19.469 Q 21.8 19 21.612 18.537 L 14.688 1.463 Q 14.5 1 14.985 0.879 L 16.015 0.621 Q 16.5 0.5 16.729 0.945 L 25.271 17.555 Q 25.5 18 25.542 18.498 L 25.958 23.502 Q 26 24 25.553 24.224 L 24.447 24.776 Q 24 25 23.828 24.531 Z" fill="url(#l1)" stroke="#4E5662" stroke-width="1.8" stroke-linejoin="round"/>
+<g transform="translate(2 2)">
+<path d="M24 25 L26.2 19 L33.5 1 L31.5 0.5 L22.5 18 L22 24 Z" fill="#000000" fill-opacity="0.2"/>
+</g>
+<path d="M 24.172 24.531 L 26.028 19.469 Q 26.2 19 26.388 18.537 L 33.312 1.463 Q 33.5 1 33.015 0.879 L 31.985 0.621 Q 31.5 0.5 31.271 0.945 L 22.729 17.555 Q 22.5 18 22.458 18.498 L 22.042 23.502 Q 22 24 22.447 24.224 L 23.553 24.776 Q 24 25 24.172 24.531 Z" fill="url(#l2)" stroke="#4E5662" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M25.5 23 L21.5 24 L18 29.5 L20.5 32 Z" fill="url(#l3)" stroke="#86190E" stroke-width="1.8" stroke-linejoin="round"/>
+<g transform="translate(2 2)">
+<path d="M 7 35 A 7.5 7.5 0 1 0 22 35 A 7.5 7.5 0 1 0 7 35 Z" fill="#000000" fill-opacity="0.25"/>
+</g>
+<path d="M 7 35 A 7.5 7.5 0 1 0 22 35 A 7.5 7.5 0 1 0 7 35 Z M 10.5 35 A 4 4 0 1 0 18.5 35 A 4 4 0 1 0 10.5 35 Z" fill="url(#l4)" fill-rule="evenodd"/>
+<path d="M 7 35 A 7.5 7.5 0 1 0 22 35 A 7.5 7.5 0 1 0 7 35 Z M 10.5 35 A 4 4 0 1 0 18.5 35 A 4 4 0 1 0 10.5 35 Z" fill="none" stroke="#86190E" stroke-width="4" stroke-linejoin="round" clip-path="url(#c5)"/>
+<path d="M22.5 23 L26.5 24 L30 29.5 L27.5 32 Z" fill="url(#l6)" stroke="#86190E" stroke-width="1.8" stroke-linejoin="round"/>
+<g transform="translate(2 2)">
+<path d="M 26 35 A 7.5 7.5 0 1 0 41 35 A 7.5 7.5 0 1 0 26 35 Z" fill="#000000" fill-opacity="0.25"/>
+</g>
+<path d="M 26 35 A 7.5 7.5 0 1 0 41 35 A 7.5 7.5 0 1 0 26 35 Z M 29.5 35 A 4 4 0 1 0 37.5 35 A 4 4 0 1 0 29.5 35 Z" fill="url(#l7)" fill-rule="evenodd"/>
+<path d="M 26 35 A 7.5 7.5 0 1 0 41 35 A 7.5 7.5 0 1 0 26 35 Z M 29.5 35 A 4 4 0 1 0 37.5 35 A 4 4 0 1 0 29.5 35 Z" fill="none" stroke="#86190E" stroke-width="4" stroke-linejoin="round" clip-path="url(#c8)"/>
+<path d="M 22 23.5 A 2 2 0 1 0 26 23.5 A 2 2 0 1 0 22 23.5 Z" fill="url(#l9)"/>
+<path d="M 22 23.5 A 2 2 0 1 0 26 23.5 A 2 2 0 1 0 22 23.5 Z" fill="none" stroke="#3E4652" stroke-width="4" stroke-linejoin="round" clip-path="url(#c10)"/>
+</svg>

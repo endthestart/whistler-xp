@@ -1,0 +1,24 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Trash"
+msgstr "Recycle Bin"
+
+msgid "Open _Trash"
+msgstr "_Open"
+
+msgid "_Empty Trash"
+msgstr "Empty Recycle _Bin"
+
+msgid "Empty Trash"
+msgstr "Empty Recycle Bin"
+
+msgid "Trash is empty"
+msgstr "Recycle Bin is empty"
+
+msgid "Mo_ve to Trash"
+msgstr "_Delete"
+
+msgid "File System"
+msgstr "My Computer"

@@ -1,0 +1,4 @@
+#!/bin/sh
+# "Command Prompt": a terminal dressed like cmd.exe
+exec xfce4-terminal --title="Command Prompt" --hide-menubar --hide-toolbar \
+    --geometry=80x25 --icon=utilities-terminal -x bash --rcfile /usr/share/whistler/cmd/bashrc -i

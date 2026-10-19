@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Spider Solitaire
+Comment=Play Spider solitaire
+Exec=sol --variation spider
+Icon=whistler-spider
+Categories=Game;CardGame;
+X-Whistler-Folder=Games

@@ -1,0 +1,183 @@
+#!/bin/bash
+# Whistler XP installer backend. Run as root:  whistler-install-backend CONFIG
+# CONFIG is a shell fragment defining: DISK FULLNAME LOGIN PASSWORD HOSTNAME
+#   TIMEZONE XKB_LAYOUT AUTOLOGIN(yes/no)
+# Prints "PROGRESS <percent> <message>" lines and "ERROR <message>" on failure.
+set -uo pipefail
+export LC_ALL=C
+
+CONFIG=${1:?config file required}
+# shellcheck source=/dev/null
+. "$CONFIG"
+rm -f "$CONFIG"
+
+SRC=/run/archiso/airootfs
+BOOTMNT=/run/archiso/bootmnt
+TARGET=/mnt/whistler
+LOG=/var/log/whistler-install.log
+exec 3>&1
+exec >>"$LOG" 2>&1
+
+progress() { echo "PROGRESS $1 $2" >&3; echo "== $1% $2"; }
+fail() { echo "ERROR $*" >&3; echo "ERROR $*"; cleanup; exit 1; }
+cleanup() {
+    sync
+    umount -R "$TARGET" 2>/dev/null
+}
+run() { "$@" || fail "Command failed: $*"; }
+
+[ "$(id -u)" = 0 ] || fail "Setup must run as root."
+[ -d "$SRC/usr" ] || fail "The Whistler XP installation source ($SRC) was not found."
+[ -b "$DISK" ] || fail "The disk $DISK does not exist."
+case "$(lsblk -no TYPE "$DISK" | head -1)" in disk) ;; *) fail "$DISK is not a whole disk." ;; esac
+if lsblk -no MOUNTPOINT "$DISK" | grep -q "^$BOOTMNT"; then
+    fail "$DISK holds the Whistler XP setup medium and cannot be used."
+fi
+
+UEFI=no
+[ -d /sys/firmware/efi/efivars ] && UEFI=yes
+part() { case "$DISK" in *[0-9]) echo "${DISK}p$1" ;; *) echo "${DISK}$1" ;; esac; }
+
+# ------------------------------------------------------------------ disk
+progress 1 "Preparing the disk..."
+for p in $(lsblk -lnpo NAME "$DISK" | tail -n +2); do umount "$p" 2>/dev/null; swapoff "$p" 2>/dev/null; done
+umount -R "$TARGET" 2>/dev/null
+run wipefs -af "$DISK"
+run sgdisk --zap-all "$DISK"
+progress 3 "Creating partitions..."
+if [ "$UEFI" = yes ]; then
+    run sgdisk -n1:0:+512M -t1:ef00 -c1:"EFI System" -n2:0:0 -t2:8304 -c2:"Whistler XP" "$DISK"
+else
+    run sgdisk -n1:0:+1M -t1:ef02 -c1:"BIOS boot" -n2:0:0 -t2:8304 -c2:"Whistler XP" "$DISK"
+fi
+partprobe "$DISK" 2>/dev/null; udevadm settle; sleep 1
+ROOTPART=$(part 2)
+progress 5 "Formatting the partition..."
+run mkfs.ext4 -F -q -L Whistler "$ROOTPART"
+if [ "$UEFI" = yes ]; then
+    run mkfs.fat -F32 -n EFI "$(part 1)"
+fi
+mkdir -p "$TARGET"
+run mount "$ROOTPART" "$TARGET"
+if [ "$UEFI" = yes ]; then
+    mkdir -p "$TARGET/boot/efi"
+    run mount "$(part 1)" "$TARGET/boot/efi"
+fi
+
+# ------------------------------------------------------------------ copy
+progress 8 "Copying files..."
+rsync -aAXH --numeric-ids --info=progress2 --no-inc-recursive \
+    --exclude=/dev/ --exclude=/proc/ --exclude=/sys/ --exclude=/run/ --exclude=/tmp/ --exclude=/mnt/ \
+    "$SRC/" "$TARGET/" 2>>"$LOG" | tr '\r' '\n' | while read -r _ pct _; do
+        case "$pct" in *%) n=${pct%\%}; echo "PROGRESS $((8 + n * 70 / 100)) Copying files... $n%" >&3 ;; esac
+    done
+[ -x "$TARGET/usr/bin/bash" ] || fail "Copying files failed. See $LOG."
+mkdir -p "$TARGET"/{dev,proc,sys,run,tmp,mnt}
+chmod 1777 "$TARGET/tmp"
+KERNEL=linux-cachyos
+if [ ! -f "$TARGET/boot/vmlinuz-$KERNEL" ]; then
+    cp "$BOOTMNT/arch/boot/x86_64/vmlinuz-$KERNEL" "$TARGET/boot/vmlinuz-$KERNEL" || fail "Kernel not found."
+fi
+
+# ------------------------------------------------------------- configure
+progress 79 "Removing temporary setup files..."
+rm -f "$TARGET"/etc/systemd/system/multi-user.target.wants/whistler-live.service \
+      "$TARGET"/etc/systemd/system/whistler-live.service \
+      "$TARGET"/usr/local/bin/whistler-live-setup \
+      "$TARGET"/etc/sudoers.d/10-whistler-live \
+      "$TARGET"/etc/lightdm/lightdm.conf.d/60-whistler-live.conf \
+      "$TARGET"/etc/polkit-1/rules.d/49-whistler-live.rules \
+      "$TARGET"/etc/mkinitcpio.conf.d/archiso.conf \
+      "$TARGET"/etc/systemd/journald.conf.d/volatile-storage.conf \
+      "$TARGET"/etc/systemd/logind.conf.d/do-not-suspend.conf \
+      "$TARGET"/etc/systemd/system/multi-user.target.wants/sshd.service \
+      "$TARGET"/etc/systemd/system/multi-user.target.wants/pacman-init.service \
+      "$TARGET"/etc/systemd/system/pacman-init.service \
+      "$TARGET"/etc/systemd/system/etc-pacman.d-gnupg.mount \
+      "$TARGET"/etc/ssh/sshd_config.d/10-debug.conf \
+      "$TARGET"/etc/systemd/system-generators/systemd-gpt-auto-generator
+rm -rf "$TARGET"/root/.ssh "$TARGET"/etc/pacman.d/gnupg
+: > "$TARGET/etc/machine-id"
+
+progress 81 "Configuring your computer..."
+genfstab -U "$TARGET" > "$TARGET/etc/fstab" || fail "Could not write fstab."
+echo "$HOSTNAME" > "$TARGET/etc/hostname"
+printf '127.0.0.1 localhost\n::1 localhost\n127.0.1.1 %s.localdomain %s\n' "$HOSTNAME" "$HOSTNAME" > "$TARGET/etc/hosts"
+if [ -n "${TIMEZONE:-}" ] && [ -f "/usr/share/zoneinfo/$TIMEZONE" ]; then
+    ln -sf "/usr/share/zoneinfo/$TIMEZONE" "$TARGET/etc/localtime"
+fi
+mkdir -p "$TARGET/etc/X11/xorg.conf.d"
+cat > "$TARGET/etc/X11/xorg.conf.d/00-keyboard.conf" <<EOF
+Section "InputClass"
+        Identifier "system-keyboard"
+        MatchIsKeyboard "on"
+        Option "XkbLayout" "${XKB_LAYOUT:-us}"
+EndSection
+EOF
+echo "KEYMAP=${XKB_LAYOUT:-us}" > "$TARGET/etc/vconsole.conf"
+printf '%%wheel ALL=(ALL:ALL) ALL\n' > "$TARGET/etc/sudoers.d/10-wheel"
+chmod 440 "$TARGET/etc/sudoers.d/10-wheel"
+cat > "$TARGET/etc/mkinitcpio.conf.d/whistler.conf" <<'EOF'
+HOOKS=(base udev autodetect microcode modconf kms plymouth keyboard keymap consolefont block filesystems fsck)
+COMPRESSION="zstd"
+EOF
+cat > "$TARGET/etc/mkinitcpio.d/$KERNEL.preset" <<EOF
+ALL_kver="/boot/vmlinuz-$KERNEL"
+PRESETS=('default' 'fallback')
+default_image="/boot/initramfs-$KERNEL.img"
+fallback_image="/boot/initramfs-$KERNEL-fallback.img"
+fallback_options="-S autodetect"
+EOF
+
+chroot_run() { arch-chroot "$TARGET" "$@"; }
+
+progress 83 "Creating your user account..."
+chroot_run groupadd -rf autologin
+chroot_run useradd -m -c "$FULLNAME" -s /bin/bash \
+    -G wheel,audio,video,storage,optical,network,power,lp "$LOGIN" || fail "Could not create the account $LOGIN."
+if [ -n "${PASSWORD:-}" ]; then
+    printf '%s:%s\n' "$LOGIN" "$PASSWORD" | chroot_run chpasswd || fail "Could not set the password."
+else
+    chroot_run passwd -d "$LOGIN" >/dev/null
+fi
+chroot_run passwd -l root >/dev/null
+if [ "${AUTOLOGIN:-no}" = yes ]; then
+    chroot_run gpasswd -a "$LOGIN" autologin >/dev/null
+    printf '[Seat:*]\nautologin-user=%s\nautologin-session=whistler\n' "$LOGIN" \
+        > "$TARGET/etc/lightdm/lightdm.conf.d/60-autologin.conf"
+fi
+if [ -n "${USERPIC:-}" ] && [ -f "$TARGET$USERPIC" ]; then
+    mkdir -p "$TARGET/var/lib/AccountsService/icons" "$TARGET/var/lib/AccountsService/users"
+    cp "$TARGET$USERPIC" "$TARGET/var/lib/AccountsService/icons/$LOGIN"
+    printf '[User]\nIcon=/var/lib/AccountsService/icons/%s\nSession=whistler\n' "$LOGIN" \
+        > "$TARGET/var/lib/AccountsService/users/$LOGIN"
+    cp "$TARGET$USERPIC" "$TARGET/home/$LOGIN/.face"
+    chroot_run chown "$LOGIN:$LOGIN" "/home/$LOGIN/.face"
+fi
+
+progress 85 "Setting up the software catalog keys..."
+chroot_run pacman-key --init >/dev/null 2>&1
+chroot_run pacman-key --populate >/dev/null 2>&1
+
+progress 88 "Preparing Whistler XP to start..."
+chroot_run mkinitcpio -P >/dev/null || fail "Could not build the startup files (initramfs)."
+
+progress 94 "Installing the boot loader..."
+sed -i 's/^GRUB_DISTRIBUTOR=.*/GRUB_DISTRIBUTOR="Whistler XP"/;
+        s/^GRUB_TIMEOUT=.*/GRUB_TIMEOUT=3/;
+        s/^#\?GRUB_TIMEOUT_STYLE=.*/GRUB_TIMEOUT_STYLE=hidden/;
+        s/^GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash loglevel=3 rd.udev.log_level=3 vt.global_cursor_default=0"/;
+        s/^#\?GRUB_DISABLE_OS_PROBER=.*/GRUB_DISABLE_OS_PROBER=false/' "$TARGET/etc/default/grub"
+if [ "$UEFI" = yes ]; then
+    chroot_run grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=Whistler >/dev/null \
+        || fail "Could not install the boot loader."
+    chroot_run grub-install --target=x86_64-efi --efi-directory=/boot/efi --removable >/dev/null
+else
+    chroot_run grub-install --target=i386-pc "$DISK" >/dev/null || fail "Could not install the boot loader."
+fi
+chroot_run grub-mkconfig -o /boot/grub/grub.cfg >/dev/null || fail "Could not configure the boot loader."
+
+progress 99 "Saving settings..."
+cleanup
+progress 100 "Setup is complete."
+exit 0

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Windows Drive C:
+Comment=Open the drive where Windows programs are installed
+Exec=whistler-winecenter --open-drive
+Icon=drive-harddisk
+Categories=Wine;
+X-Whistler-Folder=Wine

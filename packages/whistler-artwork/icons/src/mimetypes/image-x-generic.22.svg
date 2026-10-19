@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="8.727" y1="2.182" x2="37.091" y2="45.818"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F7F9FB"/><stop offset="1" stop-color="#DCE3EC"/></linearGradient>
+<clipPath id="c2"><path d="M8.727 2.182 L26.182 2.182 L37.091 13.091 L37.091 45.818 L8.727 45.818 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="26.182" y1="13.091" x2="31.636" y2="7.636"><stop offset="0" stop-color="#C4CFDD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<clipPath id="c4"><path d="M26.182 2.182 L26.182 13.091 L37.091 13.091 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="3.491" y1="6.982" x2="45.382" y2="41.891"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DDE3EA"/></linearGradient>
+<clipPath id="c6"><path d="M 5.236 6.982 H 43.636 A 1.745 1.745 0 0 1 45.382 8.727 V 40.145 A 1.745 1.745 0 0 1 43.636 41.891 H 5.236 A 1.745 1.745 0 0 1 3.491 40.145 V 8.727 A 1.745 1.745 0 0 1 5.236 6.982 Z"/></clipPath>
+<clipPath id="c7"><path d="M6.982 10.473 L41.891 10.473 L41.891 38.4 L6.982 38.4 Z"/></clipPath>
+<linearGradient id="l8" gradientUnits="userSpaceOnUse" x1="0" y1="10.473" x2="0" y2="38.4"><stop offset="0" stop-color="#2E7FE0"/><stop offset="0.6" stop-color="#8CC8FF"/><stop offset="1" stop-color="#D6EEFF"/></linearGradient>
+<radialGradient id="r9" gradientUnits="userSpaceOnUse" cx="32.465" cy="18.013" r="4.608"><stop offset="0" stop-color="#FFFFE0"/><stop offset="1" stop-color="#FFC926"/></radialGradient>
+<linearGradient id="l10" gradientUnits="userSpaceOnUse" x1="0" y1="23.04" x2="0" y2="38.4"><stop offset="0" stop-color="#7DD34F"/><stop offset="1" stop-color="#2F8F22"/></linearGradient></defs>
+<g transform="translate(2.182 2.182)">
+<path d="M8.727 2.182 L26.182 2.182 L37.091 13.091 L37.091 45.818 L8.727 45.818 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M8.727 2.182 L26.182 2.182 L37.091 13.091 L37.091 45.818 L8.727 45.818 Z" fill="url(#l1)"/>
+<path d="M8.727 2.182 L26.182 2.182 L37.091 13.091 L37.091 45.818 L8.727 45.818 Z" fill="none" stroke="#8D9AB0" stroke-width="4.364" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M26.182 2.182 L26.182 13.091 L37.091 13.091 Z" fill="url(#l3)"/>
+<path d="M26.182 2.182 L26.182 13.091 L37.091 13.091 Z" fill="none" stroke="#8D9AB0" stroke-width="4.364" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M13.091 6.545 L24 6.545 L24 8.727 L13.091 8.727 Z" fill="#A9B6C9"/>
+<path d="M13.091 10.909 L21.818 10.909 L21.818 13.091 L13.091 13.091 Z" fill="#A9B6C9"/>
+<g transform="translate(8.727 15.273) scale(0.625)">
+<g transform="translate(3.491 3.491)">
+<path d="M 5.236 6.982 H 43.636 A 1.745 1.745 0 0 1 45.382 8.727 V 40.145 A 1.745 1.745 0 0 1 43.636 41.891 H 5.236 A 1.745 1.745 0 0 1 3.491 40.145 V 8.727 A 1.745 1.745 0 0 1 5.236 6.982 Z" fill="#000000" fill-opacity="0.25"/>
+</g>
+<path d="M 5.236 6.982 H 43.636 A 1.745 1.745 0 0 1 45.382 8.727 V 40.145 A 1.745 1.745 0 0 1 43.636 41.891 H 5.236 A 1.745 1.745 0 0 1 3.491 40.145 V 8.727 A 1.745 1.745 0 0 1 5.236 6.982 Z" fill="url(#l5)"/>
+<path d="M 5.236 6.982 H 43.636 A 1.745 1.745 0 0 1 45.382 8.727 V 40.145 A 1.745 1.745 0 0 1 43.636 41.891 H 5.236 A 1.745 1.745 0 0 1 3.491 40.145 V 8.727 A 1.745 1.745 0 0 1 5.236 6.982 Z" fill="none" stroke="#7A8696" stroke-width="6.982" stroke-linejoin="round" clip-path="url(#c6)"/>
+<g clip-path="url(#c7)">
+<path d="M6.982 10.473 L41.891 10.473 L41.891 38.4 L6.982 38.4 Z" fill="url(#l8)"/>
+<path d="M 29.324 18.851 A 3.84 3.84 0 1 0 37.004 18.851 A 3.84 3.84 0 1 0 29.324 18.851 Z" fill="url(#r9)"/>
+<path d="M 6.982 30.58 C 15.709 22.202 22.691 23.04 27.927 27.788 C 33.164 24.436 38.4 24.995 41.891 27.229 V 38.4 H 6.982 Z" fill="url(#l10)"/>
+<path d="M 6.982 35.607 C 17.455 30.022 31.418 32.256 41.891 33.373 V 38.4 H 6.982 Z" fill="#2A7A1E" opacity="0.55"/>
+</g>
+<path d="M6.982 10.473 L41.891 10.473 L41.891 38.4 L6.982 38.4 Z" fill="none" stroke="#5C6B7E" stroke-width="2.095" stroke-opacity="0.6"/>
+</g>
+</svg>

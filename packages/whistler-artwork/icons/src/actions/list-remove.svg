@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="6" y1="18" x2="40" y2="28"><stop offset="0" stop-color="#FF8A66"/><stop offset="0.5" stop-color="#E5432A"/><stop offset="1" stop-color="#B32213"/></linearGradient>
+<linearGradient id="l2" gradientUnits="userSpaceOnUse" x1="0" y1="18" x2="0" y2="23"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.75"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.05"/></linearGradient>
+<clipPath id="c3"><path d="M 6.2 18 H 39.8 A 1.2 1.2 0 0 1 41 19.2 V 26.8 A 1.2 1.2 0 0 1 39.8 28 H 6.2 A 1.2 1.2 0 0 1 5 26.8 V 19.2 A 1.2 1.2 0 0 1 6.2 18 Z"/></clipPath></defs>
+<g transform="translate(1.5 1.5)">
+<path d="M 6.2 18 H 39.8 A 1.2 1.2 0 0 1 41 19.2 V 26.8 A 1.2 1.2 0 0 1 39.8 28 H 6.2 A 1.2 1.2 0 0 1 5 26.8 V 19.2 A 1.2 1.2 0 0 1 6.2 18 Z" fill="none" stroke="#000000" stroke-width="3.2" stroke-linejoin="round" stroke-opacity="0.045"/>
+<path d="M 6.2 18 H 39.8 A 1.2 1.2 0 0 1 41 19.2 V 26.8 A 1.2 1.2 0 0 1 39.8 28 H 6.2 A 1.2 1.2 0 0 1 5 26.8 V 19.2 A 1.2 1.2 0 0 1 6.2 18 Z" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="round" stroke-opacity="0.087"/>
+<path d="M 6.2 18 H 39.8 A 1.2 1.2 0 0 1 41 19.2 V 26.8 A 1.2 1.2 0 0 1 39.8 28 H 6.2 A 1.2 1.2 0 0 1 5 26.8 V 19.2 A 1.2 1.2 0 0 1 6.2 18 Z" fill="#000000" fill-opacity="0.25"/>
+</g>
+<path d="M 6.2 18 H 39.8 A 1.2 1.2 0 0 1 41 19.2 V 26.8 A 1.2 1.2 0 0 1 39.8 28 H 6.2 A 1.2 1.2 0 0 1 5 26.8 V 19.2 A 1.2 1.2 0 0 1 6.2 18 Z" fill="url(#l1)"/>
+<path d="M 6.2 18 H 39.8 A 1.2 1.2 0 0 1 41 19.2 V 26.8 A 1.2 1.2 0 0 1 39.8 28 H 6.2 A 1.2 1.2 0 0 1 5 26.8 V 19.2 A 1.2 1.2 0 0 1 6.2 18 Z" fill="none" stroke="url(#l2)" stroke-width="4" stroke-linejoin="round" clip-path="url(#c3)"/>
+<path d="M 6.2 18 H 39.8 A 1.2 1.2 0 0 1 41 19.2 V 26.8 A 1.2 1.2 0 0 1 39.8 28 H 6.2 A 1.2 1.2 0 0 1 5 26.8 V 19.2 A 1.2 1.2 0 0 1 6.2 18 Z" fill="none" stroke="#86190E" stroke-width="2" stroke-linejoin="round" clip-path="url(#c3)"/>
+</svg>

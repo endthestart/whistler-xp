@@ -1,0 +1,235 @@
+/* Shared XP-style widgets used by Whistler's own applications. */
+
+/* ---------------------------------------------- Explorer task pane */
+.xp-taskpane,
+.xp-taskpane viewport {
+  background-color: #6F8EE2;
+  background-image: linear-gradient(to bottom, #7BA2E7, #6375D6);
+  border: none;
+}
+.xp-taskpane-box {
+  padding: 12px;
+}
+.xp-taskgroup-header {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 30%, #C6D3F7 100%);
+  border: none;
+  border-radius: 4px 4px 0 0;
+  box-shadow: none;
+  padding: 3px 4px 3px 10px;
+  min-height: 19px;
+}
+.xp-taskgroup-title {
+  color: #215DC6;
+  font-weight: bold;
+}
+.xp-taskgroup-header:hover .xp-taskgroup-title {
+  color: #428EFF;
+}
+.xp-chevron {
+  color: #215DC6;
+  font-weight: bold;
+  border: 1px solid #A6B8E6;
+  border-radius: 9px;
+  background-color: #FFFFFF;
+  min-width: 15px;
+  min-height: 15px;
+  font-size: 7pt;
+}
+.xp-taskgroup.special .xp-taskgroup-header {
+  background-image: linear-gradient(to right, #0055E5, #2663E0 60%, #2D72E8);
+}
+.xp-taskgroup.special .xp-taskgroup-title {
+  color: #FFFFFF;
+}
+.xp-taskgroup.special .xp-taskgroup-header:hover .xp-taskgroup-title {
+  color: #C6D3F7;
+}
+.xp-taskgroup-body {
+  background-color: #D6DFF7;
+  border: 1px solid #FFFFFF;
+  border-top: none;
+  padding: 8px 10px;
+}
+.xp-taskgroup.special .xp-taskgroup-body {
+  background-color: #EFF3FF;
+}
+.xp-tasklink {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 1px 0;
+  min-height: 0;
+}
+.xp-tasklink label {
+  color: #215DC6;
+}
+.xp-tasklink:hover label {
+  color: #428EFF;
+  text-decoration: underline;
+}
+.xp-taskgroup-text {
+  color: #000000;
+}
+
+/* --------------------------------------------------- content area */
+.xp-content,
+.xp-content viewport {
+  background-color: #FFFFFF;
+}
+.xp-section-title {
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 0 2px 2px;
+}
+.xp-section-rule {
+  min-height: 1px;
+  background-image: linear-gradient(to right, #70BFFF, rgba(112, 191, 255, 0) 70%);
+  margin-bottom: 6px;
+}
+.xp-heading {
+  color: #00136B;
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  font-size: 15pt;
+  font-weight: bold;
+}
+.xp-category-link {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 4px;
+}
+.xp-category-link label {
+  color: #000000;
+}
+.xp-category-link:hover label {
+  color: #0033CC;
+  text-decoration: underline;
+}
+
+flowboxchild {
+  padding: 2px;
+  border-radius: 0;
+}
+flowboxchild:selected {
+  background-color: #316AC5;
+}
+flowboxchild:selected label {
+  color: #FFFFFF;
+}
+
+/* Explorer toolbar / address bar */
+.xp-toolbar {
+  background-color: #ECE9D8;
+  border-bottom: 1px solid #D6D2C2;
+  padding: 2px 4px;
+}
+.xp-toolbar button {
+  padding: 2px 6px;
+}
+.xp-addressbar {
+  background-color: #ECE9D8;
+  border-bottom: 1px solid #D6D2C2;
+  padding: 2px 4px;
+}
+
+/* -------------------------------------------------------- wizards */
+.xp-wizard-header {
+  background-color: #FFFFFF;
+  padding: 10px 14px 8px 20px;
+  min-height: 58px;
+}
+.xp-wizard-title {
+  font-weight: bold;
+  color: #000000;
+}
+.xp-wizard-subtitle {
+  color: #000000;
+  padding-left: 16px;
+}
+.xp-wizard-body {
+  background-color: #ECE9D8;
+  padding: 16px 24px;
+}
+.xp-wizard-buttons {
+  background-color: #ECE9D8;
+  border-top: 1px solid #ACA899;
+  padding: 10px 12px;
+}
+.xp-wizard-sidebar {
+  background-image: linear-gradient(to bottom, #0F4AC7, #5A7EDC);
+  min-width: 164px;
+}
+.xp-wizard-welcome-title {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #000000;
+}
+.xp-wizard-white {
+  background-color: #FFFFFF;
+  padding: 18px 20px;
+}
+
+/* status bar */
+.xp-statusbar {
+  background-color: #ECE9D8;
+  border-top: 1px solid #ACA899;
+  padding: 2px 6px;
+}
+
+/* System Properties "General" tab logo area */
+.xp-big-label {
+  font-size: 9pt;
+}
+
+/* Minesweeper */
+.mine-frame {
+  background-color: #C0C0C0;
+  padding: 6px;
+  border-top: 3px solid #FFFFFF;
+  border-left: 3px solid #FFFFFF;
+  border-right: 3px solid #808080;
+  border-bottom: 3px solid #808080;
+}
+.mine-header {
+  background-color: #C0C0C0;
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  padding: 4px 6px;
+  margin-bottom: 6px;
+}
+.mine-face {
+  background-image: none;
+  background-color: #C0C0C0;
+  border-top: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  min-width: 24px;
+  min-height: 24px;
+}
+.mine-face:active {
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+.mine-field {
+  border-top: 3px solid #808080;
+  border-left: 3px solid #808080;
+  border-right: 3px solid #FFFFFF;
+  border-bottom: 3px solid #FFFFFF;
+}
+
+.bold,
+label.bold {
+  font-weight: bold;
+}

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Install Whistler XP
+Comment=Install Whistler XP on this computer
+Exec=whistler-setup
+Icon=whistler-setup
+Categories=System;
+X-Whistler-Folder=-

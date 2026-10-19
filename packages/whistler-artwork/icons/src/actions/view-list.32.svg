@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="4.5" y1="4.5" x2="43.5" y2="43.5"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE3EC"/></linearGradient>
+<clipPath id="c2"><path d="M 5.5 4.5 H 42.5 A 1 1 0 0 1 43.5 5.5 V 42.5 A 1 1 0 0 1 42.5 43.5 H 5.5 A 1 1 0 0 1 4.5 42.5 V 5.5 A 1 1 0 0 1 5.5 4.5 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="0" y1="9" x2="0" y2="15"><stop offset="0" stop-color="#8CC0FF"/><stop offset="1" stop-color="#2257C8"/></linearGradient>
+<clipPath id="c4"><path d="M 8.95 9 H 14.05 A 0.45 0.45 0 0 1 14.5 9.45 V 14.55 A 0.45 0.45 0 0 1 14.05 15 H 8.95 A 0.45 0.45 0 0 1 8.5 14.55 V 9.45 A 0.45 0.45 0 0 1 8.95 9 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="0" y1="16.5" x2="0" y2="22.5"><stop offset="0" stop-color="#8CC0FF"/><stop offset="1" stop-color="#2257C8"/></linearGradient>
+<clipPath id="c6"><path d="M 8.95 16.5 H 14.05 A 0.45 0.45 0 0 1 14.5 16.95 V 22.05 A 0.45 0.45 0 0 1 14.05 22.5 H 8.95 A 0.45 0.45 0 0 1 8.5 22.05 V 16.95 A 0.45 0.45 0 0 1 8.95 16.5 Z"/></clipPath>
+<linearGradient id="l7" gradientUnits="userSpaceOnUse" x1="0" y1="24" x2="0" y2="30"><stop offset="0" stop-color="#8CC0FF"/><stop offset="1" stop-color="#2257C8"/></linearGradient>
+<clipPath id="c8"><path d="M 8.95 24 H 14.05 A 0.45 0.45 0 0 1 14.5 24.45 V 29.55 A 0.45 0.45 0 0 1 14.05 30 H 8.95 A 0.45 0.45 0 0 1 8.5 29.55 V 24.45 A 0.45 0.45 0 0 1 8.95 24 Z"/></clipPath>
+<linearGradient id="l9" gradientUnits="userSpaceOnUse" x1="0" y1="31.5" x2="0" y2="37.5"><stop offset="0" stop-color="#8CC0FF"/><stop offset="1" stop-color="#2257C8"/></linearGradient>
+<clipPath id="c10"><path d="M 8.95 31.5 H 14.05 A 0.45 0.45 0 0 1 14.5 31.95 V 37.05 A 0.45 0.45 0 0 1 14.05 37.5 H 8.95 A 0.45 0.45 0 0 1 8.5 37.05 V 31.95 A 0.45 0.45 0 0 1 8.95 31.5 Z"/></clipPath></defs>
+<g transform="translate(2.25 2.25)">
+<path d="M 5.5 4.5 H 42.5 A 1 1 0 0 1 43.5 5.5 V 42.5 A 1 1 0 0 1 42.5 43.5 H 5.5 A 1 1 0 0 1 4.5 42.5 V 5.5 A 1 1 0 0 1 5.5 4.5 Z" fill="none" stroke="#000000" stroke-width="4.8" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M 5.5 4.5 H 42.5 A 1 1 0 0 1 43.5 5.5 V 42.5 A 1 1 0 0 1 42.5 43.5 H 5.5 A 1 1 0 0 1 4.5 42.5 V 5.5 A 1 1 0 0 1 5.5 4.5 Z" fill="none" stroke="#000000" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M 5.5 4.5 H 42.5 A 1 1 0 0 1 43.5 5.5 V 42.5 A 1 1 0 0 1 42.5 43.5 H 5.5 A 1 1 0 0 1 4.5 42.5 V 5.5 A 1 1 0 0 1 5.5 4.5 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 5.5 4.5 H 42.5 A 1 1 0 0 1 43.5 5.5 V 42.5 A 1 1 0 0 1 42.5 43.5 H 5.5 A 1 1 0 0 1 4.5 42.5 V 5.5 A 1 1 0 0 1 5.5 4.5 Z" fill="url(#l1)"/>
+<path d="M 5.5 4.5 H 42.5 A 1 1 0 0 1 43.5 5.5 V 42.5 A 1 1 0 0 1 42.5 43.5 H 5.5 A 1 1 0 0 1 4.5 42.5 V 5.5 A 1 1 0 0 1 5.5 4.5 Z" fill="none" stroke="#8D9AB0" stroke-width="3" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M 8.95 9 H 14.05 A 0.45 0.45 0 0 1 14.5 9.45 V 14.55 A 0.45 0.45 0 0 1 14.05 15 H 8.95 A 0.45 0.45 0 0 1 8.5 14.55 V 9.45 A 0.45 0.45 0 0 1 8.95 9 Z" fill="url(#l3)"/>
+<path d="M 8.95 9 H 14.05 A 0.45 0.45 0 0 1 14.5 9.45 V 14.55 A 0.45 0.45 0 0 1 14.05 15 H 8.95 A 0.45 0.45 0 0 1 8.5 14.55 V 9.45 A 0.45 0.45 0 0 1 8.95 9 Z" fill="none" stroke="#163A8C" stroke-width="3" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M17.5 12 L39.5 12 L39.5 13.5 L17.5 13.5 Z" fill="#5B6B82"/>
+<path d="M 8.95 16.5 H 14.05 A 0.45 0.45 0 0 1 14.5 16.95 V 22.05 A 0.45 0.45 0 0 1 14.05 22.5 H 8.95 A 0.45 0.45 0 0 1 8.5 22.05 V 16.95 A 0.45 0.45 0 0 1 8.95 16.5 Z" fill="url(#l5)"/>
+<path d="M 8.95 16.5 H 14.05 A 0.45 0.45 0 0 1 14.5 16.95 V 22.05 A 0.45 0.45 0 0 1 14.05 22.5 H 8.95 A 0.45 0.45 0 0 1 8.5 22.05 V 16.95 A 0.45 0.45 0 0 1 8.95 16.5 Z" fill="none" stroke="#163A8C" stroke-width="3" stroke-linejoin="round" clip-path="url(#c6)"/>
+<path d="M17.5 18 L33.65 18 L33.65 19.5 L17.5 19.5 Z" fill="#5B6B82"/>
+<path d="M 8.95 24 H 14.05 A 0.45 0.45 0 0 1 14.5 24.45 V 29.55 A 0.45 0.45 0 0 1 14.05 30 H 8.95 A 0.45 0.45 0 0 1 8.5 29.55 V 24.45 A 0.45 0.45 0 0 1 8.95 24 Z" fill="url(#l7)"/>
+<path d="M 8.95 24 H 14.05 A 0.45 0.45 0 0 1 14.5 24.45 V 29.55 A 0.45 0.45 0 0 1 14.05 30 H 8.95 A 0.45 0.45 0 0 1 8.5 29.55 V 24.45 A 0.45 0.45 0 0 1 8.95 24 Z" fill="none" stroke="#163A8C" stroke-width="3" stroke-linejoin="round" clip-path="url(#c8)"/>
+<path d="M17.5 27 L39.5 27 L39.5 28.5 L17.5 28.5 Z" fill="#5B6B82"/>
+<path d="M 8.95 31.5 H 14.05 A 0.45 0.45 0 0 1 14.5 31.95 V 37.05 A 0.45 0.45 0 0 1 14.05 37.5 H 8.95 A 0.45 0.45 0 0 1 8.5 37.05 V 31.95 A 0.45 0.45 0 0 1 8.95 31.5 Z" fill="url(#l9)"/>
+<path d="M 8.95 31.5 H 14.05 A 0.45 0.45 0 0 1 14.5 31.95 V 37.05 A 0.45 0.45 0 0 1 14.05 37.5 H 8.95 A 0.45 0.45 0 0 1 8.5 37.05 V 31.95 A 0.45 0.45 0 0 1 8.95 31.5 Z" fill="none" stroke="#163A8C" stroke-width="3" stroke-linejoin="round" clip-path="url(#c10)"/>
+<path d="M17.5 33 L33.65 33 L33.65 34.5 L17.5 34.5 Z" fill="#5B6B82"/>
+</svg>

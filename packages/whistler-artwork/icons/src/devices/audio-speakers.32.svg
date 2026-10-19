@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="26" y1="12" x2="40" y2="41"><stop offset="0" stop-color="#7C8592"/><stop offset="1" stop-color="#3C424C"/></linearGradient>
+<linearGradient id="l2" gradientUnits="userSpaceOnUse" x1="26" y1="8" x2="45" y2="12"><stop offset="0" stop-color="#A9B1BD"/><stop offset="1" stop-color="#7C8592"/></linearGradient>
+<clipPath id="c3"><path d="M25.5 40.5 L25.5 12 L30 7.5 L45 7.5 L45 36 L40.5 40.5 Z"/></clipPath>
+<radialGradient id="r4" gradientUnits="userSpaceOnUse" cx="31.92" cy="30.87" r="5.4"><stop offset="0" stop-color="#5A6270"/><stop offset="0.7" stop-color="#1C2027"/><stop offset="1" stop-color="#0C0E12"/></radialGradient>
+<clipPath id="c5"><path d="M 27.6 31.95 A 5.4 5.4 0 1 0 38.4 31.95 A 5.4 5.4 0 1 0 27.6 31.95 Z"/></clipPath>
+<radialGradient id="r6" gradientUnits="userSpaceOnUse" cx="32" cy="30.95" r="1.89"><stop offset="0" stop-color="#8A93A0"/><stop offset="1" stop-color="#2A2F38"/></radialGradient>
+<radialGradient id="r7" gradientUnits="userSpaceOnUse" cx="32.5" cy="18.625" r="2.25"><stop offset="0" stop-color="#6A7280"/><stop offset="1" stop-color="#14171C"/></radialGradient>
+<clipPath id="c8"><path d="M 30.75 19.125 A 2.25 2.25 0 1 0 35.25 19.125 A 2.25 2.25 0 1 0 30.75 19.125 Z"/></clipPath>
+<linearGradient id="l9" gradientUnits="userSpaceOnUse" x1="5" y1="9" x2="21" y2="43"><stop offset="0" stop-color="#7C8592"/><stop offset="1" stop-color="#3C424C"/></linearGradient>
+<linearGradient id="l10" gradientUnits="userSpaceOnUse" x1="5" y1="5" x2="26" y2="9"><stop offset="0" stop-color="#A9B1BD"/><stop offset="1" stop-color="#7C8592"/></linearGradient>
+<clipPath id="c11"><path d="M4.5 43.5 L4.5 9 L9 4.5 L25.5 4.5 L25.5 39 L21 43.5 Z"/></clipPath>
+<radialGradient id="r12" gradientUnits="userSpaceOnUse" cx="11.562" cy="31.962" r="5.94"><stop offset="0" stop-color="#5A6270"/><stop offset="0.7" stop-color="#1C2027"/><stop offset="1" stop-color="#0C0E12"/></radialGradient>
+<clipPath id="c13"><path d="M 6.81 33.15 A 5.94 5.94 0 1 0 18.69 33.15 A 5.94 5.94 0 1 0 6.81 33.15 Z"/></clipPath>
+<radialGradient id="r14" gradientUnits="userSpaceOnUse" cx="11.75" cy="32.15" r="2.079"><stop offset="0" stop-color="#8A93A0"/><stop offset="1" stop-color="#2A2F38"/></radialGradient>
+<radialGradient id="r15" gradientUnits="userSpaceOnUse" cx="12.25" cy="17.125" r="2.475"><stop offset="0" stop-color="#6A7280"/><stop offset="1" stop-color="#14171C"/></radialGradient>
+<clipPath id="c16"><path d="M 10.275 17.625 A 2.475 2.475 0 1 0 15.225 17.625 A 2.475 2.475 0 1 0 10.275 17.625 Z"/></clipPath></defs>
+<g transform="translate(2.25 2.25)">
+<path d="M25.5 40.5 L25.5 12 L30 7.5 L45 7.5 L45 36 L40.5 40.5 Z" fill="none" stroke="#000000" stroke-width="4.8" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M25.5 40.5 L25.5 12 L30 7.5 L45 7.5 L45 36 L40.5 40.5 Z" fill="none" stroke="#000000" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M25.5 40.5 L25.5 12 L30 7.5 L45 7.5 L45 36 L40.5 40.5 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M25.5 12 L30 7.5 L45 7.5 L40.5 12 Z" fill="url(#l2)"/>
+<path d="M40.5 12 L45 7.5 L45 36 L40.5 40.5 Z" fill="#3C424C"/>
+<path d="M25.5 12 L40.5 12 L40.5 40.5 L25.5 40.5 Z" fill="url(#l1)"/>
+<path d="M25.5 12 L40.5 12 L40.5 13.5 L25.5 13.5 Z" fill="#22262D" opacity="0.45"/>
+<path d="M27 13.5 L40.5 13.5 L40.5 15 L27 15 Z" fill="#FFFFFF" opacity="0.7"/>
+<path d="M39 12 L40.5 12 L40.5 40.5 L39 40.5 Z" fill="#22262D" opacity="0.35"/>
+<path d="M25.5 40.5 L25.5 12 L30 7.5 L45 7.5 L45 36 L40.5 40.5 Z" fill="none" stroke="#22262D" stroke-width="3" stroke-linejoin="round" clip-path="url(#c3)"/>
+<path d="M 27.6 31.95 A 5.4 5.4 0 1 0 38.4 31.95 A 5.4 5.4 0 1 0 27.6 31.95 Z" fill="url(#r4)"/>
+<path d="M 27.6 31.95 A 5.4 5.4 0 1 0 38.4 31.95 A 5.4 5.4 0 1 0 27.6 31.95 Z" fill="none" stroke="#B9C1CC" stroke-width="3" stroke-linejoin="round" clip-path="url(#c5)"/>
+<path d="M 31.38 31.95 A 1.62 1.62 0 1 0 34.62 31.95 A 1.62 1.62 0 1 0 31.38 31.95 Z" fill="url(#r6)"/>
+<path d="M 30.75 19.125 A 2.25 2.25 0 1 0 35.25 19.125 A 2.25 2.25 0 1 0 30.75 19.125 Z" fill="url(#r7)"/>
+<path d="M 30.75 19.125 A 2.25 2.25 0 1 0 35.25 19.125 A 2.25 2.25 0 1 0 30.75 19.125 Z" fill="none" stroke="#B9C1CC" stroke-width="3" stroke-linejoin="round" clip-path="url(#c8)"/>
+<g transform="translate(2.25 2.25)">
+<path d="M4.5 43.5 L4.5 9 L9 4.5 L25.5 4.5 L25.5 39 L21 43.5 Z" fill="none" stroke="#000000" stroke-width="4.8" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M4.5 43.5 L4.5 9 L9 4.5 L25.5 4.5 L25.5 39 L21 43.5 Z" fill="none" stroke="#000000" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M4.5 43.5 L4.5 9 L9 4.5 L25.5 4.5 L25.5 39 L21 43.5 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M4.5 9 L9 4.5 L25.5 4.5 L21 9 Z" fill="url(#l10)"/>
+<path d="M21 9 L25.5 4.5 L25.5 39 L21 43.5 Z" fill="#3C424C"/>
+<path d="M4.5 9 L21 9 L21 43.5 L4.5 43.5 Z" fill="url(#l9)"/>
+<path d="M4.5 9 L21 9 L21 10.5 L4.5 10.5 Z" fill="#22262D" opacity="0.45"/>
+<path d="M6 10.5 L21 10.5 L21 12 L6 12 Z" fill="#FFFFFF" opacity="0.7"/>
+<path d="M19.5 9 L21 9 L21 43.5 L19.5 43.5 Z" fill="#22262D" opacity="0.35"/>
+<path d="M4.5 43.5 L4.5 9 L9 4.5 L25.5 4.5 L25.5 39 L21 43.5 Z" fill="none" stroke="#22262D" stroke-width="3" stroke-linejoin="round" clip-path="url(#c11)"/>
+<path d="M 6.81 33.15 A 5.94 5.94 0 1 0 18.69 33.15 A 5.94 5.94 0 1 0 6.81 33.15 Z" fill="url(#r12)"/>
+<path d="M 6.81 33.15 A 5.94 5.94 0 1 0 18.69 33.15 A 5.94 5.94 0 1 0 6.81 33.15 Z" fill="none" stroke="#B9C1CC" stroke-width="3" stroke-linejoin="round" clip-path="url(#c13)"/>
+<path d="M 10.968 33.15 A 1.782 1.782 0 1 0 14.532 33.15 A 1.782 1.782 0 1 0 10.968 33.15 Z" fill="url(#r14)"/>
+<path d="M 10.275 17.625 A 2.475 2.475 0 1 0 15.225 17.625 A 2.475 2.475 0 1 0 10.275 17.625 Z" fill="url(#r15)"/>
+<path d="M 10.275 17.625 A 2.475 2.475 0 1 0 15.225 17.625 A 2.475 2.475 0 1 0 10.275 17.625 Z" fill="none" stroke="#B9C1CC" stroke-width="3" stroke-linejoin="round" clip-path="url(#c16)"/>
+</svg>

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Minesweeper
+Comment=Find the hidden mines
+Exec=whistler-minesweeper
+Icon=whistler-minesweeper
+Categories=Game;LogicGame;
+X-Whistler-Folder=Games

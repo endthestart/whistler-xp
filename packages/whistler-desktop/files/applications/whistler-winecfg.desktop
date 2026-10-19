@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Wine Configuration
+Comment=Configure the Windows compatibility layer
+Exec=winecfg
+Icon=wine-winecfg
+Categories=Wine;
+X-Whistler-Folder=Wine

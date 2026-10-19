@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Windows Program Loader
+Comment=Run Windows programs
+Exec=whistler-winecenter --run %f
+Icon=application-x-ms-dos-executable
+NoDisplay=true
+MimeType=application/x-ms-dos-executable;application/x-msi;application/x-msdownload;application/vnd.microsoft.portable-executable;application/x-ms-shortcut;application/x-bat;application/x-wine-extension-msp;application/x-ole-storage;

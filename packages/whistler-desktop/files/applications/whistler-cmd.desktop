@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Command Prompt
+Comment=Run text commands
+Exec=whistler-cmd
+Icon=utilities-terminal
+Categories=Utility;TerminalEmulator;
+X-Whistler-Folder=Accessories

@@ -1,0 +1,25 @@
+#!/bin/sh
+# Whistler XP-style desktop session (Xfce underneath).
+case ":${XDG_CONFIG_DIRS}:" in
+    *:/etc/xdg/whistler:*) ;;
+    *) export XDG_CONFIG_DIRS="/etc/xdg/whistler:${XDG_CONFIG_DIRS:-/etc/xdg}" ;;
+esac
+case ":${XDG_DATA_DIRS}:" in
+    *:/usr/share/whistler/xdg-data:*) ;;
+    *) export XDG_DATA_DIRS="/usr/share/whistler/xdg-data:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}" ;;
+esac
+export XDG_CURRENT_DESKTOP=XFCE
+export XDG_SESSION_DESKTOP=whistler
+export DESKTOP_SESSION=whistler
+export GTK_OVERLAY_SCROLLING=0
+export XCURSOR_THEME=Whistler XCURSOR_SIZE=32
+export GTK_CSD=0
+export QT_QPA_PLATFORMTHEME=gtk3
+export MOZ_GTK_TITLEBAR_DECORATION=system
+export WINEDEBUG="${WINEDEBUG:--all}"
+
+# XP showed "Welcome" while the desktop loaded.
+if command -v whistler-splash >/dev/null 2>&1; then
+    (whistler-splash --welcome &)
+fi
+exec startxfce4

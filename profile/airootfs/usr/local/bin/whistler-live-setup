@@ -1,0 +1,10 @@
+#!/bin/bash
+# Live session: a password-less "User" account that logs in automatically,
+# just like Windows XP with a single account and no password.
+set -e
+if ! id user >/dev/null 2>&1; then
+    groupadd -rf autologin
+    useradd -m -c "User" -s /bin/bash \
+        -G wheel,audio,video,storage,optical,network,power,lp,autologin user
+    passwd -d user >/dev/null
+fi

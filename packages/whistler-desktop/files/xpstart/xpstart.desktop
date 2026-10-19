@@ -1,0 +1,10 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=Start Button
+Comment=The XP-style start button that opens the Whistler start menu
+Icon=whistler-start-logo
+X-XFCE-Module=xpstart
+X-XFCE-Internal=true
+X-XFCE-Unique=true
+X-XFCE-API=2.0

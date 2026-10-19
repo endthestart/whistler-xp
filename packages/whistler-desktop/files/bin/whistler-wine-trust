@@ -1,0 +1,15 @@
+#!/bin/bash
+# Mark Wine-created .desktop shortcuts on the desktop as trusted so they open
+# with a double-click (xfdesktop otherwise asks about "untrusted launchers").
+desk="$(xdg-user-dir DESKTOP 2>/dev/null)"
+[ -d "$desk" ] || desk="$HOME/Desktop"
+for f in "$desk"/*.desktop; do
+    [ -e "$f" ] || continue
+    grep -qiE '^Exec=.*(wine|whistler)' "$f" || continue
+    sum=$(sha256sum "$f" | cut -d' ' -f1)
+    cur=$(gio info -a metadata::xfce-exe-checksum "$f" 2>/dev/null | awk '/xfce-exe-checksum/ {print $2}')
+    [ "$cur" = "$sum" ] && continue
+    chmod +x "$f"
+    gio set -t string "$f" metadata::xfce-exe-checksum "$sum" 2>/dev/null
+done
+exit 0

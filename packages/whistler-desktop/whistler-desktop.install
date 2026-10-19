@@ -1,0 +1,12 @@
+post_install() {
+  /usr/bin/whistler-app-overrides >/dev/null 2>&1 || true
+  /usr/share/libalpm/scripts/whistler-branding >/dev/null 2>&1 || true
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  rm -rf /usr/share/whistler/xdg-data
+}

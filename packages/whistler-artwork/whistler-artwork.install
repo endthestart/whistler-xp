@@ -1,0 +1,16 @@
+post_install() {
+  whistler-assets refresh >/dev/null
+  local t
+  for t in whistler-lookalike hicolor; do
+    [ -d "/usr/share/icons/$t" ] && gtk-update-icon-cache -q -f "/usr/share/icons/$t" 2>/dev/null
+  done
+  true
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  rm -rf /usr/share/whistler/assets/current
+}

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Solitaire
+Comment=Play Klondike solitaire
+Exec=sol --variation klondike
+Icon=whistler-solitaire
+Categories=Game;CardGame;
+X-Whistler-Folder=Games

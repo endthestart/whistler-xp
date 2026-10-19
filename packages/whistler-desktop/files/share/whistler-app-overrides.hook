@@ -1,0 +1,12 @@
+[Trigger]
+Type = Path
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Target = usr/share/applications/*.desktop
+Target = usr/share/whistler/app-overrides.conf
+
+[Action]
+Description = Applying Whistler start menu names...
+When = PostTransaction
+Exec = /usr/bin/whistler-app-overrides

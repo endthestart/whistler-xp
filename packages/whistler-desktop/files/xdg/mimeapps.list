@@ -1,0 +1,18 @@
+[Default Applications]
+application/vnd.microsoft.portable-executable=whistler-runexe.desktop
+application/x-ms-dos-executable=whistler-runexe.desktop
+application/x-msdownload=whistler-runexe.desktop
+application/x-msi=whistler-runexe.desktop
+application/x-ms-shortcut=whistler-runexe.desktop
+application/x-bat=whistler-runexe.desktop
+application/x-iso9660-image=whistler-import-xp.desktop
+text/plain=org.xfce.mousepad.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+image/png=org.xfce.ristretto.desktop
+image/jpeg=org.xfce.ristretto.desktop
+image/gif=org.xfce.ristretto.desktop
+image/bmp=org.xfce.ristretto.desktop
+application/pdf=atril.desktop
+inode/directory=thunar.desktop

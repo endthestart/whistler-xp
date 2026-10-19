@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="4" y1="5" x2="36" y2="45"><stop offset="0" stop-color="#E7A762"/><stop offset="0.5" stop-color="#C07A35"/><stop offset="1" stop-color="#8A5220"/></linearGradient>
+<linearGradient id="l2" gradientUnits="userSpaceOnUse" x1="4" y1="5" x2="36" y2="45"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<clipPath id="c3"><path d="M 6 5 H 34 A 2 2 0 0 1 36 7 V 43 A 2 2 0 0 1 34 45 H 6 A 2 2 0 0 1 4 43 V 7 A 2 2 0 0 1 6 5 Z"/></clipPath>
+<linearGradient id="l4" gradientUnits="userSpaceOnUse" x1="8" y1="11" x2="32" y2="41"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE3EC"/></linearGradient>
+<clipPath id="c5"><path d="M8 11 L32 11 L32 41 L8 41 Z"/></clipPath>
+<linearGradient id="l6" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="10"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#BFC7D2"/><stop offset="1" stop-color="#7C8592"/></linearGradient>
+<clipPath id="c7"><path d="M 13.2 3 H 26.8 A 1.2 1.2 0 0 1 28 4.2 V 8.8 A 1.2 1.2 0 0 1 26.8 10 H 13.2 A 1.2 1.2 0 0 1 12 8.8 V 4.2 A 1.2 1.2 0 0 1 13.2 3 Z"/></clipPath>
+<linearGradient id="l8" gradientUnits="userSpaceOnUse" x1="20" y1="18" x2="44" y2="46"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F7F9FB"/><stop offset="1" stop-color="#DCE3EC"/></linearGradient>
+<clipPath id="c9"><path d="M20 18 L35 18 L44 27 L44 46 L20 46 Z"/></clipPath>
+<linearGradient id="l10" gradientUnits="userSpaceOnUse" x1="35" y1="27" x2="39.5" y2="22.5"><stop offset="0" stop-color="#C4CFDD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<clipPath id="c11"><path d="M35 18 L35 27 L44 27 Z"/></clipPath></defs>
+<g transform="translate(1.5 1.5)">
+<path d="M 6 5 H 34 A 2 2 0 0 1 36 7 V 43 A 2 2 0 0 1 34 45 H 6 A 2 2 0 0 1 4 43 V 7 A 2 2 0 0 1 6 5 Z" fill="none" stroke="#000000" stroke-width="3.2" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M 6 5 H 34 A 2 2 0 0 1 36 7 V 43 A 2 2 0 0 1 34 45 H 6 A 2 2 0 0 1 4 43 V 7 A 2 2 0 0 1 6 5 Z" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M 6 5 H 34 A 2 2 0 0 1 36 7 V 43 A 2 2 0 0 1 34 45 H 6 A 2 2 0 0 1 4 43 V 7 A 2 2 0 0 1 6 5 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 6 5 H 34 A 2 2 0 0 1 36 7 V 43 A 2 2 0 0 1 34 45 H 6 A 2 2 0 0 1 4 43 V 7 A 2 2 0 0 1 6 5 Z" fill="url(#l1)"/>
+<path d="M 6 5 H 34 A 2 2 0 0 1 36 7 V 43 A 2 2 0 0 1 34 45 H 6 A 2 2 0 0 1 4 43 V 7 A 2 2 0 0 1 6 5 Z" fill="none" stroke="url(#l2)" stroke-width="4" stroke-linejoin="round" clip-path="url(#c3)"/>
+<path d="M 6 5 H 34 A 2 2 0 0 1 36 7 V 43 A 2 2 0 0 1 34 45 H 6 A 2 2 0 0 1 4 43 V 7 A 2 2 0 0 1 6 5 Z" fill="none" stroke="#5E3410" stroke-width="2" stroke-linejoin="round" clip-path="url(#c3)"/>
+<path d="M8 11 L32 11 L32 41 L8 41 Z" fill="url(#l4)"/>
+<path d="M8 11 L32 11 L32 41 L8 41 Z" fill="none" stroke="#8D9AB0" stroke-width="2" stroke-linejoin="round" clip-path="url(#c5)"/>
+<path d="M12 18 L28 18 L28 20 L12 20 Z" fill="#A9B6C9"/>
+<path d="M12 22 L26 22 L26 24 L12 24 Z" fill="#A9B6C9"/>
+<path d="M12 26 L27 26 L27 28 L12 28 Z" fill="#A9B6C9"/>
+<path d="M12 30 L23 30 L23 32 L12 32 Z" fill="#A9B6C9"/>
+<path d="M12 34 L28 34 L28 36 L12 36 Z" fill="#A9B6C9"/>
+<path d="M 13.2 3 H 26.8 A 1.2 1.2 0 0 1 28 4.2 V 8.8 A 1.2 1.2 0 0 1 26.8 10 H 13.2 A 1.2 1.2 0 0 1 12 8.8 V 4.2 A 1.2 1.2 0 0 1 13.2 3 Z" fill="url(#l6)"/>
+<path d="M 13.2 3 H 26.8 A 1.2 1.2 0 0 1 28 4.2 V 8.8 A 1.2 1.2 0 0 1 26.8 10 H 13.2 A 1.2 1.2 0 0 1 12 8.8 V 4.2 A 1.2 1.2 0 0 1 13.2 3 Z" fill="none" stroke="#4C5463" stroke-width="2" stroke-linejoin="round" clip-path="url(#c7)"/>
+<g transform="translate(1.5 1.5)">
+<path d="M20 18 L35 18 L44 27 L44 46 L20 46 Z" fill="none" stroke="#000000" stroke-width="3.2" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M20 18 L35 18 L44 27 L44 46 L20 46 Z" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M20 18 L35 18 L44 27 L44 46 L20 46 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M20 18 L35 18 L44 27 L44 46 L20 46 Z" fill="url(#l8)"/>
+<path d="M20 18 L35 18 L44 27 L44 46 L20 46 Z" fill="none" stroke="#8D9AB0" stroke-width="2" stroke-linejoin="round" clip-path="url(#c9)"/>
+<path d="M35 18 L35 27 L44 27 Z" fill="url(#l10)"/>
+<path d="M35 18 L35 27 L44 27 Z" fill="none" stroke="#8D9AB0" stroke-width="2" stroke-linejoin="round" clip-path="url(#c11)"/>
+<path d="M24 28 L40 28 L40 30 L24 30 Z" fill="#A9B6C9"/>
+<path d="M24 32 L38 32 L38 34 L24 34 Z" fill="#A9B6C9"/>
+<path d="M24 36 L39 36 L39 38 L24 38 Z" fill="#A9B6C9"/>
+<path d="M24 40 L35 40 L35 42 L24 42 Z" fill="#A9B6C9"/>
+</svg>

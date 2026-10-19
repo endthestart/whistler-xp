@@ -1,0 +1,74 @@
+#!/bin/bash
+# Create Start menu and desktop launchers for Windows shortcuts (.lnk) that
+# installers added. Wine normally does this itself, but its background menu
+# builder is easily missed (it waits for the setup program), so Whistler runs
+# it after installs and at login.
+#
+# Each shortcut is handled once (list in ~/.local/share/whistler/wine-menus.done),
+# so launchers the user deletes stay deleted. Shortcuts that installers drop on
+# the desktop (*.lnk) get a launcher and are hidden via ~/Desktop/.hidden.
+#   whistler-wine-menus [--prefix DIR]   (default: ~/.wine and all Wine Center environments;
+#                                         desktop shortcuts go to the first prefix)
+cd "$HOME" 2>/dev/null || cd /
+prefixes=()
+while [ $# -gt 0 ]; do
+    case "$1" in --prefix) prefixes+=("$2"); shift ;; esac
+    shift
+done
+if [ ${#prefixes[@]} -eq 0 ]; then
+    prefixes=("$HOME/.wine")
+    for p in "${XDG_DATA_HOME:-$HOME/.local/share}"/wineprefixes/*; do prefixes+=("$p"); done
+fi
+export WINEDEBUG=-all
+: "${XDG_CURRENT_DESKTOP:=XFCE}"
+export XDG_CURRENT_DESKTOP
+data="${XDG_DATA_HOME:-$HOME/.local/share}"
+apps="$data/applications/wine"
+desk="$(xdg-user-dir DESKTOP 2>/dev/null)"
+[ -n "$desk" ] || desk="$HOME/Desktop"
+done_list="$data/whistler/wine-menus.done"
+mkdir -p "$(dirname "$done_list")"
+touch "$done_list"
+
+handled() { grep -qxF "$1" "$done_list"; }
+mark() { printf '%s\n' "$1" >> "$done_list"; }
+
+build() {   # prefix, unix path of .lnk
+    local win
+    win=$(WINEPREFIX="$1" winepath -w "$2" 2>/dev/null)
+    [ -n "$win" ] && WINEPREFIX="$1" wine winemenubuilder "$win" >/dev/null 2>&1
+}
+
+for p in "${prefixes[@]}"; do
+    [ -f "$p/system.reg" ] || continue
+    ran=0
+    while IFS= read -r -d '' lnk; do
+        handled "$lnk" && continue
+        rel="${lnk#*/Start Menu/}"
+        [ -e "$apps/${rel%.*}.desktop" ] || { build "$p" "$lnk"; ran=1; }
+        mark "$lnk"
+    done < <(find "$p/drive_c/users" "$p/drive_c/ProgramData/Microsoft/Windows/Start Menu" \
+                 -path '*/Start Menu/*' -iname '*.lnk' -print0 2>/dev/null)
+    [ $ran = 1 ] && WINEPREFIX="$p" wineserver -w
+done
+
+# Desktop shortcuts: the first usable prefix owns them.
+owner=""
+for p in "${prefixes[@]}"; do [ -f "$p/system.reg" ] && { owner=$p; break; }; done
+if [ -n "$owner" ]; then
+    ran=0
+    for lnk in "$desk"/*.lnk "$desk"/*.LNK; do
+        [ -e "$lnk" ] || continue
+        name=$(basename "$lnk")
+        if ! handled "$lnk"; then
+            # address it through the prefix's own Desktop folder (a link to this one)
+            via=$(ls -d "$owner"/drive_c/users/*/Desktop/"$name" 2>/dev/null | head -1)
+            [ -e "$desk/${name%.*}.desktop" ] || { build "$owner" "${via:-$lnk}"; ran=1; }
+            mark "$lnk"
+        fi
+        grep -qxF "$name" "$desk/.hidden" 2>/dev/null || printf '%s\n' "$name" >> "$desk/.hidden"
+    done
+    [ $ran = 1 ] && WINEPREFIX="$owner" wineserver -w
+fi
+whistler-wine-trust
+exit 0

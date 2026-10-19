@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="7.5" y1="3" x2="37.5" y2="45"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F7F9FB"/><stop offset="1" stop-color="#DCE3EC"/></linearGradient>
+<clipPath id="c2"><path d="M7.5 3 L25.5 3 L37.5 15 L37.5 45 L7.5 45 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="25.5" y1="15" x2="31.5" y2="9"><stop offset="0" stop-color="#C4CFDD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<clipPath id="c4"><path d="M25.5 3 L25.5 15 L37.5 15 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="0" y1="7.2" x2="0" y2="40.8"><stop offset="0" stop-color="#2F7CF2"/><stop offset="1" stop-color="#0D4FC8"/></linearGradient>
+<clipPath id="c6"><path d="M 4.8 10.2 A 3 3 0 0 1 7.8 7.2 H 40.2 A 3 3 0 0 1 43.2 10.2 V 40.8 H 4.8 Z"/></clipPath>
+<linearGradient id="l7" gradientUnits="userSpaceOnUse" x1="0" y1="7.2" x2="0" y2="14.4"><stop offset="0" stop-color="#8CC2FF"/><stop offset="0.18" stop-color="#3C8DF8"/><stop offset="0.55" stop-color="#0F5FE6"/><stop offset="1" stop-color="#0B4FD0"/></linearGradient>
+<clipPath id="c8"><path d="M 4.8 10.2 A 3 3 0 0 1 7.8 7.2 H 40.2 A 3 3 0 0 1 43.2 10.2 V 14.4 H 4.8 Z"/></clipPath>
+<linearGradient id="l9" gradientUnits="userSpaceOnUse" x1="0" y1="8.4" x2="0" y2="13.2"><stop offset="0" stop-color="#FF9C7A"/><stop offset="0.5" stop-color="#E5482A"/><stop offset="1" stop-color="#B8240F"/></linearGradient>
+<clipPath id="c10"><path d="M 37.2 8.4 H 39.6 A 1.2 1.2 0 0 1 40.8 9.6 V 12 A 1.2 1.2 0 0 1 39.6 13.2 H 37.2 A 1.2 1.2 0 0 1 36 12 V 9.6 A 1.2 1.2 0 0 1 37.2 8.4 Z"/></clipPath>
+<clipPath id="c11"><path d="M 5.25 30 H 17.25 A 0.75 0.75 0 0 1 18 30.75 V 42.75 A 0.75 0.75 0 0 1 17.25 43.5 H 5.25 A 0.75 0.75 0 0 1 4.5 42.75 V 30.75 A 0.75 0.75 0 0 1 5.25 30 Z"/></clipPath></defs>
+<g transform="translate(2.25 2.25)">
+<path d="M7.5 3 L25.5 3 L37.5 15 L37.5 45 L7.5 45 Z" fill="none" stroke="#000000" stroke-width="4.8" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M7.5 3 L25.5 3 L37.5 15 L37.5 45 L7.5 45 Z" fill="none" stroke="#000000" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M7.5 3 L25.5 3 L37.5 15 L37.5 45 L7.5 45 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M7.5 3 L25.5 3 L37.5 15 L37.5 45 L7.5 45 Z" fill="url(#l1)"/>
+<path d="M7.5 3 L25.5 3 L37.5 15 L37.5 45 L7.5 45 Z" fill="none" stroke="#8D9AB0" stroke-width="3" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M25.5 3 L25.5 15 L37.5 15 Z" fill="url(#l3)"/>
+<path d="M25.5 3 L25.5 15 L37.5 15 Z" fill="none" stroke="#8D9AB0" stroke-width="3" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M12 9 L21 9 L21 10.5 L12 10.5 Z" fill="#A9B6C9"/>
+<path d="M12 13.5 L19.5 13.5 L19.5 15 L12 15 Z" fill="#A9B6C9"/>
+<g transform="translate(9 16.5) scale(0.625)">
+<g transform="translate(2.4 2.4)">
+<path d="M 4.8 10.2 A 3 3 0 0 1 7.8 7.2 H 40.2 A 3 3 0 0 1 43.2 10.2 V 40.8 H 4.8 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 4.8 10.2 A 3 3 0 0 1 7.8 7.2 H 40.2 A 3 3 0 0 1 43.2 10.2 V 40.8 H 4.8 Z" fill="url(#l5)"/>
+<path d="M 4.8 10.2 A 3 3 0 0 1 7.8 7.2 H 40.2 A 3 3 0 0 1 43.2 10.2 V 40.8 H 4.8 Z" fill="none" stroke="#0B3C9C" stroke-width="4.8" stroke-linejoin="round" clip-path="url(#c6)"/>
+<path d="M 4.8 10.2 A 3 3 0 0 1 7.8 7.2 H 40.2 A 3 3 0 0 1 43.2 10.2 V 14.4 H 4.8 Z" fill="url(#l7)"/>
+<path d="M 4.8 10.2 A 3 3 0 0 1 7.8 7.2 H 40.2 A 3 3 0 0 1 43.2 10.2 V 14.4 H 4.8 Z" fill="none" stroke="#0B3C9C" stroke-width="4.8" stroke-linejoin="round" clip-path="url(#c8)"/>
+<path d="M7.2 14.4 L40.8 14.4 L40.8 38.4 L7.2 38.4 Z" fill="#FFFFFF"/>
+<path d="M 37.2 8.4 H 39.6 A 1.2 1.2 0 0 1 40.8 9.6 V 12 A 1.2 1.2 0 0 1 39.6 13.2 H 37.2 A 1.2 1.2 0 0 1 36 12 V 9.6 A 1.2 1.2 0 0 1 37.2 8.4 Z" fill="url(#l9)"/>
+<path d="M 37.2 8.4 H 39.6 A 1.2 1.2 0 0 1 40.8 9.6 V 12 A 1.2 1.2 0 0 1 39.6 13.2 H 37.2 A 1.2 1.2 0 0 1 36 12 V 9.6 A 1.2 1.2 0 0 1 37.2 8.4 Z" fill="none" stroke="#8A1A0D" stroke-width="4.8" stroke-linejoin="round" clip-path="url(#c10)"/>
+</g>
+<path d="M 5.25 30 H 17.25 A 0.75 0.75 0 0 1 18 30.75 V 42.75 A 0.75 0.75 0 0 1 17.25 43.5 H 5.25 A 0.75 0.75 0 0 1 4.5 42.75 V 30.75 A 0.75 0.75 0 0 1 5.25 30 Z" fill="#FFFFFF"/>
+<path d="M 5.25 30 H 17.25 A 0.75 0.75 0 0 1 18 30.75 V 42.75 A 0.75 0.75 0 0 1 17.25 43.5 H 5.25 A 0.75 0.75 0 0 1 4.5 42.75 V 30.75 A 0.75 0.75 0 0 1 5.25 30 Z" fill="none" stroke="#5B6B82" stroke-width="3" stroke-linejoin="round" clip-path="url(#c11)"/>
+<path d="M 8.28 40.8 C 8.28 36.075 10.575 35.13 12.87 35.13" fill="none" stroke="#1F50C0" stroke-width="2.16" stroke-linecap="round"/>
+<path d="M11.925 32.16 L16.11 35.13 L11.925 38.37 Z" fill="#1F50C0"/>
+</svg>

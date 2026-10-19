@@ -1,0 +1,5 @@
+#!/bin/sh
+# Toggle the start menu quickly over D-Bus (used by the Windows key).
+gdbus call --session --dest org.whistler.StartMenu --object-path /org/whistler/StartMenu \
+    --method org.gtk.Actions.Activate toggle '[]' '{}' >/dev/null 2>&1 \
+    || exec whistler-startmenu --toggle

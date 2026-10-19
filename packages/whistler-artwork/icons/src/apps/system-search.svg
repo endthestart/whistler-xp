@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="4" y1="2" x2="32" y2="40"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F7F9FB"/><stop offset="1" stop-color="#DCE3EC"/></linearGradient>
+<clipPath id="c2"><path d="M4 2 L21 2 L32 13 L32 40 L4 40 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="21" y1="13" x2="26.5" y2="7.5"><stop offset="0" stop-color="#C4CFDD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<clipPath id="c4"><path d="M21 2 L21 13 L32 13 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="32.879" y1="36.97" x2="37.97" y2="31.879"><stop offset="0" stop-color="#6E6E78"/><stop offset="0.4" stop-color="#3A3A44"/><stop offset="1" stop-color="#16161C"/></linearGradient>
+<clipPath id="c6"><path d="M 35.293 38.621 L 38.867 42.672 Q 41.011 45.102 43.302 42.811 L 43.811 42.302 Q 46.102 40.011 43.672 37.867 L 39.621 34.293 Q 37.461 32.388 35.425 34.425 L 35.425 34.425 Q 33.388 36.461 35.293 38.621 Z"/></clipPath>
+<linearGradient id="l7" gradientUnits="userSpaceOnUse" x1="34.647" y1="38.738" x2="39.738" y2="33.647"><stop offset="0" stop-color="#F2F4F7"/><stop offset="1" stop-color="#8D95A1"/></linearGradient>
+<clipPath id="c8"><path d="M 33.53 37.875 L 35.863 40.209 Q 36.287 40.633 36.712 40.209 L 41.209 35.712 Q 41.633 35.287 41.209 34.863 L 38.875 32.53 Q 38.451 32.105 38.027 32.53 L 33.53 37.027 Q 33.105 37.451 33.53 37.875 Z"/></clipPath>
+<linearGradient id="l9" gradientUnits="userSpaceOnUse" x1="18" y1="17" x2="38" y2="37"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#C3CAD4"/><stop offset="1" stop-color="#7C8592"/></linearGradient>
+<clipPath id="c10"><path d="M 16 27 A 12 12 0 1 0 40 27 A 12 12 0 1 0 16 27 Z"/></clipPath>
+<radialGradient id="r11" gradientUnits="userSpaceOnUse" cx="25" cy="23.5" r="14"><stop offset="0" stop-color="#F2FAFF"/><stop offset="0.45" stop-color="#9DD2FF"/><stop offset="1" stop-color="#3A86E0"/></radialGradient>
+<clipPath id="c12"><path d="M 18 27 A 10 10 0 1 0 38 27 A 10 10 0 1 0 18 27 Z"/></clipPath></defs>
+<g transform="translate(1.5 1.5)">
+<path d="M4 2 L21 2 L32 13 L32 40 L4 40 Z" fill="none" stroke="#000000" stroke-width="3.2" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M4 2 L21 2 L32 13 L32 40 L4 40 Z" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M4 2 L21 2 L32 13 L32 40 L4 40 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M4 2 L21 2 L32 13 L32 40 L4 40 Z" fill="url(#l1)"/>
+<path d="M4 2 L21 2 L32 13 L32 40 L4 40 Z" fill="none" stroke="#8D9AB0" stroke-width="2" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M21 2 L21 13 L32 13 Z" fill="url(#l3)"/>
+<path d="M21 2 L21 13 L32 13 Z" fill="none" stroke="#8D9AB0" stroke-width="2" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M8 14 L28 14 L28 16 L8 16 Z" fill="#A9B6C9"/>
+<path d="M8 18 L25 18 L25 20 L8 20 Z" fill="#A9B6C9"/>
+<path d="M8 22 L27 22 L27 24 L8 24 Z" fill="#A9B6C9"/>
+<path d="M8 26 L22 26 L22 28 L8 28 Z" fill="#A9B6C9"/>
+<path d="M8 30 L28 30 L28 32 L8 32 Z" fill="#A9B6C9"/>
+<path d="M8 34 L26 34 L26 36 L8 36 Z" fill="#A9B6C9"/>
+<g transform="translate(1.5 1.5)">
+<path d="M 35.293 38.621 L 38.867 42.672 Q 41.011 45.102 43.302 42.811 L 43.811 42.302 Q 46.102 40.011 43.672 37.867 L 39.621 34.293 Q 37.461 32.388 35.425 34.425 L 35.425 34.425 Q 33.388 36.461 35.293 38.621 Z" fill="none" stroke="#000000" stroke-width="3.2" stroke-linejoin="round" stroke-opacity="0.045"/>
+<path d="M 35.293 38.621 L 38.867 42.672 Q 41.011 45.102 43.302 42.811 L 43.811 42.302 Q 46.102 40.011 43.672 37.867 L 39.621 34.293 Q 37.461 32.388 35.425 34.425 L 35.425 34.425 Q 33.388 36.461 35.293 38.621 Z" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="round" stroke-opacity="0.087"/>
+<path d="M 35.293 38.621 L 38.867 42.672 Q 41.011 45.102 43.302 42.811 L 43.811 42.302 Q 46.102 40.011 43.672 37.867 L 39.621 34.293 Q 37.461 32.388 35.425 34.425 L 35.425 34.425 Q 33.388 36.461 35.293 38.621 Z" fill="#000000" fill-opacity="0.25"/>
+</g>
+<g transform="translate(1.5 1.5)">
+<path d="M 16 27 A 12 12 0 1 0 40 27 A 12 12 0 1 0 16 27 Z" fill="none" stroke="#000000" stroke-width="3.2" stroke-linejoin="round" stroke-opacity="0.045"/>
+<path d="M 16 27 A 12 12 0 1 0 40 27 A 12 12 0 1 0 16 27 Z" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="round" stroke-opacity="0.087"/>
+<path d="M 16 27 A 12 12 0 1 0 40 27 A 12 12 0 1 0 16 27 Z" fill="#000000" fill-opacity="0.25"/>
+</g>
+<path d="M 35.293 38.621 L 38.867 42.672 Q 41.011 45.102 43.302 42.811 L 43.811 42.302 Q 46.102 40.011 43.672 37.867 L 39.621 34.293 Q 37.461 32.388 35.425 34.425 L 35.425 34.425 Q 33.388 36.461 35.293 38.621 Z" fill="url(#l5)"/>
+<path d="M 35.293 38.621 L 38.867 42.672 Q 41.011 45.102 43.302 42.811 L 43.811 42.302 Q 46.102 40.011 43.672 37.867 L 39.621 34.293 Q 37.461 32.388 35.425 34.425 L 35.425 34.425 Q 33.388 36.461 35.293 38.621 Z" fill="none" stroke="#0E0E12" stroke-width="2" stroke-linejoin="round" clip-path="url(#c6)"/>
+<path d="M 33.53 37.875 L 35.863 40.209 Q 36.287 40.633 36.712 40.209 L 41.209 35.712 Q 41.633 35.287 41.209 34.863 L 38.875 32.53 Q 38.451 32.105 38.027 32.53 L 33.53 37.027 Q 33.105 37.451 33.53 37.875 Z" fill="url(#l7)"/>
+<path d="M 33.53 37.875 L 35.863 40.209 Q 36.287 40.633 36.712 40.209 L 41.209 35.712 Q 41.633 35.287 41.209 34.863 L 38.875 32.53 Q 38.451 32.105 38.027 32.53 L 33.53 37.027 Q 33.105 37.451 33.53 37.875 Z" fill="none" stroke="#5C636E" stroke-width="2" stroke-linejoin="round" clip-path="url(#c8)"/>
+<path d="M 16 27 A 12 12 0 1 0 40 27 A 12 12 0 1 0 16 27 Z" fill="url(#l9)"/>
+<path d="M 16 27 A 12 12 0 1 0 40 27 A 12 12 0 1 0 16 27 Z" fill="none" stroke="#4F5662" stroke-width="2" stroke-linejoin="round" clip-path="url(#c10)"/>
+<path d="M 18 27 A 10 10 0 1 0 38 27 A 10 10 0 1 0 18 27 Z" fill="url(#r11)"/>
+<path d="M 18 27 A 10 10 0 1 0 38 27 A 10 10 0 1 0 18 27 Z" fill="none" stroke="#5C6B80" stroke-width="2" stroke-linejoin="round" clip-path="url(#c12)"/>
+<path d="M 21 27.5 A 7 7 0 0 1 28.5 20" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity="0.9"/>
+</svg>

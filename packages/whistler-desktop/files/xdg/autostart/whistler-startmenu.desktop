@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Whistler Start Menu
+Exec=whistler-startmenu --daemon
+OnlyShowIn=XFCE;
+NoDisplay=true
+X-XFCE-Autostart-Override=true

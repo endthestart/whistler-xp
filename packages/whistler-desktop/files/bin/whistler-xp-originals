@@ -1,0 +1,32 @@
+#!/usr/bin/python3
+"""Start the "Import Windows XP Files" wizard, installing the optional
+add-on from the local Whistler repository first if needed."""
+import glob
+import os
+import shutil
+import subprocess
+import sys
+
+sys.path.insert(0, "/usr/lib/whistler")
+if shutil.which("whistler-import-xp"):
+    os.execvp("whistler-import-xp", ["whistler-import-xp"] + sys.argv[1:])
+
+import whistler  # noqa: E402,F401
+from gi.repository import Gtk  # noqa: E402
+
+from whistler.common import load_css, xp_message  # noqa: E402
+
+load_css("whistler.css")
+r = xp_message(None, "Install the “Windows XP originals” add-on?",
+               "Whistler XP can use the original Windows XP artwork, fonts and sounds from your own "
+               "Windows XP CD, ISO image or Windows folder. The add-on is on this computer already; "
+               "nothing is downloaded.", kind=Gtk.MessageType.QUESTION, buttons=Gtk.ButtonsType.YES_NO,
+               title="Windows XP Originals")
+if r != Gtk.ResponseType.YES:
+    sys.exit(0)
+pkgs = sorted(glob.glob("/opt/whistler/repo/whistler-xp-originals-*.pkg.tar.zst"))
+cmd = (["pkexec", "pacman", "-U", "--noconfirm", "--needed", pkgs[-1]] if pkgs else
+       ["pkexec", "pacman", "-S", "--noconfirm", "--needed", "whistler-xp-originals"])
+if subprocess.run(cmd).returncode == 0 and shutil.which("whistler-import-xp"):
+    os.execvp("whistler-import-xp", ["whistler-import-xp"] + sys.argv[1:])
+xp_message(None, "The add-on could not be installed.", kind=Gtk.MessageType.ERROR, title="Windows XP Originals")

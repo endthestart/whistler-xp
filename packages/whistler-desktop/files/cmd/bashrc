@@ -1,0 +1,18 @@
+# Command Prompt flavour for bash
+[ -f /etc/bash.bashrc ] && . /etc/bash.bashrc
+[ -f "$HOME/.bashrc" ] && . "$HOME/.bashrc"
+printf 'Whistler XP [Version 1.0.2600]\n(C) Copyright 2026 The Whistler Project.\n\n'
+__xp_cwd() { local p="${PWD//\//\\}"; printf 'C:%s' "$p"; }
+PS1='$(__xp_cwd)>'
+alias dir='ls -la --group-directories-first'
+alias cls='clear'
+alias ver='printf "\nWhistler XP [Version 1.0.2600]\n\n"'
+alias ipconfig='ip -brief address'
+alias tracert='tracepath'
+alias md='mkdir'
+alias rd='rmdir'
+alias del='rm -i'
+alias ren='mv -i'
+alias tasklist='ps aux'
+alias type='cat'
+alias edit='mousepad'

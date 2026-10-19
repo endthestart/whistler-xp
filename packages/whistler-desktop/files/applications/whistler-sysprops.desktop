@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=System Information
+Comment=View information about this computer
+Exec=whistler-sysprops
+Icon=computer
+Categories=System;
+X-Whistler-Folder=Accessories/System Tools

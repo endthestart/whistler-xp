@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Registry Editor
+Exec=wine regedit
+Icon=wine-regedit
+Categories=Wine;
+X-Whistler-Folder=Wine

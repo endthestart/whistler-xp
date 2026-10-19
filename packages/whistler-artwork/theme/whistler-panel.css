@@ -1,0 +1,270 @@
+/* Whistler additions to the Whistler GTK theme: taskbar, start button, tray,
+   desktop icons and notification balloons. Appended to gtk-3.20/gtk.css. */
+
+/* ---------------------------------------------------------------- taskbar */
+.xfce4-panel.panel,
+window.xfce4-panel {
+  background-color: #245DDA;
+  background-image: url("/usr/share/whistler/assets/current/panel/taskbar.png");
+  background-size: 1px 100%;
+  background-repeat: repeat-x;
+  border: none;
+  color: #FFFFFF;
+  font-family: Tahoma, sans-serif;
+  font-size: 8pt;
+}
+
+.xfce4-panel.panel button {
+  min-height: 0;
+  min-width: 0;
+}
+
+/* start button: the green pill */
+#xp-start-button,
+.xfce4-panel.panel #xp-start-button {
+  background-color: transparent;
+  background-image: url("/usr/share/whistler/assets/current/panel/start-normal.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0 22px 0 9px;
+  min-width: 70px;
+  min-height: 30px;
+}
+#xp-start-button:hover,
+.xfce4-panel.panel #xp-start-button:hover {
+  background-image: url("/usr/share/whistler/assets/current/panel/start-hover.png");
+}
+#xp-start-button:active,
+#xp-start-button:checked,
+.xfce4-panel.panel #xp-start-button:active,
+.xfce4-panel.panel #xp-start-button:checked {
+  background-image: url("/usr/share/whistler/assets/current/panel/start-pressed.png");
+}
+#xp-start-label {
+  color: #FFFFFF;
+  font-family: "Trebuchet MS", "Franklin Gothic Medium", sans-serif;
+  font-size: 14.5pt;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  padding-left: 4px;
+  padding-bottom: 1px;
+}
+#xp-start-logo {
+  -gtk-icon-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+}
+
+/* task buttons (9-slice border images) */
+.xfce4-panel.panel .tasklist button,
+.xfce4-panel.panel .tasklist button.flat {
+  color: #FFFFFF;
+  background-color: transparent;
+  background-image: none;
+  border-style: solid;
+  border-width: 4px;
+  border-image: url("/usr/share/whistler/assets/current/panel/task-normal.png") 4 4 4 4 stretch;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 3px 1px 1px 2px;
+  padding: 0 2px;
+  text-shadow: none;
+}
+.xfce4-panel.panel .tasklist button:hover {
+  border-image: url("/usr/share/whistler/assets/current/panel/task-hover.png") 4 4 4 4 stretch;
+}
+.xfce4-panel.panel .tasklist button:active,
+.xfce4-panel.panel .tasklist button:checked {
+  border-image: url("/usr/share/whistler/assets/current/panel/task-active.png") 4 4 4 4 stretch;
+}
+.xfce4-panel.panel .tasklist button:active:hover,
+.xfce4-panel.panel .tasklist button:checked:hover {
+  border-image: url("/usr/share/whistler/assets/current/panel/task-active-hover.png") 4 4 4 4 stretch;
+}
+.xfce4-panel.panel .tasklist button label {
+  color: #FFFFFF;
+  font-size: 8pt;
+}
+
+.tasklist {
+  -XfceTasklist-max-button-length: 162;
+  -XfceTasklist-min-button-length: 60;
+  -XfceTasklist-max-button-size: 26;
+  -XfceTasklist-minimized-icon-lucency: 100;
+  -XfceTasklist-menu-max-width-chars: 40;
+}
+
+/* quick launch / show desktop buttons: flat until hovered, like XP */
+.xfce4-panel.panel .launcher button,
+.xfce4-panel.panel .showdesktop button,
+.xfce4-panel.panel button.flat {
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 2px;
+  margin: 3px 0;
+  box-shadow: none;
+}
+.xfce4-panel.panel .launcher button:hover,
+.xfce4-panel.panel .showdesktop button:hover,
+.xfce4-panel.panel button.flat:hover {
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.xfce4-panel.panel .launcher button:active,
+.xfce4-panel.panel .showdesktop button:active,
+.xfce4-panel.panel .showdesktop button:checked,
+.xfce4-panel.panel button.flat:active {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.18);
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+/* notification area: lighter blue tray. systray and the volume plugin run
+   out of process inside an XfcePanelWindowWrapper plug; the clock is internal. */
+#XfcePanelWindowWrapper,
+#clock-11 button,
+#clock-11 button:hover,
+#clock-11 button:checked {
+  background-color: #0F8EEA;
+  background-image: url("/usr/share/whistler/assets/current/panel/tray.png");
+  background-size: 100% 100%;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+#clock-11 button {
+  padding: 0 10px 0 6px;
+  margin: 0;
+}
+#clock-11 label,
+#clock-11 button label {
+  color: #FFFFFF;
+  font-family: Tahoma, sans-serif;
+  font-size: 8pt;
+  text-shadow: none;
+}
+#pulseaudio-10 button,
+#systray-9 button {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0 2px;
+}
+#xp-tray-edge {
+  min-width: 3px;
+}
+
+/* ----------------------------------------------------------- desktop icons */
+XfdesktopIconView.view,
+XfdesktopIconView .view {
+  color: #FFFFFF;
+  background-color: transparent;
+  text-shadow: 1px 1px 1px #000000;
+  font-family: Tahoma, sans-serif;
+}
+XfdesktopIconView.view:backdrop,
+XfdesktopIconView .view:backdrop {
+  color: #FFFFFF;
+  background-color: transparent;
+  text-shadow: 1px 1px 1px #000000;
+}
+XfdesktopIconView.view:selected,
+XfdesktopIconView .view:selected,
+XfdesktopIconView.view:selected:backdrop,
+XfdesktopIconView .view:selected:backdrop {
+  color: #FFFFFF;
+  background-color: #0B61FF;
+  text-shadow: none;
+}
+XfdesktopIconView {
+  -XfdesktopIconView-label-alpha: 0;
+  -XfdesktopIconView-selected-label-alpha: 255;
+  -XfdesktopIconView-ellipsize-icon-labels: 0;
+  -XfdesktopIconView-shadow-x-offset: 1;
+  -XfdesktopIconView-shadow-y-offset: 1;
+  -XfdesktopIconView-shadow-color: #000000;
+  -XfdesktopIconView-selected-shadow-x-offset: 0;
+  -XfdesktopIconView-selected-shadow-y-offset: 0;
+  -XfdesktopIconView-cell-spacing: 6;
+  -XfdesktopIconView-cell-padding: 6;
+  -XfdesktopIconView-cell-text-width-proportion: 2.2;
+}
+
+/* --------------------------------------------------- notification balloons */
+#XfceNotifyWindow,
+#XfceNotifyWindow.osd {
+  background-color: #FFFFE1;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-family: Tahoma, sans-serif;
+  font-size: 8pt;
+}
+#XfceNotifyWindow label#summary {
+  font-weight: bold;
+  color: #000000;
+}
+#XfceNotifyWindow label#body {
+  color: #000000;
+}
+#XfceNotifyWindow progressbar progress {
+  background-color: #2FB52F;
+}
+
+/* -------------------------------------------- tooltips (pale yellow like XP) */
+tooltip,
+tooltip.background {
+  background-color: #FFFFE1;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+tooltip * {
+  color: #000000;
+  text-shadow: none;
+}
+
+/* -------------------------------------------- Alt+Tab (XP "cool switch") */
+#xfwm-tabwin {
+  background-color: #2C5BD8;
+  background-image: linear-gradient(to bottom, #3D74E9, #2152CF);
+  border: 1px solid #0A246A;
+  border-radius: 6px;
+  padding: 8px;
+  color: #FFFFFF;
+  box-shadow: none;
+}
+#xfwm-tabwin label {
+  color: #FFFFFF;
+  font-family: Tahoma, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+}
+#xfwm-tabwin button {
+  background-image: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+#xfwm-tabwin button label {
+  font-size: 0;
+  min-height: 0;
+}
+#xfwm-tabwin button:checked,
+#xfwm-tabwin button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #FFFFFF;
+}

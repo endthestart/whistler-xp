@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="3" y1="21" x2="33" y2="43"><stop offset="0" stop-color="#EBC48C"/><stop offset="1" stop-color="#D29E5A"/></linearGradient>
+<linearGradient id="l2" gradientUnits="userSpaceOnUse" x1="3" y1="12" x2="43" y2="21"><stop offset="0" stop-color="#F1D6AE"/><stop offset="1" stop-color="#EBC48C"/></linearGradient>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="33" y1="0" x2="43" y2="0"><stop offset="0" stop-color="#A87436"/><stop offset="1" stop-color="#8F6028"/></linearGradient>
+<clipPath id="c4"><path d="M4 44 L4 20 L16 12 L44 12 L44 36 L32 44 Z"/></clipPath>
+<clipPath id="c5"><path d="M8 34 L20 34 L20 42 L8 42 Z"/></clipPath>
+<clipPath id="c6"><path d="M4 44 L4 20 L16 12 L44 12 L44 36 L32 44 Z"/></clipPath></defs>
+<g transform="translate(2 2)">
+<path d="M4 44 L4 20 L16 12 L44 12 L44 36 L32 44 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M4 20 L16 12 L44 12 L32 20 Z" fill="url(#l2)"/>
+<path d="M32 20 L44 12 L44 36 L32 44 Z" fill="url(#l3)"/>
+<path d="M4 20 L32 20 L32 44 L4 44 Z" fill="url(#l1)"/>
+<path d="M4 20 L32 20 L32 22 L4 22 Z" fill="#76501F" opacity="0.45"/>
+<path d="M6 22 L32 22 L32 24 L6 24 Z" fill="#FFFFFF" opacity="0.7"/>
+<path d="M30 20 L32 20 L32 44 L30 44 Z" fill="#76501F" opacity="0.35"/>
+<path d="M4 44 L4 20 L16 12 L44 12 L44 36 L32 44 Z" fill="none" stroke="#76501F" stroke-width="4" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M15.48 20 L27.48 12 L32.52 12 L20.52 20 Z" fill="#F7E6C4" opacity="0.9"/>
+<path d="M16 20 L20 20 L20 28 L16 28 Z" fill="#F7E6C4" opacity="0.9"/>
+<path d="M8 34 L20 34 L20 42 L8 42 Z" fill="#FFFFFF"/>
+<path d="M8 34 L20 34 L20 42 L8 42 Z" fill="none" stroke="#9A7A4A" stroke-width="4" stroke-linejoin="round" clip-path="url(#c5)"/>
+<path d="M4 44 L4 20 L16 12 L44 12 L44 36 L32 44 Z" fill="none" stroke="#76501F" stroke-width="4" stroke-linejoin="round" clip-path="url(#c6)"/>
+</svg>

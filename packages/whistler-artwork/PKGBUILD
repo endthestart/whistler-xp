@@ -1,0 +1,131 @@
+# Maintainer: The Whistler Project
+pkgname=whistler-artwork
+pkgver=0.2.0
+pkgrel=1
+pkgdesc="Whistler XP artwork: original XP-style GTK/xfwm4 theme, icons, pointers, wallpaper, sounds and boot splash"
+arch=(any)
+license=(GPL-3.0-or-later)
+depends=(python fontconfig gdk-pixbuf2 librsvg)
+optdepends=('plymouth: boot splash' 'wine: Tahoma-compatible UI font')
+makedepends=(git python python-pillow python-numpy python-cairo python-cairosvg xorg-xcursorgen
+             ttf-fira-sans ttf-dejavu noto-fonts-emoji)
+install=whistler-artwork.install
+# Only the GPL-3 GTK stylesheet is used from this repository; none of its
+# bitmaps are packaged — every image is drawn by the scripts in gen/.
+_b00merang=7637830906823af40a3cd7e7079be753d8b7d679
+source=("Windows-XP::git+https://github.com/B00merang-Project/Windows-XP.git#commit=$_b00merang")
+sha256sums=('SKIP')
+
+_gen="$startdir/gen"
+_css="Windows-XP/Windows XP Luna/gtk-3.20/gtk.css"
+
+build() {
+  cd "$srcdir"
+  rm -rf out
+  local look=out/lookalike
+  mkdir -p "$look/wallpaper" "$look/sounds"
+  python "$_gen/wallpaper.py" "$look/wallpaper/default.jpg"
+  python "$_gen/sounds.py" "$look/sounds"
+  python "$_gen/luna_assets.py" "$look"
+  python "$_gen/icons.py" out
+  python "$_gen/userpics.py" out/userpics
+  python "$_gen/build_cursors.py" out/cursors --name whistler-lookalike-cursors
+  if [ -d "$startdir/icons/src" ]; then
+    python "$_gen/build_icons.py" "$startdir/icons/src" out/icons
+  else
+    mkdir -p out/icons/Whistler
+    printf '[Icon Theme]\nName=Whistler\nInherits=AdwaitaLegacy,Adwaita,hicolor\nDirectories=\n' \
+      > out/icons/Whistler/index.theme
+  fi
+
+  # the stylesheet must find every image it references
+  local missing=0 ref
+  for ref in $(grep -o 'url("assets/[^"]*")' "$_css" | sed 's/url("assets\///; s/")//' | sort -u); do
+    [ -f "$look/gtk/$ref" ] || { echo "missing asset: $ref"; missing=1; }
+  done
+  [ $missing = 0 ]
+}
+
+package() {
+  cd "$srcdir"
+  local A=/usr/share/whistler/assets
+  local look="$pkgdir$A/lookalike"
+
+  # --- swappable assets (see whistler-assets) ---
+  install -d "$look/fonts" "$look/css" "$look/userpics"
+  cp -r out/lookalike/. "$look/"
+  cp out/userpics/*.png "$look/userpics/"
+  printf '/* lookalike: no overrides */\n' > "$look/css/gtk-overrides.css"
+  printf '/* lookalike: no overrides */\n' > "$look/css/startmenu.css"
+  ln -s /usr/share/wine/fonts/tahoma.ttf "$look/fonts/tahoma.ttf"
+  ln -s /usr/share/wine/fonts/tahomabd.ttf "$look/fonts/tahomabd.ttf"
+  install -Dm755 "$startdir/bin/whistler-assets" "$pkgdir/usr/bin/whistler-assets"
+
+  # --- GTK + xfwm4 theme "Whistler" ---
+  local theme="$pkgdir/usr/share/themes/Whistler" c
+  install -d "$theme/gtk-3.20" "$theme/xfce-notify-4.0"
+  sed -e "s#\.\./cinnamon/panel\.png#$A/current/panel/taskbar.png#g" \
+      -e "s#\.\./cinnamon/normal\.png#$A/current/panel/task-normal.png#g" \
+      -e "s#\.\./cinnamon/hover\.png#$A/current/panel/task-hover.png#g" \
+      -e "s#\.\./cinnamon/active-hover\.png#$A/current/panel/task-active-hover.png#g" \
+      -e "s#\.\./cinnamon/active\.png#$A/current/panel/task-active.png#g" \
+      -e "s#\.\./cinnamon/menu-box\.png#$A/current/panel/start-normal.png#g" \
+      -e "s#\.\./cinnamon/menu-hover\.png#$A/current/panel/start-hover.png#g" \
+      -e "s#\.\./cinnamon/menu-active\.png#$A/current/panel/start-pressed.png#g" \
+      -e "s#\.\./cinnamon/menu-top\.png#$A/current/panel/startmenu-top.png#g" \
+      -e "s#\.\./cinnamon/menu-bottom\.png#$A/current/panel/startmenu-bottom.png#g" \
+      "$_css" > "$theme/gtk-3.20/gtk.css"
+  if grep -q 'cinnamon/' "$theme/gtk-3.20/gtk.css"; then
+    echo "unmapped panel image in stylesheet"; return 1
+  fi
+  install -m644 "$startdir/theme/whistler-panel.css" "$theme/gtk-3.20/whistler-panel.css"
+  printf '\n@import url("whistler-panel.css");\n@import url("%s/current/css/gtk-overrides.css");\n' "$A" \
+    >> "$theme/gtk-3.20/gtk.css"
+  ln -s "$A/current/gtk" "$theme/gtk-3.20/assets"
+  ln -s gtk-3.20 "$theme/gtk-3.0"
+  ln -s "$A/current/xfwm4" "$theme/xfwm4"
+  install -m644 "$startdir/notify/gtk.css" "$theme/xfce-notify-4.0/gtk.css"
+  printf '%s\n' '[Desktop Entry]' 'Type=X-GNOME-Metatheme' 'Name=Whistler' \
+    'Comment=Whistler XP blue (original XP-style artwork)' 'Encoding=UTF-8' '' \
+    '[X-GNOME-Metatheme]' 'GtkTheme=Whistler' 'MetacityTheme=Whistler' 'IconTheme=Whistler' \
+    'CursorTheme=Whistler' 'ButtonLayout=:minimize,maximize,close' > "$theme/index.theme"
+  install -Dm644 "Windows-XP/LICENSE.md" "$pkgdir/usr/share/licenses/$pkgname/LICENSE-stylesheet.md"
+
+  # --- icons and pointers ---
+  # "Whistler" only inherits: optional imported originals first, then the lookalikes.
+  local icons="$pkgdir/usr/share/icons"
+  install -d "$icons/Whistler" "$icons/hicolor"
+  cp -a out/icons/Whistler "$icons/whistler-lookalike"
+  sed -i 's/^Name=.*/Name=Whistler (lookalike)/; s/^Inherits=.*/Inherits=AdwaitaLegacy,Adwaita,hicolor/' \
+    "$icons/whistler-lookalike/index.theme"
+  cp -a out/cursors/whistler-lookalike-cursors "$icons/"
+  printf '%s\n' '[Icon Theme]' 'Name=Whistler' 'Comment=Whistler XP icons and pointers' \
+    'Inherits=whistler-xp-originals,whistler-lookalike,whistler-lookalike-cursors,AdwaitaLegacy,Adwaita,hicolor' \
+    'Directories=' > "$icons/Whistler/index.theme"
+  cp -a out/icons/hicolor/. "$icons/hicolor/"
+
+  # --- wallpaper, logos, account pictures ---
+  install -d "$pkgdir/usr/share/backgrounds/whistler" "$pkgdir/usr/share/whistler/logos"
+  install -m644 out/lookalike/wallpaper/default.jpg "$pkgdir/usr/share/backgrounds/whistler/serenity.jpg"
+  ln -s "$A/current/wallpaper/default.jpg" "$pkgdir/usr/share/backgrounds/whistler/default.jpg"
+  cp out/logos/*.png "$pkgdir/usr/share/whistler/logos/"
+  ln -s "$A/current/userpics" "$pkgdir/usr/share/whistler/userpics"
+
+  # --- sound theme ---
+  install -d "$pkgdir/usr/share/sounds/whistler"
+  ln -s "$A/current/sounds" "$pkgdir/usr/share/sounds/whistler/stereo"
+  printf '[Sound Theme]\nName=Whistler\nDirectories=stereo\n\n[stereo]\nOutputProfile=stereo\n' \
+    > "$pkgdir/usr/share/sounds/whistler/index.theme"
+
+  # --- plymouth boot splash ---
+  local ply="$pkgdir/usr/share/plymouth/themes/whistler"
+  install -d "$ply"
+  cp out/plymouth/*.png "$ply/"
+  install -m644 "$startdir/plymouth/whistler.plymouth" "$startdir/plymouth/whistler.script" "$ply/"
+
+  # --- fonts: UI fonts come from the swappable asset tree ---
+  install -d "$pkgdir/usr/share/fonts" "$pkgdir/etc/fonts/conf.d"
+  ln -s "$A/current/fonts" "$pkgdir/usr/share/fonts/whistler"
+  install -Dm644 "$startdir/fontconfig/60-whistler.conf" "$pkgdir/usr/share/fontconfig/conf.avail/60-whistler.conf"
+  ln -s /usr/share/fontconfig/conf.avail/60-whistler.conf "$pkgdir/etc/fonts/conf.d/60-whistler.conf"
+}

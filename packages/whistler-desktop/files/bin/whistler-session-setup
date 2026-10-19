@@ -1,0 +1,75 @@
+#!/bin/bash
+# Runs at every Whistler login: wallpaper per monitor, first-login profile setup.
+WALL=/usr/share/backgrounds/whistler/default.jpg
+CONF="${XDG_CONFIG_HOME:-$HOME/.config}/whistler"
+mkdir -p "$CONF"
+
+set_wallpaper() {
+    local mon base
+    for mon in $(xrandr --listmonitors 2>/dev/null | awk 'NR>1 {print $NF}'); do
+        base="/backdrop/screen0/monitor${mon}/workspace0"
+        if [ -z "$(xfconf-query -c xfce4-desktop -p "$base/last-image" 2>/dev/null)" ]; then
+            xfconf-query -c xfce4-desktop -p "$base/last-image" -n -t string -s "$WALL"
+            xfconf-query -c xfce4-desktop -p "$base/image-style" -n -t int -s 5
+            xfconf-query -c xfce4-desktop -p "$base/color-style" -n -t int -s 0
+        fi
+    done
+}
+
+desktop_icon() {   # name icon exec [properties-command]
+    local dir file
+    dir="$(xdg-user-dir DESKTOP)"
+    mkdir -p "$dir"
+    file="$dir/$1.desktop"
+    [ -e "$file" ] && return
+    printf '[Desktop Entry]\nType=Application\nName=%s\nIcon=%s\nExec=%s\nTerminal=false\n' "$1" "$2" "$3" > "$file"
+    if [ -n "${4:-}" ]; then
+        printf 'Actions=properties;\n\n[Desktop Action properties]\nName=Properties\nExec=%s\n' "$4" >> "$file"
+    fi
+    chmod 755 "$file"
+    gio set -t string "$file" metadata::xfce-exe-checksum "$(sha256sum "$file" | cut -d' ' -f1)" 2>/dev/null
+}
+
+first_login() {
+    xdg-user-dirs-update
+    local docs
+    docs="$(xdg-user-dir DOCUMENTS)"
+    mkdir -p "$docs" "$(xdg-user-dir PICTURES)" "$(xdg-user-dir MUSIC)" "$(xdg-user-dir VIDEOS)"
+
+    desktop_icon "My Documents" folder-documents "sh -c 'exo-open \"\$(xdg-user-dir DOCUMENTS)\"'"
+    desktop_icon "My Computer" computer "whistler-mycomputer" "whistler-sysprops"
+    desktop_icon "My Network Places" network-workgroup "exo-open network:///" "nm-connection-editor"
+    desktop_icon "Mozilla Firefox" firefox "firefox"
+    desktop_icon "Wine Center" whistler-winecenter "whistler-winecenter"
+    if [ -d /run/archiso ]; then
+        desktop_icon "Install Whistler XP" whistler-setup "whistler-setup"
+    fi
+
+    if [ ! -e "$HOME/.face" ]; then
+        pics=(/usr/share/whistler/assets/current/userpics/*.png)
+        [ -e "${pics[0]}" ] && cp "${pics[RANDOM % ${#pics[@]}]}" "$HOME/.face"
+    fi
+
+    mkdir -p "$HOME/.config/gtk-3.0"
+    if [ ! -e "$HOME/.config/gtk-3.0/bookmarks" ]; then
+        {
+            printf 'file://%s My Documents\n' "$(printf '%s' "$docs" | sed 's/ /%20/g')"
+            printf 'file://%s My Pictures\n' "$(xdg-user-dir PICTURES | sed 's/ /%20/g')"
+            printf 'file://%s My Music\n' "$(xdg-user-dir MUSIC | sed 's/ /%20/g')"
+            printf 'file://%s/.wine/drive_c Windows Drive (C:)\n' "$HOME"
+        } > "$HOME/.config/gtk-3.0/bookmarks"
+    fi
+    touch "$CONF/.firstlogin-done"
+    whistler-desktop-arrange &
+    # Prepare the Windows compatibility layer in the background.
+    (sleep 20; nice -n 10 whistler-wine-init --notify) &
+    (sleep 12; notify-send -i whistler-help -t 15000 "Take a tour of Whistler XP" \
+        "To learn about the new features, click start, then Help and Support.") &
+}
+
+set_wallpaper
+[ -e "$CONF/.firstlogin-done" ] || first_login
+(sleep 25; nice -n 10 whistler-wine-menus) &
+# Re-apply the Windows look if the optional XP originals were added or removed.
+(sleep 30; nice -n 10 whistler-wine-init --theme-only) &
+exit 0

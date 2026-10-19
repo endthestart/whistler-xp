@@ -1,0 +1,5 @@
+#!/bin/sh
+# Help and Support Center: whistler-help [topic]
+page="${1:-index}"
+[ -f "/usr/share/whistler/help/$page.html" ] || page=index
+exec exo-open "file:///usr/share/whistler/help/$page.html"

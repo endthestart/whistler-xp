@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="0" y1="24" x2="0" y2="37"><stop offset="0" stop-color="#EEF1F5"/><stop offset="1" stop-color="#98A2B0"/></linearGradient>
+<linearGradient id="l2" gradientUnits="userSpaceOnUse" x1="3" y1="13" x2="45" y2="24"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.6" stop-color="#EEF1F5"/><stop offset="1" stop-color="#C9D0D9"/></linearGradient>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="37" y1="0" x2="45" y2="0"><stop offset="0" stop-color="#98A2B0"/><stop offset="1" stop-color="#77808D"/></linearGradient>
+<clipPath id="c4"><path d="M3 36 L3 24 L12 12 L45 12 L45 24 L36 36 Z"/></clipPath></defs>
+<g transform="translate(3 3)">
+<path d="M3 36 L3 24 L12 12 L45 12 L45 24 L36 36 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M3 24 L12 12 L45 12 L36 24 Z" fill="url(#l2)"/>
+<path d="M36 24 L45 12 L45 24 L36 36 Z" fill="url(#l3)"/>
+<path d="M3 24 L36 24 L36 36 L3 36 Z" fill="url(#l1)"/>
+<path d="M3 24 L36 24 L36 27 L3 27 Z" fill="#5E6774" opacity="0.45"/>
+<path d="M6 27 L36 27 L36 30 L6 30 Z" fill="#FFFFFF" opacity="0.7"/>
+<path d="M33 24 L36 24 L36 36 L33 36 Z" fill="#5E6774" opacity="0.35"/>
+<path d="M3 36 L3 24 L12 12 L45 12 L45 24 L36 36 Z" fill="none" stroke="#5E6774" stroke-width="6" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M 27.9 30 H 29.1 A 0.9 0.9 0 0 1 30 30.9 V 32.1 A 0.9 0.9 0 0 1 29.1 33 H 27.9 A 0.9 0.9 0 0 1 27 32.1 V 30.9 A 0.9 0.9 0 0 1 27.9 30 Z" fill="#47E23A"/>
+</svg>

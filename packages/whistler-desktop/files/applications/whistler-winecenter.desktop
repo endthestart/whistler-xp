@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Wine Center
+GenericName=Windows Program Center
+Comment=Install, run and manage Windows programs
+Exec=whistler-winecenter %f
+Icon=whistler-winecenter
+Categories=Wine;System;
+MimeType=application/x-ms-dos-executable;application/x-msi;application/x-msdownload;application/vnd.microsoft.portable-executable;
+X-Whistler-Folder=

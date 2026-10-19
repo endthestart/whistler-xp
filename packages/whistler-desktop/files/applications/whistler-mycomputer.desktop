@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=My Computer
+Comment=Browse the drives and folders on this computer
+Exec=whistler-mycomputer
+Icon=computer
+Categories=System;
+X-Whistler-Folder=-

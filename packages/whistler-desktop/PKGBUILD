@@ -1,0 +1,134 @@
+# Maintainer: The Whistler Project
+pkgname=whistler-desktop
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Whistler XP desktop: XP-style start menu, taskbar button, dialogs, Wine Center and session defaults"
+arch=(x86_64)
+license=(GPL-3.0-or-later)
+depends=(
+  python python-gobject python-cairo python-yaml gtk3 libwnck3 xfce4-panel xfwm4 xfdesktop
+  xfce4-session xfce4-settings xfconf thunar exo garcon xfce4-terminal xfce4-notifyd
+  xorg-xprop xorg-xrandr xdg-user-dirs xdg-utils libnotify lightdm wine winetricks
+  whistler-artwork
+)
+optdepends=(
+  'mousepad: Notepad' 'mtpaint: Paint' 'galculator: Calculator' 'abiword: WordPad'
+  'parole: Windows Media Player' 'aisleriot: Solitaire, FreeCell and Spider'
+  'catfish: Search' 'xfce4-taskmanager: Task Manager' 'pavucontrol: Volume Control'
+)
+makedepends=(gettext xfce4-panel gtk3 pkgconf python gcc)
+install=whistler-desktop.install
+
+_files="$startdir/files"
+
+build() {
+  cd "$srcdir"
+  for p in xpstart xptrayedge; do
+    gcc $CFLAGS $LDFLAGS -shared -fPIC -o lib$p.so "$_files/xpstart/$p.c" \
+      $(pkg-config --cflags --libs libxfce4panel-2.0 gtk+-3.0)
+  done
+  for po in "$_files"/locale/*.po; do
+    msgfmt -o "$(basename "$po" .po).mo" "$po"
+  done
+}
+
+package() {
+  cd "$srcdir"
+  local f d
+
+  # panel plugin
+  for p in xpstart xptrayedge; do
+    install -Dm755 lib$p.so "$pkgdir/usr/lib/xfce4/panel/plugins/lib$p.so"
+    install -Dm644 "$_files/xpstart/$p.desktop" "$pkgdir/usr/share/xfce4/panel/plugins/$p.desktop"
+  done
+
+  # python package + launchers
+  install -d "$pkgdir/usr/lib/whistler/whistler"
+  cp -r "$_files/python/whistler/." "$pkgdir/usr/lib/whistler/whistler/"
+  find "$pkgdir/usr/lib/whistler" -name '__pycache__' -prune -exec rm -rf {} +
+
+  python -m compileall -q "$pkgdir/usr/lib/whistler" -d /usr/lib/whistler
+  while read -r cmd module func; do
+    [ -z "$cmd" ] && continue
+    install -d "$pkgdir/usr/bin"
+    cat > "$pkgdir/usr/bin/$cmd" <<EOF
+#!/usr/bin/python3
+import sys
+sys.path.insert(0, "/usr/lib/whistler")
+from whistler.$module import ${func:-main}
+sys.exit($([ -n "$func" ] && echo "${func}()" || echo "main()"))
+EOF
+    chmod 755 "$pkgdir/usr/bin/$cmd"
+  done <<'LIST'
+whistler-startmenu startmenu
+whistler-run rundialog
+whistler-shutdown shutdown
+whistler-logoff shutdown main_logoff
+whistler-splash splash
+whistler-control controlpanel
+whistler-mycomputer mycomputer
+whistler-sysprops sysprops
+whistler-winecenter winecenter
+whistler-minesweeper minesweeper
+whistler-useraccounts useraccounts
+whistler-addremove addremove
+whistler-greeter greeter
+whistler-setup installer
+whistler-volume volume
+LIST
+  for f in "$_files"/bin/*; do
+    case "$(basename "$f")" in
+      xfce4-session-logout) install -Dm755 "$f" "$pkgdir/usr/local/bin/xfce4-session-logout" ;;
+      *) install -Dm755 "$f" "$pkgdir/usr/bin/$(basename "$f")" ;;
+    esac
+  done
+
+  # shared data
+  install -d "$pkgdir/usr/share/whistler"
+  cp -r "$_files/share/css" "$pkgdir/usr/share/whistler/"
+  install -Dm644 "$_files/share/app-overrides.conf" "$pkgdir/usr/share/whistler/app-overrides.conf"
+  install -Dm644 "$_files/share/whistler-app-overrides.hook" "$pkgdir/usr/share/libalpm/hooks/90-whistler-app-overrides.hook"
+  install -Dm644 "$_files/share/whistler-branding.hook" "$pkgdir/usr/share/libalpm/hooks/zz-whistler-branding.hook"
+  install -Dm755 "$_files/share/whistler-branding" "$pkgdir/usr/share/libalpm/scripts/whistler-branding"
+  install -d "$pkgdir/usr/share/whistler/xdg-data/applications"
+  install -Dm644 "$_files/wine/whistler.reg" "$pkgdir/usr/share/whistler/wine/whistler.reg"
+  install -Dm644 "$_files/cmd/bashrc" "$pkgdir/usr/share/whistler/cmd/bashrc"
+  [ -d "$_files/help" ] && cp -r "$_files/help" "$pkgdir/usr/share/whistler/"
+
+  # desktop entries
+  for f in "$_files"/applications/*.desktop; do
+    install -Dm644 "$f" "$pkgdir/usr/share/applications/$(basename "$f")"
+  done
+
+  # session
+  install -Dm755 "$_files/session/whistler-session" "$pkgdir/usr/bin/whistler-session"
+  install -Dm644 "$_files/session/whistler.desktop" "$pkgdir/usr/share/xsessions/whistler.desktop"
+  install -Dm644 "$_files/session/environment.sh" "$pkgdir/etc/profile.d/whistler.sh"
+  install -Dm644 "$_files/session/90-whistler.conf" "$pkgdir/usr/lib/environment.d/90-whistler.conf"
+
+  # system-wide defaults (searched first via XDG_CONFIG_DIRS)
+  install -d "$pkgdir/etc/xdg/whistler"
+  cp -r "$_files/xdg/." "$pkgdir/etc/xdg/whistler/"
+
+  # lightdm
+  install -Dm644 "$_files/lightdm/50-whistler.conf" "$pkgdir/etc/lightdm/lightdm.conf.d/50-whistler.conf"
+  if [ -f "$_files/lightdm/whistler-greeter.desktop" ]; then
+    install -Dm644 "$_files/lightdm/whistler-greeter.desktop" "$pkgdir/usr/share/xgreeters/whistler-greeter.desktop"
+  fi
+
+  # "Trash" -> "Recycle Bin"
+  for f in *.mo; do
+    install -Dm644 "$f" "$pkgdir/usr/share/locale/en_US/LC_MESSAGES/$f"
+  done
+
+  install -Dm644 "$_files/gschema/90_whistler.gschema.override" \
+    "$pkgdir/usr/share/glib-2.0/schemas/90_whistler.gschema.override"
+  install -Dm644 "$_files/firefox/whistler.js" "$pkgdir/usr/lib/firefox/browser/defaults/preferences/whistler.js"
+  install -d "$pkgdir/etc/xdg/whistler/menus"
+  ln -s /etc/xdg/menus/xfce-applications.menu "$pkgdir/etc/xdg/whistler/menus/applications.menu"
+
+  [ -d "$_files/polkit" ] && for f in "$_files"/polkit/*.rules; do
+    [ -e "$f" ] && install -Dm644 "$f" "$pkgdir/usr/share/polkit-1/rules.d/$(basename "$f")"
+  done
+  return 0
+}

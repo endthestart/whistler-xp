@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="8" y1="3" x2="38" y2="45"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F7F9FB"/><stop offset="1" stop-color="#DCE3EC"/></linearGradient>
+<clipPath id="c2"><path d="M8 3 L27 3 L38 14 L38 45 L8 45 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="27" y1="14" x2="32.5" y2="8.5"><stop offset="0" stop-color="#C4CFDD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<clipPath id="c4"><path d="M27 3 L27 14 L38 14 Z"/></clipPath></defs>
+<g transform="translate(1.5 1.5)">
+<path d="M8 3 L27 3 L38 14 L38 45 L8 45 Z" fill="none" stroke="#000000" stroke-width="3.2" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M8 3 L27 3 L38 14 L38 45 L8 45 Z" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M8 3 L27 3 L38 14 L38 45 L8 45 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M8 3 L27 3 L38 14 L38 45 L8 45 Z" fill="url(#l1)"/>
+<path d="M8 3 L27 3 L38 14 L38 45 L8 45 Z" fill="none" stroke="#8D9AB0" stroke-width="2" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M27 3 L27 14 L38 14 Z" fill="url(#l3)"/>
+<path d="M27 3 L27 14 L38 14 Z" fill="none" stroke="#8D9AB0" stroke-width="2" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M12 17 L34 17 L34 20 L12 20 Z" fill="#58B847"/>
+<path d="M12 17 L17 17 L17 41 L12 41 Z" fill="#DFF3D8"/>
+<path d="M12 17 L17 17 L17 20 L12 20 Z" fill="#3E9A30"/>
+<path d="M12 17 L34 17 L34 18 L12 18 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M12 20 L34 20 L34 21 L12 21 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M12 24 L34 24 L34 25 L12 25 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M12 27 L34 27 L34 28 L12 28 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M12 31 L34 31 L34 32 L12 32 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M12 34 L34 34 L34 35 L12 35 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M12 38 L34 38 L34 39 L12 39 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M12 41 L34 41 L34 42 L12 42 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M12 17 L13 17 L13 42 L12 42 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M18 17 L19 17 L19 42 L18 42 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M23 17 L24 17 L24 42 L23 42 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M28 17 L29 17 L29 42 L28 42 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M33 17 L34 17 L34 42 L33 42 Z" fill="#6E9C64" opacity="0.8"/>
+<path d="M12 7 L23 7 L23 9 L12 9 Z" fill="#3E9A30"/>
+</svg>

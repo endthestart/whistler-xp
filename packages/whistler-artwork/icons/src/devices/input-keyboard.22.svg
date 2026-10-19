@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="0" y1="34.909" x2="0" y2="37.091"><stop offset="0" stop-color="#E6DDC4"/><stop offset="1" stop-color="#C9BC98"/></linearGradient>
+<linearGradient id="l2" gradientUnits="userSpaceOnUse" x1="2.182" y1="15.273" x2="39.273" y2="34.909"><stop offset="0" stop-color="#FFFFFA"/><stop offset="1" stop-color="#E6DDC4"/></linearGradient>
+<clipPath id="c3"><path d="M2.182 37.091 L2.182 34.909 L8.727 15.273 L45.818 15.273 L45.818 17.455 L39.273 37.091 Z"/></clipPath></defs>
+<g transform="translate(2.182 2.182)">
+<path d="M2.182 37.091 L2.182 34.909 L8.727 15.273 L45.818 15.273 L45.818 17.455 L39.273 37.091 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M2.182 34.909 L39.273 34.909 L39.273 37.091 L2.182 37.091 Z" fill="url(#l1)"/>
+<path d="M39.273 34.909 L45.818 15.273 L45.818 17.455 L39.273 37.091 Z" fill="#C9BC98"/>
+<path d="M2.182 34.909 L8.727 15.273 L45.818 15.273 L39.273 34.909 Z" fill="url(#l2)"/>
+<path d="M2.182 37.091 L2.182 34.909 L8.727 15.273 L45.818 15.273 L45.818 17.455 L39.273 37.091 Z" fill="none" stroke="#8C8064" stroke-width="4.364" stroke-linejoin="round" clip-path="url(#c3)"/>
+<path d="M10.909 19.636 L13.091 19.636 L13.091 21.818 L10.909 21.818 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M15.273 19.636 L17.455 19.636 L17.455 21.818 L15.273 21.818 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M19.636 19.636 L21.818 19.636 L21.818 21.818 L19.636 21.818 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M24 19.636 L26.182 19.636 L26.182 21.818 L24 21.818 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M28.364 19.636 L30.545 19.636 L30.545 21.818 L28.364 21.818 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M32.727 19.636 L34.909 19.636 L34.909 21.818 L32.727 21.818 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M10.909 24 L13.091 24 L13.091 26.182 L10.909 26.182 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M15.273 24 L17.455 24 L17.455 26.182 L15.273 26.182 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M19.636 24 L21.818 24 L21.818 26.182 L19.636 26.182 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M24 24 L26.182 24 L26.182 26.182 L24 26.182 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M28.364 24 L30.545 24 L30.545 26.182 L28.364 26.182 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M32.727 24 L34.909 24 L34.909 26.182 L32.727 26.182 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M8.727 28.364 L10.909 28.364 L10.909 30.545 L8.727 30.545 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M13.091 28.364 L15.273 28.364 L15.273 30.545 L13.091 30.545 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M17.455 28.364 L19.636 28.364 L19.636 30.545 L17.455 30.545 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M21.818 28.364 L24 28.364 L24 30.545 L21.818 30.545 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M26.182 28.364 L28.364 28.364 L28.364 30.545 L26.182 30.545 Z" fill="#7A6E52" opacity="0.8"/>
+<path d="M30.545 28.364 L32.727 28.364 L32.727 30.545 L30.545 30.545 Z" fill="#7A6E52" opacity="0.8"/>
+</svg>

@@ -1,0 +1,6 @@
+// Live session: administrators are not asked for a password.
+polkit.addRule(function(action, subject) {
+    if (subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+});

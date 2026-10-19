@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = filesystem
+Target = cachyos-hooks
+Target = whistler-desktop
+
+[Action]
+Description = Applying Whistler XP branding...
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/whistler-branding

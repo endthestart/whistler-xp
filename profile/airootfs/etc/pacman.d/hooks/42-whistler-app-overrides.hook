@@ -1,0 +1,10 @@
+# remove from airootfs!
+[Trigger]
+Operation = Install
+Type = Package
+Target = *
+
+[Action]
+Description = Applying Whistler start menu names (ISO build)...
+When = PostTransaction
+Exec = /bin/sh -c '[ -x /usr/bin/whistler-app-overrides ] && /usr/bin/whistler-app-overrides || true'

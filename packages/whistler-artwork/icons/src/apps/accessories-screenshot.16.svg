@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="36"><stop offset="0" stop-color="#2F7CF2"/><stop offset="1" stop-color="#0D4FC8"/></linearGradient>
+<clipPath id="c2"><path d="M 3 5.7 A 2.7 2.7 0 0 1 5.7 3 H 36.3 A 2.7 2.7 0 0 1 39 5.7 V 36 H 3 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="9"><stop offset="0" stop-color="#8CC2FF"/><stop offset="0.18" stop-color="#3C8DF8"/><stop offset="0.55" stop-color="#0F5FE6"/><stop offset="1" stop-color="#0B4FD0"/></linearGradient>
+<clipPath id="c4"><path d="M 3 5.7 A 2.7 2.7 0 0 1 5.7 3 H 36.3 A 2.7 2.7 0 0 1 39 5.7 V 9 H 3 Z"/></clipPath>
+<clipPath id="c5"><path d="M6 9 L36 9 L36 33 L6 33 Z"/></clipPath>
+<linearGradient id="l6" gradientUnits="userSpaceOnUse" x1="0" y1="9" x2="0" y2="16"><stop offset="0" stop-color="#E6EAF0"/><stop offset="1" stop-color="#8E98A6"/></linearGradient>
+<clipPath id="c7"><path d="M 11.5 9 H 20.5 A 1.5 1.5 0 0 1 22 10.5 V 14.5 A 1.5 1.5 0 0 1 20.5 16 H 11.5 A 1.5 1.5 0 0 1 10 14.5 V 10.5 A 1.5 1.5 0 0 1 11.5 9 Z"/></clipPath>
+<linearGradient id="l8" gradientUnits="userSpaceOnUse" x1="0" y1="14" x2="0" y2="40"><stop offset="0" stop-color="#F5F7FA"/><stop offset="0.5" stop-color="#B3BCC8"/><stop offset="1" stop-color="#7C8796"/></linearGradient>
+<clipPath id="c9"><path d="M 8 14 H 40 A 4 4 0 0 1 44 18 V 36 A 4 4 0 0 1 40 40 H 8 A 4 4 0 0 1 4 36 V 18 A 4 4 0 0 1 8 14 Z"/></clipPath>
+<linearGradient id="l10" gradientUnits="userSpaceOnUse" x1="14" y1="17" x2="34" y2="37"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#5E6774"/></linearGradient>
+<clipPath id="c11"><path d="M 14 27 A 10 10 0 1 0 34 27 A 10 10 0 1 0 14 27 Z"/></clipPath>
+<radialGradient id="r12" gradientUnits="userSpaceOnUse" cx="22" cy="25" r="8"><stop offset="0" stop-color="#7FB2FF"/><stop offset="0.5" stop-color="#1F3C7A"/><stop offset="1" stop-color="#0B0E14"/></radialGradient></defs>
+<g transform="translate(3 3)">
+<path d="M 3 5.7 A 2.7 2.7 0 0 1 5.7 3 H 36.3 A 2.7 2.7 0 0 1 39 5.7 V 36 H 3 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 3 5.7 A 2.7 2.7 0 0 1 5.7 3 H 36.3 A 2.7 2.7 0 0 1 39 5.7 V 36 H 3 Z" fill="url(#l1)"/>
+<path d="M 3 5.7 A 2.7 2.7 0 0 1 5.7 3 H 36.3 A 2.7 2.7 0 0 1 39 5.7 V 36 H 3 Z" fill="none" stroke="#0B3C9C" stroke-width="6" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M 3 5.7 A 2.7 2.7 0 0 1 5.7 3 H 36.3 A 2.7 2.7 0 0 1 39 5.7 V 9 H 3 Z" fill="url(#l3)"/>
+<path d="M 3 5.7 A 2.7 2.7 0 0 1 5.7 3 H 36.3 A 2.7 2.7 0 0 1 39 5.7 V 9 H 3 Z" fill="none" stroke="#0B3C9C" stroke-width="6" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M6 9 L36 9 L36 33 L6 33 Z" fill="#FFFFFF"/>
+<g clip-path="url(#c5)">
+<path d="M6 9 L36 9 L36 33 L6 33 Z" fill="#FFFFFF"/>
+<path d="M13.5 13.5 L28.5 13.5 L28.5 25.5 L13.5 25.5 Z" fill="#D7E7FF" stroke="#2F6FE0" stroke-width="3" stroke-dasharray="3 3"/>
+</g>
+<g transform="translate(18 21) scale(0.583)">
+<g transform="translate(5.143 5.143)">
+<path d="M 8 14 H 40 A 4 4 0 0 1 44 18 V 36 A 4 4 0 0 1 40 40 H 8 A 4 4 0 0 1 4 36 V 18 A 4 4 0 0 1 8 14 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 11.5 9 H 20.5 A 1.5 1.5 0 0 1 22 10.5 V 14.5 A 1.5 1.5 0 0 1 20.5 16 H 11.5 A 1.5 1.5 0 0 1 10 14.5 V 10.5 A 1.5 1.5 0 0 1 11.5 9 Z" fill="url(#l6)"/>
+<path d="M 11.5 9 H 20.5 A 1.5 1.5 0 0 1 22 10.5 V 14.5 A 1.5 1.5 0 0 1 20.5 16 H 11.5 A 1.5 1.5 0 0 1 10 14.5 V 10.5 A 1.5 1.5 0 0 1 11.5 9 Z" fill="none" stroke="#3E4552" stroke-width="10.286" stroke-linejoin="round" clip-path="url(#c7)"/>
+<path d="M 8 14 H 40 A 4 4 0 0 1 44 18 V 36 A 4 4 0 0 1 40 40 H 8 A 4 4 0 0 1 4 36 V 18 A 4 4 0 0 1 8 14 Z" fill="url(#l8)"/>
+<path d="M 8 14 H 40 A 4 4 0 0 1 44 18 V 36 A 4 4 0 0 1 40 40 H 8 A 4 4 0 0 1 4 36 V 18 A 4 4 0 0 1 8 14 Z" fill="none" stroke="#3E4552" stroke-width="10.286" stroke-linejoin="round" clip-path="url(#c9)"/>
+<path d="M 14 27 A 10 10 0 1 0 34 27 A 10 10 0 1 0 14 27 Z" fill="url(#l10)"/>
+<path d="M 14 27 A 10 10 0 1 0 34 27 A 10 10 0 1 0 14 27 Z" fill="none" stroke="#3E4552" stroke-width="10.286" stroke-linejoin="round" clip-path="url(#c11)"/>
+<path d="M 17 27 A 7 7 0 1 0 31 27 A 7 7 0 1 0 17 27 Z" fill="url(#r12)"/>
+<path d="M 19.8 24.5 A 2.2 1.4 0 1 0 24.2 24.5 A 2.2 1.4 0 1 0 19.8 24.5 Z" fill="#FFFFFF" opacity="0.8"/>
+</g>
+</svg>

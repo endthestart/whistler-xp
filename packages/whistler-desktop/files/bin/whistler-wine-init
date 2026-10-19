@@ -1,0 +1,78 @@
+#!/bin/bash
+# Create (or refresh) a Wine prefix with Whistler's XP look applied.
+#   whistler-wine-init [--notify] [--theme-only] [--prefix DIR] [--arch win32|win64] [--winver winxp|win7|win10]
+# If the optional originals add-on imported the XP visual style
+# (/var/lib/whistler/originals/wine/luna/luna.msstyles), Windows programs use
+# it; otherwise they get the classic look in XP colours.
+NOTIFY=0
+THEME_ONLY=0
+PREFIX="${WINEPREFIX:-$HOME/.wine}"
+ARCH=win64
+WINVER=""
+MSSTYLES=/var/lib/whistler/originals/wine/luna/luna.msstyles
+while [ $# -gt 0 ]; do
+    case "$1" in
+        --notify) NOTIFY=1 ;;
+        --theme-only) THEME_ONLY=1 ;;
+        --prefix) PREFIX="$2"; shift ;;
+        --arch) ARCH="$2"; shift ;;
+        --winver) WINVER="$2"; shift ;;
+    esac
+    shift
+done
+export WINEPREFIX="$PREFIX" WINEARCH="$ARCH" WINEDEBUG=-all
+note() { [ "$NOTIFY" = 1 ] && notify-send -i whistler-winecenter -t 9000 "$1" "$2"; }
+
+if [ ! -f "$WINEPREFIX/system.reg" ]; then
+    [ "$THEME_ONLY" = 1 ] && exit 0
+    note "Setting up Windows program support" \
+         "Whistler is preparing the Windows compatibility layer. This happens only once and may take a few minutes."
+    mkdir -p "$WINEPREFIX"
+    # No "updating configuration" window and no file associations/menu clutter.
+    env -u DISPLAY -u WAYLAND_DISPLAY WINEDLLOVERRIDES="winemenubuilder.exe=d" wineboot --init >/dev/null 2>&1
+    wineserver -w
+    FRESH=1
+fi
+
+apply_theme() {
+    local reg tmp
+    tmp=$(mktemp --suffix=.reg)
+    if [ -f "$MSSTYLES" ]; then
+        mkdir -p "$WINEPREFIX/drive_c/windows/Resources/Themes/luna"
+        cp -f "$MSSTYLES" "$WINEPREFIX/drive_c/windows/Resources/Themes/luna/luna.msstyles"
+        cat > "$tmp" <<'REG'
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager]
+"ColorName"="NormalColor"
+"DllName"="C:\\windows\\Resources\\Themes\\luna\\luna.msstyles"
+"SizeName"="NormalSize"
+"ThemeActive"="1"
+REG
+    else
+        cat > "$tmp" <<'REG'
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager]
+"ThemeActive"="0"
+REG
+    fi
+    wine regedit /S /usr/share/whistler/wine/whistler.reg >/dev/null 2>&1
+    wine regedit /S "$tmp" >/dev/null 2>&1
+    rm -f "$tmp"
+}
+
+# Only touch the registry when the theme source changed since last time.
+stamp="$WINEPREFIX/.whistler-theme"
+want=$([ -f "$MSSTYLES" ] && echo originals || echo classic)
+if [ "$THEME_ONLY" = 0 ] || [ "$(cat "$stamp" 2>/dev/null)" != "$want" ]; then
+    apply_theme
+    echo "$want" > "$stamp"
+fi
+[ -n "$WINVER" ] && wine winecfg -v "$WINVER" >/dev/null 2>&1
+wineserver -w
+if [ -n "${FRESH:-}" ]; then
+    note "Windows programs are ready" \
+         "Double-click any .exe or .msi file to run it, or open Wine Center from the Start menu."
+fi
+exit 0

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><radialGradient id="r1" gradientUnits="userSpaceOnUse" cx="23" cy="42" r="41.8" gradientTransform="translate(23 42) scale(1.2 1) translate(-23 -42)"><stop offset="0" stop-color="#FF8A66"/><stop offset="0.5" stop-color="#E5432A"/><stop offset="1" stop-color="#B32213"/></radialGradient>
+<clipPath id="c2"><path d="M 10 4 H 36 A 6 6 0 0 1 42 10 V 36 A 6 6 0 0 1 36 42 H 10 A 6 6 0 0 1 4 36 V 10 A 6 6 0 0 1 10 4 Z"/></clipPath>
+<clipPath id="c3"><path d="M 10 6 H 36 A 4 4 0 0 1 40 10 V 36 A 4 4 0 0 1 36 40 H 10 A 4 4 0 0 1 6 36 V 10 A 4 4 0 0 1 10 6 Z"/></clipPath>
+<clipPath id="c4"><path d="M 10 4 H 36 A 6 6 0 0 1 42 10 V 36 A 6 6 0 0 1 36 42 H 10 A 6 6 0 0 1 4 36 V 10 A 6 6 0 0 1 10 4 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="0" y1="4" x2="0" y2="22.24"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.75"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.05"/></linearGradient></defs>
+<g transform="translate(2 2)">
+<path d="M 10 4 H 36 A 6 6 0 0 1 42 10 V 36 A 6 6 0 0 1 36 42 H 10 A 6 6 0 0 1 4 36 V 10 A 6 6 0 0 1 10 4 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 10 4 H 36 A 6 6 0 0 1 42 10 V 36 A 6 6 0 0 1 36 42 H 10 A 6 6 0 0 1 4 36 V 10 A 6 6 0 0 1 10 4 Z" fill="url(#r1)"/>
+<path d="M 10 4 H 36 A 6 6 0 0 1 42 10 V 36 A 6 6 0 0 1 36 42 H 10 A 6 6 0 0 1 4 36 V 10 A 6 6 0 0 1 10 4 Z" fill="none" stroke="#86190E" stroke-width="4" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M 10 6 H 36 A 4 4 0 0 1 40 10 V 36 A 4 4 0 0 1 36 40 H 10 A 4 4 0 0 1 6 36 V 10 A 4 4 0 0 1 10 6 Z" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" clip-path="url(#c3)"/>
+<g clip-path="url(#c4)">
+<path d="M 2.1 8.56 A 20.9 13.68 0 1 0 43.9 8.56 A 20.9 13.68 0 1 0 2.1 8.56 Z" fill="url(#l5)"/>
+</g>
+<path d="M 18.192 34.031 L 22.434 29.788 Q 23 29.223 23.566 29.788 L 27.808 34.031 Q 28.374 34.597 28.94 34.031 L 34.031 28.94 Q 34.597 28.374 34.031 27.808 L 29.788 23.566 Q 29.223 23 29.788 22.434 L 34.031 18.192 Q 34.597 17.626 34.031 17.06 L 28.94 11.969 Q 28.374 11.403 27.808 11.969 L 23.566 16.212 Q 23 16.777 22.434 16.212 L 18.192 11.969 Q 17.626 11.403 17.06 11.969 L 11.969 17.06 Q 11.403 17.626 11.969 18.192 L 16.212 22.434 Q 16.777 23 16.212 23.566 L 11.969 27.808 Q 11.403 28.374 11.969 28.94 L 17.06 34.031 Q 17.626 34.597 18.192 34.031 Z" fill="#FFFFFF"/>
+</svg>

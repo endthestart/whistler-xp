@@ -1,0 +1,9 @@
+# Whistler XP defaults
+[org.xfce.mousepad.preferences.view]
+font-name='Lucida Console 10'
+use-default-monospace-font=false
+
+[org.xfce.mousepad.preferences.window]
+client-side-decorations=false
+toolbar-visible=false
+statusbar-visible=false

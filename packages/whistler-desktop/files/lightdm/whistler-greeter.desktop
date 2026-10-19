@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Whistler Welcome Screen
+Comment=Windows XP style welcome screen
+Exec=whistler-greeter
+Type=Application

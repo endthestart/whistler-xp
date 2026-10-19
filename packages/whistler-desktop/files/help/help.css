@@ -1,0 +1,20 @@
+body { margin: 0; font-family: Tahoma, Verdana, sans-serif; font-size: 13px; background: #fff; color: #000; }
+header { background: linear-gradient(#0A4CC6, #2A6FE0 60%, #1C5ACF); color: #fff; padding: 10px 18px; display: flex; align-items: center; gap: 14px; border-bottom: 3px solid #F2A65A; }
+header img { width: 48px; height: 48px; }
+header h1 { margin: 0; font-family: "Trebuchet MS", Tahoma, sans-serif; font-size: 24px; font-weight: normal; }
+header h1 small { display: block; font-size: 12px; color: #D6E4FF; }
+nav { background: #E3EBFA; padding: 6px 18px; border-bottom: 1px solid #A6B8E6; }
+nav a { margin-right: 18px; }
+main { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 20px 28px; max-width: 1100px; }
+main.single { display: block; max-width: 820px; }
+h2 { color: #215DC6; font-size: 16px; border-bottom: 1px solid #A6B8E6; padding-bottom: 4px; }
+h3 { color: #00136B; font-size: 14px; margin-bottom: 4px; }
+a { color: #215DC6; text-decoration: none; }
+a:hover { color: #428EFF; text-decoration: underline; }
+ul.topics { list-style: none; padding: 0; }
+ul.topics li { padding: 5px 0 5px 26px; background: no-repeat left center; position: relative; }
+ul.topics li::before { content: "\25B8"; color: #4BB543; position: absolute; left: 8px; }
+.box { background: #EEF3FF; border: 1px solid #C6D3F7; border-radius: 4px; padding: 10px 14px; margin: 10px 0; }
+kbd { border: 1px solid #999; border-radius: 3px; background: #F4F4F4; padding: 0 4px; font-family: Tahoma, sans-serif; }
+.step { margin: 6px 0; }
+footer { padding: 14px 28px; color: #666; font-size: 11px; }

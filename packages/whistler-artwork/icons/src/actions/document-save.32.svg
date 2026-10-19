@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="4.5" y1="4.5" x2="43.5" y2="43.5"><stop offset="0" stop-color="#5C7CF0"/><stop offset="0.5" stop-color="#2C47B8"/><stop offset="1" stop-color="#1B2C86"/></linearGradient>
+<linearGradient id="l2" gradientUnits="userSpaceOnUse" x1="4.5" y1="4.5" x2="27.9" y2="27.9"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<clipPath id="c3"><path d="M 5.7 4.5 L 37.8 4.5 Q 39 4.5 39.849 5.349 L 42.651 8.151 Q 43.5 9 43.5 10.2 L 43.5 42.3 Q 43.5 43.5 42.3 43.5 L 5.7 43.5 Q 4.5 43.5 4.5 42.3 L 4.5 5.7 Q 4.5 4.5 5.7 4.5 Z"/></clipPath>
+<linearGradient id="l4" gradientUnits="userSpaceOnUse" x1="13.5" y1="4.5" x2="33" y2="18"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#C7CED8"/><stop offset="1" stop-color="#8E98A6"/></linearGradient>
+<clipPath id="c5"><path d="M13.5 4.5 L33 4.5 L33 18 L13.5 18 Z"/></clipPath>
+<linearGradient id="l6" gradientUnits="userSpaceOnUse" x1="0" y1="24" x2="0" y2="43.5"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E2E7EE"/></linearGradient>
+<clipPath id="c7"><path d="M 9.75 24 H 38.25 A 0.75 0.75 0 0 1 39 24.75 V 42.75 A 0.75 0.75 0 0 1 38.25 43.5 H 9.75 A 0.75 0.75 0 0 1 9 42.75 V 24.75 A 0.75 0.75 0 0 1 9.75 24 Z"/></clipPath></defs>
+<g transform="translate(2.25 2.25)">
+<path d="M 5.7 4.5 L 37.8 4.5 Q 39 4.5 39.849 5.349 L 42.651 8.151 Q 43.5 9 43.5 10.2 L 43.5 42.3 Q 43.5 43.5 42.3 43.5 L 5.7 43.5 Q 4.5 43.5 4.5 42.3 L 4.5 5.7 Q 4.5 4.5 5.7 4.5 Z" fill="none" stroke="#000000" stroke-width="4.8" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M 5.7 4.5 L 37.8 4.5 Q 39 4.5 39.849 5.349 L 42.651 8.151 Q 43.5 9 43.5 10.2 L 43.5 42.3 Q 43.5 43.5 42.3 43.5 L 5.7 43.5 Q 4.5 43.5 4.5 42.3 L 4.5 5.7 Q 4.5 4.5 5.7 4.5 Z" fill="none" stroke="#000000" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M 5.7 4.5 L 37.8 4.5 Q 39 4.5 39.849 5.349 L 42.651 8.151 Q 43.5 9 43.5 10.2 L 43.5 42.3 Q 43.5 43.5 42.3 43.5 L 5.7 43.5 Q 4.5 43.5 4.5 42.3 L 4.5 5.7 Q 4.5 4.5 5.7 4.5 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 5.7 4.5 L 37.8 4.5 Q 39 4.5 39.849 5.349 L 42.651 8.151 Q 43.5 9 43.5 10.2 L 43.5 42.3 Q 43.5 43.5 42.3 43.5 L 5.7 43.5 Q 4.5 43.5 4.5 42.3 L 4.5 5.7 Q 4.5 4.5 5.7 4.5 Z" fill="url(#l1)"/>
+<path d="M 5.7 4.5 L 37.8 4.5 Q 39 4.5 39.849 5.349 L 42.651 8.151 Q 43.5 9 43.5 10.2 L 43.5 42.3 Q 43.5 43.5 42.3 43.5 L 5.7 43.5 Q 4.5 43.5 4.5 42.3 L 4.5 5.7 Q 4.5 4.5 5.7 4.5 Z" fill="none" stroke="url(#l2)" stroke-width="6" stroke-linejoin="round" clip-path="url(#c3)"/>
+<path d="M 5.7 4.5 L 37.8 4.5 Q 39 4.5 39.849 5.349 L 42.651 8.151 Q 43.5 9 43.5 10.2 L 43.5 42.3 Q 43.5 43.5 42.3 43.5 L 5.7 43.5 Q 4.5 43.5 4.5 42.3 L 4.5 5.7 Q 4.5 4.5 5.7 4.5 Z" fill="none" stroke="#121E5E" stroke-width="3" stroke-linejoin="round" clip-path="url(#c3)"/>
+<path d="M13.5 4.5 L33 4.5 L33 18 L13.5 18 Z" fill="url(#l4)"/>
+<path d="M13.5 4.5 L33 4.5 L33 18 L13.5 18 Z" fill="none" stroke="#5E6774" stroke-width="3" stroke-linejoin="round" clip-path="url(#c5)"/>
+<path d="M25.5 7.5 L30 7.5 L30 15 L25.5 15 Z" fill="#2C3442"/>
+<path d="M 9.75 24 H 38.25 A 0.75 0.75 0 0 1 39 24.75 V 42.75 A 0.75 0.75 0 0 1 38.25 43.5 H 9.75 A 0.75 0.75 0 0 1 9 42.75 V 24.75 A 0.75 0.75 0 0 1 9.75 24 Z" fill="url(#l6)"/>
+<path d="M 9.75 24 H 38.25 A 0.75 0.75 0 0 1 39 24.75 V 42.75 A 0.75 0.75 0 0 1 38.25 43.5 H 9.75 A 0.75 0.75 0 0 1 9 42.75 V 24.75 A 0.75 0.75 0 0 1 9.75 24 Z" fill="none" stroke="#8A96A8" stroke-width="3" stroke-linejoin="round" clip-path="url(#c7)"/>
+<path d="M12 28.5 L36 28.5 L36 30 L12 30 Z" fill="#8FA9D8"/>
+<path d="M12 33 L28.5 33 L28.5 34.5 L12 34.5 Z" fill="#8FA9D8"/>
+<path d="M12 37.5 L33 37.5 L33 39 L12 39 Z" fill="#8FA9D8"/>
+<path d="M6 39 L9 39 L9 42 L6 42 Z" fill="#0E1648"/>
+</svg>

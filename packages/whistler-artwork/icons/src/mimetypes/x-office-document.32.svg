@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="7.5" y1="3" x2="37.5" y2="45"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F7F9FB"/><stop offset="1" stop-color="#DCE3EC"/></linearGradient>
+<clipPath id="c2"><path d="M7.5 3 L25.5 3 L37.5 15 L37.5 45 L7.5 45 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="25.5" y1="15" x2="31.5" y2="9"><stop offset="0" stop-color="#C4CFDD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<clipPath id="c4"><path d="M25.5 3 L25.5 15 L37.5 15 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="0" y1="19.5" x2="0" y2="28.5"><stop offset="0" stop-color="#9FD0FF"/><stop offset="1" stop-color="#3F86E0"/></linearGradient>
+<clipPath id="c6"><path d="M12.5 19.5 L24 19.5 L24 28.5 L12.5 28.5 Z"/></clipPath>
+<clipPath id="c7"><path d="M12.5 19.5 L24 19.5 L24 28.5 L12.5 28.5 Z"/></clipPath></defs>
+<g transform="translate(2.25 2.25)">
+<path d="M7.5 3 L25.5 3 L37.5 15 L37.5 45 L7.5 45 Z" fill="none" stroke="#000000" stroke-width="4.8" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M7.5 3 L25.5 3 L37.5 15 L37.5 45 L7.5 45 Z" fill="none" stroke="#000000" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M7.5 3 L25.5 3 L37.5 15 L37.5 45 L7.5 45 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M7.5 3 L25.5 3 L37.5 15 L37.5 45 L7.5 45 Z" fill="url(#l1)"/>
+<path d="M7.5 3 L25.5 3 L37.5 15 L37.5 45 L7.5 45 Z" fill="none" stroke="#8D9AB0" stroke-width="3" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M25.5 3 L25.5 15 L37.5 15 Z" fill="url(#l3)"/>
+<path d="M25.5 3 L25.5 15 L37.5 15 Z" fill="none" stroke="#8D9AB0" stroke-width="3" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M12.5 9 L24 9 L24 10.5 L12.5 10.5 Z" fill="#2F6FE0"/>
+<path d="M12.5 19.5 L24 19.5 L24 28.5 L12.5 28.5 Z" fill="url(#l5)"/>
+<g clip-path="url(#c6)">
+<path d="M 12.1 28.5 A 9.9 3.6 0 1 0 31.9 28.5 A 9.9 3.6 0 1 0 12.1 28.5 Z" fill="#4FAE3A"/>
+</g>
+<path d="M12.5 19.5 L24 19.5 L24 28.5 L12.5 28.5 Z" fill="none" stroke="#5B7BAE" stroke-width="2.1" stroke-linejoin="round" clip-path="url(#c7)"/>
+<path d="M27 19.5 L33 19.5 L33 21 L27 21 Z" fill="#A9B6C9"/>
+<path d="M27 24 L31.5 24 L31.5 25.5 L27 25.5 Z" fill="#A9B6C9"/>
+<path d="M12 31.5 L33 31.5 L33 33 L12 33 Z" fill="#A9B6C9"/>
+<path d="M12 36 L30 36 L30 37.5 L12 37.5 Z" fill="#A9B6C9"/>
+</svg>

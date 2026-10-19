@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="0" y1="8" x2="21" y2="40"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#DCE2EA"/><stop offset="1" stop-color="#9AA5B4"/></linearGradient>
+<clipPath id="c2"><path d="M 1.2 18 L 7.5 18 Q 8 18 8.37 17.664 L 18.26 8.673 Q 19 8 20 8 L 20 8 Q 21 8 21 9 L 21 39 Q 21 40 20 40 L 20 40 Q 19 40 18.26 39.327 L 8.37 30.336 Q 8 30 7.5 30 L 1.2 30 Q 0 30 0 28.8 L 0 19.2 Q 0 18 1.2 18 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="0" y1="6" x2="0" y2="42"><stop offset="0" stop-color="#FF8A66"/><stop offset="1" stop-color="#E5432A"/></linearGradient></defs>
+<g transform="translate(3 3)">
+<path d="M 1.2 18 L 7.5 18 Q 8 18 8.37 17.664 L 18.26 8.673 Q 19 8 20 8 L 20 8 Q 21 8 21 9 L 21 39 Q 21 40 20 40 L 20 40 Q 19 40 18.26 39.327 L 8.37 30.336 Q 8 30 7.5 30 L 1.2 30 Q 0 30 0 28.8 L 0 19.2 Q 0 18 1.2 18 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 1.2 18 L 7.5 18 Q 8 18 8.37 17.664 L 18.26 8.673 Q 19 8 20 8 L 20 8 Q 21 8 21 9 L 21 39 Q 21 40 20 40 L 20 40 Q 19 40 18.26 39.327 L 8.37 30.336 Q 8 30 7.5 30 L 1.2 30 Q 0 30 0 28.8 L 0 19.2 Q 0 18 1.2 18 Z" fill="url(#l1)"/>
+<path d="M 1.2 18 L 7.5 18 Q 8 18 8.37 17.664 L 18.26 8.673 Q 19 8 20 8 L 20 8 Q 21 8 21 9 L 21 39 Q 21 40 20 40 L 20 40 Q 19 40 18.26 39.327 L 8.37 30.336 Q 8 30 7.5 30 L 1.2 30 Q 0 30 0 28.8 L 0 19.2 Q 0 18 1.2 18 Z" fill="none" stroke="#39414E" stroke-width="6" stroke-linejoin="round" clip-path="url(#c2)"/>
+<g transform="translate(21 21) scale(0.583)">
+<g transform="translate(5.143 5.143)">
+<path d="M 7 24 A 17 17 0 1 0 41 24 A 17 17 0 1 0 7 24 Z" fill="#000000" fill-opacity="0.25"/>
+</g>
+<path d="M 7 24 A 17 17 0 1 0 41 24 A 17 17 0 1 0 7 24 Z" fill="none" stroke="#86190E" stroke-width="19.286"/>
+<path d="M12.5 12.5 L35.5 35.5" fill="none" stroke="#86190E" stroke-width="19.286" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M 7 24 A 17 17 0 1 0 41 24 A 17 17 0 1 0 7 24 Z" fill="none" stroke="url(#l3)" stroke-width="9"/>
+<path d="M12.5 12.5 L35.5 35.5" fill="none" stroke="#E5432A" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round"/>
+</g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="0" y1="4.5" x2="0" y2="40.5"><stop offset="0" stop-color="#2F7CF2"/><stop offset="1" stop-color="#0D4FC8"/></linearGradient>
+<clipPath id="c2"><path d="M 1.5 7.5 A 3 3 0 0 1 4.5 4.5 H 40.5 A 3 3 0 0 1 43.5 7.5 V 40.5 H 1.5 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="0" y1="4.5" x2="0" y2="12"><stop offset="0" stop-color="#8CC2FF"/><stop offset="0.18" stop-color="#3C8DF8"/><stop offset="0.55" stop-color="#0F5FE6"/><stop offset="1" stop-color="#0B4FD0"/></linearGradient>
+<clipPath id="c4"><path d="M 1.5 7.5 A 3 3 0 0 1 4.5 4.5 H 40.5 A 3 3 0 0 1 43.5 7.5 V 12 H 1.5 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="0" y1="6" x2="0" y2="10.5"><stop offset="0" stop-color="#FF9C7A"/><stop offset="0.5" stop-color="#E5482A"/><stop offset="1" stop-color="#B8240F"/></linearGradient>
+<clipPath id="c6"><path d="M 37.125 6 H 39.375 A 1.125 1.125 0 0 1 40.5 7.125 V 9.375 A 1.125 1.125 0 0 1 39.375 10.5 H 37.125 A 1.125 1.125 0 0 1 36 9.375 V 7.125 A 1.125 1.125 0 0 1 37.125 6 Z"/></clipPath>
+<clipPath id="c7"><path d="M3 12 L42 12 L42 39 L3 39 Z"/></clipPath></defs>
+<g transform="translate(2.25 2.25)">
+<path d="M 1.5 7.5 A 3 3 0 0 1 4.5 4.5 H 40.5 A 3 3 0 0 1 43.5 7.5 V 40.5 H 1.5 Z" fill="none" stroke="#000000" stroke-width="4.8" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M 1.5 7.5 A 3 3 0 0 1 4.5 4.5 H 40.5 A 3 3 0 0 1 43.5 7.5 V 40.5 H 1.5 Z" fill="none" stroke="#000000" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M 1.5 7.5 A 3 3 0 0 1 4.5 4.5 H 40.5 A 3 3 0 0 1 43.5 7.5 V 40.5 H 1.5 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 1.5 7.5 A 3 3 0 0 1 4.5 4.5 H 40.5 A 3 3 0 0 1 43.5 7.5 V 40.5 H 1.5 Z" fill="url(#l1)"/>
+<path d="M 1.5 7.5 A 3 3 0 0 1 4.5 4.5 H 40.5 A 3 3 0 0 1 43.5 7.5 V 40.5 H 1.5 Z" fill="none" stroke="#0B3C9C" stroke-width="3" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M 1.5 7.5 A 3 3 0 0 1 4.5 4.5 H 40.5 A 3 3 0 0 1 43.5 7.5 V 12 H 1.5 Z" fill="url(#l3)"/>
+<path d="M 1.5 7.5 A 3 3 0 0 1 4.5 4.5 H 40.5 A 3 3 0 0 1 43.5 7.5 V 12 H 1.5 Z" fill="none" stroke="#0B3C9C" stroke-width="3" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M3 12 L42 12 L42 39 L3 39 Z" fill="#FFFFFF"/>
+<path d="M 37.125 6 H 39.375 A 1.125 1.125 0 0 1 40.5 7.125 V 9.375 A 1.125 1.125 0 0 1 39.375 10.5 H 37.125 A 1.125 1.125 0 0 1 36 9.375 V 7.125 A 1.125 1.125 0 0 1 37.125 6 Z" fill="url(#l5)"/>
+<path d="M 37.125 6 H 39.375 A 1.125 1.125 0 0 1 40.5 7.125 V 9.375 A 1.125 1.125 0 0 1 39.375 10.5 H 37.125 A 1.125 1.125 0 0 1 36 9.375 V 7.125 A 1.125 1.125 0 0 1 37.125 6 Z" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" clip-path="url(#c6)"/>
+<path d="M37.35 7.35 L39.15 9.15" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M39.15 7.35 L37.35 9.15" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<g clip-path="url(#c7)">
+<path d="M3 12 L42 12 L42 39 L3 39 Z" fill="#0C0C0C"/>
+<path d="M7.5 16.5 L12.5 20.5 L7.5 24.5" fill="none" stroke="#E8E8E8" stroke-width="2.4" stroke-linecap="square" stroke-linejoin="miter"/>
+<path d="M15 22.5 L22.5 22.5 L22.5 25.5 L15 25.5 Z" fill="#E8E8E8"/>
+<path d="M7.5 30 L29.2 30 L29.2 31.5 L7.5 31.5 Z" fill="#9A9A9A"/>
+<path d="M7.5 33 L21.45 33 L21.45 34.5 L7.5 34.5 Z" fill="#9A9A9A"/>
+</g>
+</svg>

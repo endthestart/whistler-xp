@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Control Panel
+Comment=Change your computer's settings
+Exec=whistler-control
+Icon=preferences-system
+Categories=Settings;
+X-Whistler-Folder=-

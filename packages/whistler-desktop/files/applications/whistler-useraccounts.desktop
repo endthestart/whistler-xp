@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=User Accounts
+Comment=Change your picture, name and password
+Exec=whistler-useraccounts
+Icon=system-users
+Categories=Settings;
+X-Whistler-Folder=-

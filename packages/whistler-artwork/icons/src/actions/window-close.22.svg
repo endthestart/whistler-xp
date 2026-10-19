@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><radialGradient id="r1" gradientUnits="userSpaceOnUse" cx="22.909" cy="41.455" r="40.8" gradientTransform="translate(22.909 41.455) scale(1.2 1) translate(-22.909 -41.455)"><stop offset="0" stop-color="#FF8A66"/><stop offset="0.5" stop-color="#E5432A"/><stop offset="1" stop-color="#B32213"/></radialGradient>
+<clipPath id="c2"><path d="M 10.364 4.364 H 35.455 A 6 6 0 0 1 41.455 10.364 V 35.455 A 6 6 0 0 1 35.455 41.455 H 10.364 A 6 6 0 0 1 4.364 35.455 V 10.364 A 6 6 0 0 1 10.364 4.364 Z"/></clipPath>
+<clipPath id="c3"><path d="M 10.364 6.545 H 35.455 A 3.818 3.818 0 0 1 39.273 10.364 V 35.455 A 3.818 3.818 0 0 1 35.455 39.273 H 10.364 A 3.818 3.818 0 0 1 6.545 35.455 V 10.364 A 3.818 3.818 0 0 1 10.364 6.545 Z"/></clipPath>
+<clipPath id="c4"><path d="M 10.364 4.364 H 35.455 A 6 6 0 0 1 41.455 10.364 V 35.455 A 6 6 0 0 1 35.455 41.455 H 10.364 A 6 6 0 0 1 4.364 35.455 V 10.364 A 6 6 0 0 1 10.364 4.364 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="0" y1="4.364" x2="0" y2="22.167"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.75"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.05"/></linearGradient></defs>
+<g transform="translate(2.182 2.182)">
+<path d="M 10.364 4.364 H 35.455 A 6 6 0 0 1 41.455 10.364 V 35.455 A 6 6 0 0 1 35.455 41.455 H 10.364 A 6 6 0 0 1 4.364 35.455 V 10.364 A 6 6 0 0 1 10.364 4.364 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 10.364 4.364 H 35.455 A 6 6 0 0 1 41.455 10.364 V 35.455 A 6 6 0 0 1 35.455 41.455 H 10.364 A 6 6 0 0 1 4.364 35.455 V 10.364 A 6 6 0 0 1 10.364 4.364 Z" fill="url(#r1)"/>
+<path d="M 10.364 4.364 H 35.455 A 6 6 0 0 1 41.455 10.364 V 35.455 A 6 6 0 0 1 35.455 41.455 H 10.364 A 6 6 0 0 1 4.364 35.455 V 10.364 A 6 6 0 0 1 10.364 4.364 Z" fill="none" stroke="#86190E" stroke-width="4.364" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M 10.364 6.545 H 35.455 A 3.818 3.818 0 0 1 39.273 10.364 V 35.455 A 3.818 3.818 0 0 1 35.455 39.273 H 10.364 A 3.818 3.818 0 0 1 6.545 35.455 V 10.364 A 3.818 3.818 0 0 1 10.364 6.545 Z" fill="none" stroke="#FFFFFF" stroke-width="4.364" stroke-linejoin="round" clip-path="url(#c3)"/>
+<g clip-path="url(#c4)">
+<path d="M 2.509 8.815 A 20.4 13.353 0 1 0 43.309 8.815 A 20.4 13.353 0 1 0 2.509 8.815 Z" fill="url(#l5)"/>
+</g>
+<path d="M 18.192 34.031 L 22.434 29.788 Q 23 29.223 23.566 29.788 L 27.808 34.031 Q 28.374 34.597 28.94 34.031 L 34.031 28.94 Q 34.597 28.374 34.031 27.808 L 29.788 23.566 Q 29.223 23 29.788 22.434 L 34.031 18.192 Q 34.597 17.626 34.031 17.06 L 28.94 11.969 Q 28.374 11.403 27.808 11.969 L 23.566 16.212 Q 23 16.777 22.434 16.212 L 18.192 11.969 Q 17.626 11.403 17.06 11.969 L 11.969 17.06 Q 11.403 17.626 11.969 18.192 L 16.212 22.434 Q 16.777 23 16.212 23.566 L 11.969 27.808 Q 11.403 28.374 11.969 28.94 L 17.06 34.031 Q 17.626 34.597 18.192 34.031 Z" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="10" y1="3" x2="40" y2="45"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F7F9FB"/><stop offset="1" stop-color="#DCE3EC"/></linearGradient>
+<clipPath id="c2"><path d="M10 3 L29 3 L40 14 L40 45 L10 45 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="29" y1="14" x2="34.5" y2="8.5"><stop offset="0" stop-color="#C4CFDD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<clipPath id="c4"><path d="M29 3 L29 14 L40 14 Z"/></clipPath>
+<radialGradient id="r5" gradientUnits="userSpaceOnUse" cx="12" cy="12" r="11"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.35" stop-color="#FFE77A"/><stop offset="1" stop-color="#E8A511"/></radialGradient></defs>
+<g transform="translate(1.5 1.5)">
+<path d="M10 3 L29 3 L40 14 L40 45 L10 45 Z" fill="none" stroke="#000000" stroke-width="3.2" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M10 3 L29 3 L40 14 L40 45 L10 45 Z" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M10 3 L29 3 L40 14 L40 45 L10 45 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M10 3 L29 3 L40 14 L40 45 L10 45 Z" fill="url(#l1)"/>
+<path d="M10 3 L29 3 L40 14 L40 45 L10 45 Z" fill="none" stroke="#8D9AB0" stroke-width="2" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M29 3 L29 14 L40 14 Z" fill="url(#l3)"/>
+<path d="M29 3 L29 14 L40 14 Z" fill="none" stroke="#8D9AB0" stroke-width="2" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M15 9 L25 9 L25 11 L15 11 Z" fill="#A9B6C9"/>
+<path d="M15 18 L35 18 L35 20 L15 20 Z" fill="#A9B6C9"/>
+<path d="M15 22 L32 22 L32 24 L15 24 Z" fill="#A9B6C9"/>
+<path d="M15 26 L34 26 L34 28 L15 28 Z" fill="#A9B6C9"/>
+<path d="M15 30 L29 30 L29 32 L15 32 Z" fill="#A9B6C9"/>
+<path d="M15 34 L35 34 L35 36 L15 36 Z" fill="#A9B6C9"/>
+<path d="M15 38 L33 38 L33 40 L15 40 Z" fill="#A9B6C9"/>
+<path d="M12 1 L14.178 9.822 L23 12 L14.178 14.178 L12 23 L9.822 14.178 L1 12 L9.822 9.822 Z" fill="url(#r5)" stroke="#A87808" stroke-width="0.9" stroke-linejoin="round"/>
+</svg>

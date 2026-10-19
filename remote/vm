@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Manage the test VM on the build host.
+#   remote/vm start [--bios] [--disk-only]   boot the latest ISO (2 vCPU, 4 GiB) in the background
+#   remote/vm stop | status | log
+# On a shared host, set WHISTLER_VM_PRECHECK (e.g. in remote/local.env) to a remote
+# command that must succeed before the VM starts.
+cd "$(dirname "$0")/.."
+[ -f remote/local.env ] && . remote/local.env
+cmd=${1:-status}; shift || true
+case "$cmd" in
+start)
+    exec remote/mp "
+        ${WHISTLER_VM_PRECHECK:-true} || { echo 'precheck failed; not starting the test VM'; exit 1; }
+        pkill -f 'qemu-system-x86_64.*-name whistler' && sleep 2
+        mkdir -p test
+        nohup test/run-vm.sh $* > test/qemu.log 2>&1 &
+        sleep 3; cat test/qemu.log"
+    ;;
+stop)
+    exec remote/mp "pkill -f 'qemu-system-x86_64.*-name whistler' && echo stopped || echo 'not running'"
+    ;;
+status)
+    exec remote/mp "pgrep -fl 'qemu-system-x86_64.*-name whistler' >/dev/null && echo running || echo stopped; cat test/qemu.log 2>/dev/null | tail -3"
+    ;;
+log)
+    exec remote/mp "tail -c 3000 test/serial.log | strings | tail -40"
+    ;;
+*) echo "usage: remote/vm start|stop|status|log" >&2; exit 2 ;;
+esac

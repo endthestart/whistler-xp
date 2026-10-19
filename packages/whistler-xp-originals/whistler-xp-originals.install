@@ -1,0 +1,12 @@
+post_install() {
+  echo "  Open Start > All Programs > Accessories > System Tools > Import Windows XP Files"
+  echo "  (or run: sudo whistler-import-xp --cli XP_ISO) to use your own XP CD image."
+}
+
+pre_remove() {
+  rm -rf /var/lib/whistler/originals /var/lib/whistler/originals.new /var/lib/whistler/originals.old
+}
+
+post_remove() {
+  whistler-assets refresh >/dev/null 2>&1 || true
+}

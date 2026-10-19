@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Tour Whistler XP
+Comment=Learn about the features of Whistler XP
+Exec=whistler-help tour
+Icon=whistler-help
+Categories=Utility;
+X-Whistler-Folder=Accessories

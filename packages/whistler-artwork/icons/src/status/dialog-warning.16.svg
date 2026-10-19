@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="14" y1="6" x2="34" y2="44"><stop offset="0" stop-color="#FFF4B0"/><stop offset="0.35" stop-color="#FFD84A"/><stop offset="1" stop-color="#E9A40E"/></linearGradient>
+<linearGradient id="l2" gradientUnits="userSpaceOnUse" x1="0" y1="4" x2="0" y2="30"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.1"/></linearGradient>
+<clipPath id="c3"><path d="M 25.468 4.616 L 45.532 40.384 Q 47 43 44 43 L 4 43 Q 1 43 2.468 40.384 L 22.532 4.616 Q 24 2 25.468 4.616 Z"/></clipPath></defs>
+<g transform="translate(3 3)">
+<path d="M 25.468 4.616 L 45.532 40.384 Q 47 43 44 43 L 4 43 Q 1 43 2.468 40.384 L 22.532 4.616 Q 24 2 25.468 4.616 Z" fill="#000000" fill-opacity="0.25"/>
+</g>
+<path d="M 25.468 4.616 L 45.532 40.384 Q 47 43 44 43 L 4 43 Q 1 43 2.468 40.384 L 22.532 4.616 Q 24 2 25.468 4.616 Z" fill="url(#l1)"/>
+<path d="M 25.468 4.616 L 45.532 40.384 Q 47 43 44 43 L 4 43 Q 1 43 2.468 40.384 L 22.532 4.616 Q 24 2 25.468 4.616 Z" fill="none" stroke="url(#l2)" stroke-width="12" stroke-linejoin="round" clip-path="url(#c3)"/>
+<path d="M 25.468 4.616 L 45.532 40.384 Q 47 43 44 43 L 4 43 Q 1 43 2.468 40.384 L 22.532 4.616 Q 24 2 25.468 4.616 Z" fill="none" stroke="#A87308" stroke-width="6" stroke-linejoin="round" clip-path="url(#c3)"/>
+<path d="M 21.93 12.55 L 26.07 12.55 Q 27.91 12.55 27.788 14.386 L 26.652 31.414 Q 26.53 33.25 24.69 33.25 L 23.31 33.25 Q 21.47 33.25 21.348 31.414 L 20.212 14.386 Q 20.09 12.55 21.93 12.55 Z" fill="#1E1A10"/>
+<path d="M 20.435 39.575 A 3.565 3.565 0 1 0 27.565 39.575 A 3.565 3.565 0 1 0 20.435 39.575 Z" fill="#1E1A10"/>
+</svg>

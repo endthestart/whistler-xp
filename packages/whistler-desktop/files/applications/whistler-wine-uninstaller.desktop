@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Uninstall Windows Programs
+Exec=wine uninstaller
+Icon=wine-uninstaller
+Categories=Wine;
+X-Whistler-Folder=Wine

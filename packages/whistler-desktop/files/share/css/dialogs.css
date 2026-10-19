@@ -1,0 +1,49 @@
+/* Turn off computer / Log off dialogs */
+.xp-off-dialog {
+  background-color: #6C8DE4;
+  border: 1px solid #001E7A;
+  font-family: Tahoma, sans-serif;
+  font-size: 8pt;
+}
+.xp-off-top {
+  min-height: 48px;
+  padding: 0 10px 0 12px;
+  background-color: #00309C;
+  background-image: linear-gradient(to bottom, #00309C, #002B92 80%, #0A42B5);
+}
+.xp-off-title {
+  color: #FFFFFF;
+  font-family: "Trebuchet MS", "Franklin Gothic Medium", sans-serif;
+  font-size: 15pt;
+  font-weight: normal;
+}
+.xp-off-middle {
+  background-image: linear-gradient(to right, #6F8EE5, #98B2F2 35%, #93AFF0 60%, #5B7DDE);
+  border-top: 2px solid #ED9E4B;
+  padding: 26px 18px 10px 18px;
+}
+.xp-off-bottom {
+  min-height: 42px;
+  padding: 0 12px;
+  background-color: #00309C;
+  background-image: linear-gradient(to bottom, #0A3DB0, #00309C 20%, #00309C);
+}
+.xp-off-bottom button {
+  margin: 9px 0;
+}
+.xp-off-button {
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 1px;
+}
+.xp-off-button:hover {
+  border-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.xp-off-label {
+  color: #FFFFFF;
+  text-shadow: none;
+}

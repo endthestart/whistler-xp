@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Copy the source tree to the build host (~/winxp there).
+cd "$(dirname "$0")/.."
+[ -f remote/local.env ] && . remote/local.env
+exec rsync -a --delete \
+    --exclude .git/ --exclude /out/ --exclude /colima/ --exclude /test/disk.qcow2 --exclude /test/efivars.fd \
+    --exclude /test/shots/ --exclude /test/*.sock --exclude /test/serial.log --exclude /test/qemu.log \
+    --exclude /test/ssh/ --exclude /.xp-test/ --exclude __pycache__/ \
+    ./ "${WHISTLER_REMOTE:?set WHISTLER_REMOTE to your build host (ssh name)}:winxp/"

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Forward the build host's test VM VNC (5901) and SSH (2222) ports to this machine.
+[ -f "$(dirname "$0")/local.env" ] && . "$(dirname "$0")/local.env"
+exec ssh -N -o ExitOnForwardFailure=yes -L 5901:127.0.0.1:5901 -L 2222:127.0.0.1:2222 \
+    "${WHISTLER_REMOTE:?set WHISTLER_REMOTE to your build host (ssh name)}"

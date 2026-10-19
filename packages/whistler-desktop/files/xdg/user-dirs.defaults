@@ -1,0 +1,9 @@
+# Whistler: Windows XP style "My Documents" layout
+DESKTOP=Desktop
+DOCUMENTS=My Documents
+MUSIC=My Documents/My Music
+PICTURES=My Documents/My Pictures
+VIDEOS=My Documents/My Videos
+DOWNLOAD=My Documents/Downloads
+TEMPLATES=.local/share/templates
+PUBLICSHARE=Public

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="4.5" y1="1.5" x2="31.5" y2="40.5"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F7F9FB"/><stop offset="1" stop-color="#DCE3EC"/></linearGradient>
+<clipPath id="c2"><path d="M4.5 1.5 L21 1.5 L31.5 12 L31.5 40.5 L4.5 40.5 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="21" y1="12" x2="26.25" y2="6.75"><stop offset="0" stop-color="#C4CFDD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<clipPath id="c4"><path d="M21 1.5 L21 12 L31.5 12 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="32.879" y1="36.97" x2="37.97" y2="31.879"><stop offset="0" stop-color="#6E6E78"/><stop offset="0.4" stop-color="#3A3A44"/><stop offset="1" stop-color="#16161C"/></linearGradient>
+<clipPath id="c6"><path d="M 35.293 38.621 L 38.867 42.672 Q 41.011 45.102 43.302 42.811 L 43.811 42.302 Q 46.102 40.011 43.672 37.867 L 39.621 34.293 Q 37.461 32.388 35.425 34.425 L 35.425 34.425 Q 33.388 36.461 35.293 38.621 Z"/></clipPath>
+<linearGradient id="l7" gradientUnits="userSpaceOnUse" x1="34.824" y1="38.915" x2="39.915" y2="33.824"><stop offset="0" stop-color="#F2F4F7"/><stop offset="1" stop-color="#8D95A1"/></linearGradient>
+<clipPath id="c8"><path d="M 33.706 38.052 L 36.04 40.386 Q 36.464 40.81 36.888 40.386 L 41.386 35.888 Q 41.81 35.464 41.386 35.04 L 39.052 32.706 Q 38.628 32.282 38.204 32.706 L 33.706 37.204 Q 33.282 37.628 33.706 38.052 Z"/></clipPath>
+<linearGradient id="l9" gradientUnits="userSpaceOnUse" x1="18" y1="17" x2="38" y2="37"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#C3CAD4"/><stop offset="1" stop-color="#7C8592"/></linearGradient>
+<clipPath id="c10"><path d="M 15.75 27 A 12.25 12.25 0 1 0 40.25 27 A 12.25 12.25 0 1 0 15.75 27 Z"/></clipPath>
+<radialGradient id="r11" gradientUnits="userSpaceOnUse" cx="25" cy="23.5" r="14"><stop offset="0" stop-color="#F2FAFF"/><stop offset="0.45" stop-color="#9DD2FF"/><stop offset="1" stop-color="#3A86E0"/></radialGradient>
+<clipPath id="c12"><path d="M 18 27 A 10 10 0 1 0 38 27 A 10 10 0 1 0 18 27 Z"/></clipPath></defs>
+<g transform="translate(2.25 2.25)">
+<path d="M4.5 1.5 L21 1.5 L31.5 12 L31.5 40.5 L4.5 40.5 Z" fill="none" stroke="#000000" stroke-width="4.8" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M4.5 1.5 L21 1.5 L31.5 12 L31.5 40.5 L4.5 40.5 Z" fill="none" stroke="#000000" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M4.5 1.5 L21 1.5 L31.5 12 L31.5 40.5 L4.5 40.5 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M4.5 1.5 L21 1.5 L31.5 12 L31.5 40.5 L4.5 40.5 Z" fill="url(#l1)"/>
+<path d="M4.5 1.5 L21 1.5 L31.5 12 L31.5 40.5 L4.5 40.5 Z" fill="none" stroke="#8D9AB0" stroke-width="3" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M21 1.5 L21 12 L31.5 12 Z" fill="url(#l3)"/>
+<path d="M21 1.5 L21 12 L31.5 12 Z" fill="none" stroke="#8D9AB0" stroke-width="3" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M9 13.5 L27 13.5 L27 15 L9 15 Z" fill="#A9B6C9"/>
+<path d="M9 18 L24 18 L24 19.5 L9 19.5 Z" fill="#A9B6C9"/>
+<path d="M9 22.5 L27 22.5 L27 24 L9 24 Z" fill="#A9B6C9"/>
+<path d="M9 27 L22.5 27 L22.5 28.5 L9 28.5 Z" fill="#A9B6C9"/>
+<path d="M9 31.5 L27 31.5 L27 33 L9 33 Z" fill="#A9B6C9"/>
+<g transform="translate(2.25 2.25)">
+<path d="M 35.293 38.621 L 38.867 42.672 Q 41.011 45.102 43.302 42.811 L 43.811 42.302 Q 46.102 40.011 43.672 37.867 L 39.621 34.293 Q 37.461 32.388 35.425 34.425 L 35.425 34.425 Q 33.388 36.461 35.293 38.621 Z" fill="none" stroke="#000000" stroke-width="4.8" stroke-linejoin="round" stroke-opacity="0.045"/>
+<path d="M 35.293 38.621 L 38.867 42.672 Q 41.011 45.102 43.302 42.811 L 43.811 42.302 Q 46.102 40.011 43.672 37.867 L 39.621 34.293 Q 37.461 32.388 35.425 34.425 L 35.425 34.425 Q 33.388 36.461 35.293 38.621 Z" fill="none" stroke="#000000" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.087"/>
+<path d="M 35.293 38.621 L 38.867 42.672 Q 41.011 45.102 43.302 42.811 L 43.811 42.302 Q 46.102 40.011 43.672 37.867 L 39.621 34.293 Q 37.461 32.388 35.425 34.425 L 35.425 34.425 Q 33.388 36.461 35.293 38.621 Z" fill="#000000" fill-opacity="0.25"/>
+</g>
+<g transform="translate(2.25 2.25)">
+<path d="M 15.75 27 A 12.25 12.25 0 1 0 40.25 27 A 12.25 12.25 0 1 0 15.75 27 Z" fill="none" stroke="#000000" stroke-width="4.8" stroke-linejoin="round" stroke-opacity="0.045"/>
+<path d="M 15.75 27 A 12.25 12.25 0 1 0 40.25 27 A 12.25 12.25 0 1 0 15.75 27 Z" fill="none" stroke="#000000" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.087"/>
+<path d="M 15.75 27 A 12.25 12.25 0 1 0 40.25 27 A 12.25 12.25 0 1 0 15.75 27 Z" fill="#000000" fill-opacity="0.25"/>
+</g>
+<path d="M 35.293 38.621 L 38.867 42.672 Q 41.011 45.102 43.302 42.811 L 43.811 42.302 Q 46.102 40.011 43.672 37.867 L 39.621 34.293 Q 37.461 32.388 35.425 34.425 L 35.425 34.425 Q 33.388 36.461 35.293 38.621 Z" fill="url(#l5)"/>
+<path d="M 35.293 38.621 L 38.867 42.672 Q 41.011 45.102 43.302 42.811 L 43.811 42.302 Q 46.102 40.011 43.672 37.867 L 39.621 34.293 Q 37.461 32.388 35.425 34.425 L 35.425 34.425 Q 33.388 36.461 35.293 38.621 Z" fill="none" stroke="#0E0E12" stroke-width="3" stroke-linejoin="round" clip-path="url(#c6)"/>
+<path d="M 33.706 38.052 L 36.04 40.386 Q 36.464 40.81 36.888 40.386 L 41.386 35.888 Q 41.81 35.464 41.386 35.04 L 39.052 32.706 Q 38.628 32.282 38.204 32.706 L 33.706 37.204 Q 33.282 37.628 33.706 38.052 Z" fill="url(#l7)"/>
+<path d="M 33.706 38.052 L 36.04 40.386 Q 36.464 40.81 36.888 40.386 L 41.386 35.888 Q 41.81 35.464 41.386 35.04 L 39.052 32.706 Q 38.628 32.282 38.204 32.706 L 33.706 37.204 Q 33.282 37.628 33.706 38.052 Z" fill="none" stroke="#5C636E" stroke-width="3" stroke-linejoin="round" clip-path="url(#c8)"/>
+<path d="M 15.75 27 A 12.25 12.25 0 1 0 40.25 27 A 12.25 12.25 0 1 0 15.75 27 Z" fill="url(#l9)"/>
+<path d="M 15.75 27 A 12.25 12.25 0 1 0 40.25 27 A 12.25 12.25 0 1 0 15.75 27 Z" fill="none" stroke="#4F5662" stroke-width="3" stroke-linejoin="round" clip-path="url(#c10)"/>
+<path d="M 18 27 A 10 10 0 1 0 38 27 A 10 10 0 1 0 18 27 Z" fill="url(#r11)"/>
+<path d="M 18 27 A 10 10 0 1 0 38 27 A 10 10 0 1 0 18 27 Z" fill="none" stroke="#5C6B80" stroke-width="3" stroke-linejoin="round" clip-path="url(#c12)"/>
+<path d="M 21 27.5 A 7 7 0 0 1 28.5 20" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity="0.9"/>
+</svg>

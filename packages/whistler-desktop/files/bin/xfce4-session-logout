@@ -1,0 +1,7 @@
+#!/bin/sh
+# Whistler: a bare "log out" request (Alt+F4 on the desktop, Xfce menus)
+# shows the XP "Turn off computer" dialog instead of logging out at once.
+if [ $# -eq 0 ] && [ -n "$DISPLAY" ] && command -v whistler-shutdown >/dev/null; then
+    exec whistler-shutdown
+fi
+exec /usr/bin/xfce4-session-logout "$@"

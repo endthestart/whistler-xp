@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="9.72" y1="21.9" x2="38.28" y2="45"><stop offset="0" stop-color="#FFFBEF"/><stop offset="1" stop-color="#E3D3B0"/></linearGradient>
+<clipPath id="c2"><path d="M9.72 21.9 L38.28 21.9 L38.28 45 L9.72 45 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="30.72" y1="0" x2="35.34" y2="0"><stop offset="0" stop-color="#D8653F"/><stop offset="1" stop-color="#9C3A22"/></linearGradient>
+<clipPath id="c4"><path d="M30.72 8.04 L35.34 8.04 L35.34 18.12 L30.72 15.6 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="11.4" y1="5.1" x2="36.6" y2="26.1"><stop offset="0" stop-color="#FF8A5C"/><stop offset="0.5" stop-color="#E5432A"/><stop offset="1" stop-color="#A92212"/></linearGradient>
+<linearGradient id="l6" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="15.6"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<clipPath id="c7"><path d="M 25.766 6.305 L 43.234 22.375 Q 45 24 42.942 25.235 L 42.858 25.285 Q 40.8 26.52 39.016 24.914 L 25.784 13.006 Q 24 11.4 22.216 13.006 L 8.984 24.914 Q 7.2 26.52 5.142 25.285 L 5.058 25.235 Q 3 24 4.766 22.375 L 22.234 6.305 Q 24 4.68 25.766 6.305 Z"/></clipPath>
+<linearGradient id="l8" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="28" y2="0"><stop offset="0" stop-color="#4E8FE8"/><stop offset="1" stop-color="#1D4FB0"/></linearGradient>
+<clipPath id="c9"><path d="M20 30 L28 30 L28 43 L20 43 Z"/></clipPath>
+<linearGradient id="l10" gradientUnits="userSpaceOnUse" x1="0" y1="27.36" x2="0" y2="34.08"><stop offset="0" stop-color="#E9F6FF"/><stop offset="1" stop-color="#7CB9F2"/></linearGradient>
+<clipPath id="c11"><path d="M12 28 L18 28 L18 34 L12 34 Z"/></clipPath>
+<linearGradient id="l12" gradientUnits="userSpaceOnUse" x1="0" y1="27.36" x2="0" y2="34.08"><stop offset="0" stop-color="#E9F6FF"/><stop offset="1" stop-color="#7CB9F2"/></linearGradient>
+<clipPath id="c13"><path d="M30 28 L36 28 L36 34 L30 34 Z"/></clipPath></defs>
+<g transform="translate(2 2)">
+<path d="M8.04 21.9 L24 6.36 L39.96 21.9 L39.96 45 L8.04 45 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M9.72 21.9 L38.28 21.9 L38.28 45 L9.72 45 Z" fill="url(#l1)"/>
+<path d="M9.72 21.9 L38.28 21.9 L38.28 45 L9.72 45 Z" fill="none" stroke="#8C7552" stroke-width="4" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M30.72 8.04 L35.34 8.04 L35.34 18.12 L30.72 15.6 Z" fill="url(#l3)"/>
+<path d="M30.72 8.04 L35.34 8.04 L35.34 18.12 L30.72 15.6 Z" fill="none" stroke="#6E2412" stroke-width="4" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M 25.766 6.305 L 43.234 22.375 Q 45 24 42.942 25.235 L 42.858 25.285 Q 40.8 26.52 39.016 24.914 L 25.784 13.006 Q 24 11.4 22.216 13.006 L 8.984 24.914 Q 7.2 26.52 5.142 25.285 L 5.058 25.235 Q 3 24 4.766 22.375 L 22.234 6.305 Q 24 4.68 25.766 6.305 Z" fill="url(#l5)"/>
+<path d="M 25.766 6.305 L 43.234 22.375 Q 45 24 42.942 25.235 L 42.858 25.285 Q 40.8 26.52 39.016 24.914 L 25.784 13.006 Q 24 11.4 22.216 13.006 L 8.984 24.914 Q 7.2 26.52 5.142 25.285 L 5.058 25.235 Q 3 24 4.766 22.375 L 22.234 6.305 Q 24 4.68 25.766 6.305 Z" fill="none" stroke="url(#l6)" stroke-width="8" stroke-linejoin="round" clip-path="url(#c7)"/>
+<path d="M 25.766 6.305 L 43.234 22.375 Q 45 24 42.942 25.235 L 42.858 25.285 Q 40.8 26.52 39.016 24.914 L 25.784 13.006 Q 24 11.4 22.216 13.006 L 8.984 24.914 Q 7.2 26.52 5.142 25.285 L 5.058 25.235 Q 3 24 4.766 22.375 L 22.234 6.305 Q 24 4.68 25.766 6.305 Z" fill="none" stroke="#7A1B0E" stroke-width="4" stroke-linejoin="round" clip-path="url(#c7)"/>
+<path d="M20 30 L28 30 L28 43 L20 43 Z" fill="url(#l8)"/>
+<path d="M20 30 L28 30 L28 43 L20 43 Z" fill="none" stroke="#173F8C" stroke-width="4" stroke-linejoin="round" clip-path="url(#c9)"/>
+<path d="M12 28 L18 28 L18 34 L12 34 Z" fill="url(#l10)"/>
+<path d="M12 28 L18 28 L18 34 L12 34 Z" fill="none" stroke="#5A6B80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c11)"/>
+<path d="M30 28 L36 28 L36 34 L30 34 Z" fill="url(#l12)"/>
+<path d="M30 28 L36 28 L36 34 L30 34 Z" fill="none" stroke="#5A6B80" stroke-width="4" stroke-linejoin="round" clip-path="url(#c13)"/>
+</svg>

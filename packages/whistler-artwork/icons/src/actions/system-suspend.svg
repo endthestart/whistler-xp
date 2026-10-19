@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><radialGradient id="r1" gradientUnits="userSpaceOnUse" cx="23" cy="42" r="41.8" gradientTransform="translate(23 42) scale(1.2 1) translate(-23 -42)"><stop offset="0" stop-color="#FFD964"/><stop offset="0.5" stop-color="#F2B21C"/><stop offset="1" stop-color="#C98A0A"/></radialGradient>
+<clipPath id="c2"><path d="M 10 4 H 36 A 6 6 0 0 1 42 10 V 36 A 6 6 0 0 1 36 42 H 10 A 6 6 0 0 1 4 36 V 10 A 6 6 0 0 1 10 4 Z"/></clipPath>
+<clipPath id="c3"><path d="M 10 5 H 36 A 5 5 0 0 1 41 10 V 36 A 5 5 0 0 1 36 41 H 10 A 5 5 0 0 1 5 36 V 10 A 5 5 0 0 1 10 5 Z"/></clipPath>
+<clipPath id="c4"><path d="M 10 4 H 36 A 6 6 0 0 1 42 10 V 36 A 6 6 0 0 1 36 42 H 10 A 6 6 0 0 1 4 36 V 10 A 6 6 0 0 1 10 4 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="0" y1="4" x2="0" y2="22.24"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.75"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.05"/></linearGradient></defs>
+<g transform="translate(1.5 1.5)">
+<path d="M 10 4 H 36 A 6 6 0 0 1 42 10 V 36 A 6 6 0 0 1 36 42 H 10 A 6 6 0 0 1 4 36 V 10 A 6 6 0 0 1 10 4 Z" fill="none" stroke="#000000" stroke-width="3.2" stroke-linejoin="round" stroke-opacity="0.04"/>
+<path d="M 10 4 H 36 A 6 6 0 0 1 42 10 V 36 A 6 6 0 0 1 36 42 H 10 A 6 6 0 0 1 4 36 V 10 A 6 6 0 0 1 10 4 Z" fill="none" stroke="#000000" stroke-width="1.6" stroke-linejoin="round" stroke-opacity="0.077"/>
+<path d="M 10 4 H 36 A 6 6 0 0 1 42 10 V 36 A 6 6 0 0 1 36 42 H 10 A 6 6 0 0 1 4 36 V 10 A 6 6 0 0 1 10 4 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 10 4 H 36 A 6 6 0 0 1 42 10 V 36 A 6 6 0 0 1 36 42 H 10 A 6 6 0 0 1 4 36 V 10 A 6 6 0 0 1 10 4 Z" fill="url(#r1)"/>
+<path d="M 10 4 H 36 A 6 6 0 0 1 42 10 V 36 A 6 6 0 0 1 36 42 H 10 A 6 6 0 0 1 4 36 V 10 A 6 6 0 0 1 10 4 Z" fill="none" stroke="#8A5E06" stroke-width="2" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M 10 5 H 36 A 5 5 0 0 1 41 10 V 36 A 5 5 0 0 1 36 41 H 10 A 5 5 0 0 1 5 36 V 10 A 5 5 0 0 1 10 5 Z" fill="none" stroke="#FFFFFF" stroke-width="2.8" stroke-linejoin="round" clip-path="url(#c3)"/>
+<g clip-path="url(#c4)">
+<path d="M 2.1 8.56 A 20.9 13.68 0 1 0 43.9 8.56 A 20.9 13.68 0 1 0 2.1 8.56 Z" fill="url(#l5)"/>
+</g>
+<path d="M 27 11 A 12.5 12.5 0 1 0 34 31 A 10 10 0 1 1 27 11 Z" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,193 @@
+/* XP-style start menu */
+window.whistler-startmenu-window {
+  background-color: transparent;
+}
+
+#startmenu {
+  background-color: #FFFFFF;
+  border: 1px solid #0F3EA8;
+  border-bottom: none;
+  border-radius: 7px 7px 0 0;
+  font-family: Tahoma, sans-serif;
+  font-size: 8pt;
+  color: #000000;
+}
+
+#sm-header {
+  background-color: #1C69D8;
+  background-image: url("/usr/share/whistler/assets/current/panel/startmenu-top.png");
+  background-size: 100% 100%;
+  border-radius: 6px 6px 0 0;
+  min-height: 56px;
+  padding: 5px 7px 4px 7px;
+}
+#sm-userpic {
+  border: 2px solid rgba(240, 240, 240, 0.85);
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+}
+#sm-userpic image {
+  border-radius: 2px;
+}
+#sm-username {
+  color: #FFFFFF;
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  font-size: 11.5pt;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  padding-left: 2px;
+}
+
+#sm-orange-line {
+  min-height: 2px;
+  background-image: linear-gradient(to right, rgba(218, 136, 74, 0) 0%, #E8A14A 30%, #F7C176 50%, #E8A14A 70%, rgba(218, 136, 74, 0) 100%);
+  background-color: #2E73D9;
+}
+
+#sm-body {
+  border-left: 1px solid #2E6CD6;
+  border-right: 1px solid #2E6CD6;
+}
+
+#sm-left {
+  background-color: #FFFFFF;
+  padding: 6px 2px 0 2px;
+  min-width: 189px;
+}
+#sm-right {
+  background-color: #D3E5FA;
+  border-left: 1px solid #95BDEE;
+  padding: 6px 2px 4px 2px;
+  min-width: 182px;
+}
+
+.sm-item {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 2px 4px;
+  margin: 0;
+  min-height: 0;
+  outline: none;
+}
+.sm-item:hover {
+  background-color: #316AC5;
+  background-image: none;
+}
+.sm-item label {
+  color: #000000;
+  text-shadow: none;
+}
+.sm-right-item label {
+  color: #00136B;
+}
+.sm-item:hover label {
+  color: #FFFFFF;
+}
+.sm-title.bold,
+label.bold {
+  font-weight: bold;
+}
+.sm-subtitle {
+  color: #7F7F7F;
+}
+.sm-arrow {
+  font-size: 7pt;
+}
+
+#sm-left .sm-item {
+  min-height: 36px;
+}
+#sm-right .sm-item {
+  min-height: 26px;
+}
+
+.sm-sep-left {
+  min-height: 1px;
+  margin: 4px 6px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #CFCFCF 40%, #CFCFCF 60%, rgba(0, 0, 0, 0) 100%);
+}
+.sm-sep-right {
+  min-height: 1px;
+  margin: 4px 8px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #A1C0EE 30%, #A1C0EE 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+#sm-allprograms {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 3px 4px 5px 4px;
+  min-height: 24px;
+}
+#sm-allprograms:hover {
+  background-color: #316AC5;
+}
+#sm-allprograms label {
+  color: #000000;
+}
+#sm-allprograms:hover label {
+  color: #FFFFFF;
+}
+
+#sm-footer {
+  background-color: #1E61D0;
+  background-image: url("/usr/share/whistler/assets/current/panel/startmenu-bottom.png");
+  background-size: 100% 100%;
+  min-height: 36px;
+  padding: 0 6px;
+}
+.sm-footer-button {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 2px 4px;
+  margin: 0 2px;
+}
+.sm-footer-button label {
+  color: #FFFFFF;
+  text-shadow: none;
+}
+.sm-footer-button:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+}
+
+/* cascading program menus. Child combinators matter: GTK3 parents a
+   submenu's CSS node under the (hovered) item that opened it. */
+menu.xp-startmenu-popup,
+.xp-startmenu-popup {
+  background-color: #FFFFFF;
+  border: 1px solid #8DA2C6;
+  padding: 1px;
+  font-family: Tahoma, sans-serif;
+  font-size: 8pt;
+}
+.xp-startmenu-popup > menuitem {
+  padding: 3px 18px 3px 4px;
+  min-height: 18px;
+  color: #000000;
+}
+.xp-startmenu-popup > menuitem > box > label,
+.xp-startmenu-popup > menuitem > label {
+  color: #000000;
+  text-shadow: none;
+}
+.xp-startmenu-popup > menuitem:hover {
+  background-color: #316AC5;
+  background-image: none;
+  color: #FFFFFF;
+}
+.xp-startmenu-popup > menuitem:hover > box > label,
+.xp-startmenu-popup > menuitem:hover > label {
+  color: #FFFFFF;
+}
+.xp-startmenu-popup > menuitem > arrow {
+  min-width: 8px;
+}

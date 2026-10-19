@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Run...
+Exec=whistler-run
+Icon=system-run
+NoDisplay=true

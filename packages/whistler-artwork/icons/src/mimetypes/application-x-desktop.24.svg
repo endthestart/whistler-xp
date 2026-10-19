@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="8" y1="4" x2="38" y2="44"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F7F9FB"/><stop offset="1" stop-color="#DCE3EC"/></linearGradient>
+<clipPath id="c2"><path d="M8 4 L26 4 L38 16 L38 44 L8 44 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="26" y1="16" x2="32" y2="10"><stop offset="0" stop-color="#C4CFDD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<clipPath id="c4"><path d="M26 4 L26 16 L38 16 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="0" y1="6.4" x2="0" y2="38.4"><stop offset="0" stop-color="#2F7CF2"/><stop offset="1" stop-color="#0D4FC8"/></linearGradient>
+<clipPath id="c6"><path d="M 3.2 9.4 A 3 3 0 0 1 6.2 6.4 H 41.8 A 3 3 0 0 1 44.8 9.4 V 38.4 H 3.2 Z"/></clipPath>
+<linearGradient id="l7" gradientUnits="userSpaceOnUse" x1="0" y1="6.4" x2="0" y2="16"><stop offset="0" stop-color="#8CC2FF"/><stop offset="0.18" stop-color="#3C8DF8"/><stop offset="0.55" stop-color="#0F5FE6"/><stop offset="1" stop-color="#0B4FD0"/></linearGradient>
+<clipPath id="c8"><path d="M 3.2 9.4 A 3 3 0 0 1 6.2 6.4 H 41.8 A 3 3 0 0 1 44.8 9.4 V 16 H 3.2 Z"/></clipPath>
+<linearGradient id="l9" gradientUnits="userSpaceOnUse" x1="0" y1="8" x2="0" y2="14.4"><stop offset="0" stop-color="#FF9C7A"/><stop offset="0.5" stop-color="#E5482A"/><stop offset="1" stop-color="#B8240F"/></linearGradient>
+<clipPath id="c10"><path d="M 36.8 8 H 40 A 1.6 1.6 0 0 1 41.6 9.6 V 12.8 A 1.6 1.6 0 0 1 40 14.4 H 36.8 A 1.6 1.6 0 0 1 35.2 12.8 V 9.6 A 1.6 1.6 0 0 1 36.8 8 Z"/></clipPath>
+<clipPath id="c11"><path d="M 5 30 H 15 A 1 1 0 0 1 16 31 V 41 A 1 1 0 0 1 15 42 H 5 A 1 1 0 0 1 4 41 V 31 A 1 1 0 0 1 5 30 Z"/></clipPath></defs>
+<g transform="translate(2 2)">
+<path d="M8 4 L26 4 L38 16 L38 44 L8 44 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M8 4 L26 4 L38 16 L38 44 L8 44 Z" fill="url(#l1)"/>
+<path d="M8 4 L26 4 L38 16 L38 44 L8 44 Z" fill="none" stroke="#8D9AB0" stroke-width="4" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M26 4 L26 16 L38 16 Z" fill="url(#l3)"/>
+<path d="M26 4 L26 16 L38 16 Z" fill="none" stroke="#8D9AB0" stroke-width="4" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M14 10 L22 10 L22 12 L14 12 Z" fill="#A9B6C9"/>
+<path d="M14 14 L20 14 L20 16 L14 16 Z" fill="#A9B6C9"/>
+<g transform="translate(8 16) scale(0.625)">
+<g transform="translate(3.2 3.2)">
+<path d="M 3.2 9.4 A 3 3 0 0 1 6.2 6.4 H 41.8 A 3 3 0 0 1 44.8 9.4 V 38.4 H 3.2 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 3.2 9.4 A 3 3 0 0 1 6.2 6.4 H 41.8 A 3 3 0 0 1 44.8 9.4 V 38.4 H 3.2 Z" fill="url(#l5)"/>
+<path d="M 3.2 9.4 A 3 3 0 0 1 6.2 6.4 H 41.8 A 3 3 0 0 1 44.8 9.4 V 38.4 H 3.2 Z" fill="none" stroke="#0B3C9C" stroke-width="6.4" stroke-linejoin="round" clip-path="url(#c6)"/>
+<path d="M 3.2 9.4 A 3 3 0 0 1 6.2 6.4 H 41.8 A 3 3 0 0 1 44.8 9.4 V 16 H 3.2 Z" fill="url(#l7)"/>
+<path d="M 3.2 9.4 A 3 3 0 0 1 6.2 6.4 H 41.8 A 3 3 0 0 1 44.8 9.4 V 16 H 3.2 Z" fill="none" stroke="#0B3C9C" stroke-width="6.4" stroke-linejoin="round" clip-path="url(#c8)"/>
+<path d="M6.4 16 L41.6 16 L41.6 35.2 L6.4 35.2 Z" fill="#FFFFFF"/>
+<path d="M 36.8 8 H 40 A 1.6 1.6 0 0 1 41.6 9.6 V 12.8 A 1.6 1.6 0 0 1 40 14.4 H 36.8 A 1.6 1.6 0 0 1 35.2 12.8 V 9.6 A 1.6 1.6 0 0 1 36.8 8 Z" fill="url(#l9)"/>
+<path d="M 36.8 8 H 40 A 1.6 1.6 0 0 1 41.6 9.6 V 12.8 A 1.6 1.6 0 0 1 40 14.4 H 36.8 A 1.6 1.6 0 0 1 35.2 12.8 V 9.6 A 1.6 1.6 0 0 1 36.8 8 Z" fill="none" stroke="#8A1A0D" stroke-width="6.4" stroke-linejoin="round" clip-path="url(#c10)"/>
+</g>
+<path d="M 5 30 H 15 A 1 1 0 0 1 16 31 V 41 A 1 1 0 0 1 15 42 H 5 A 1 1 0 0 1 4 41 V 31 A 1 1 0 0 1 5 30 Z" fill="#FFFFFF"/>
+<path d="M 5 30 H 15 A 1 1 0 0 1 16 31 V 41 A 1 1 0 0 1 15 42 H 5 A 1 1 0 0 1 4 41 V 31 A 1 1 0 0 1 5 30 Z" fill="none" stroke="#5B6B82" stroke-width="4" stroke-linejoin="round" clip-path="url(#c11)"/>
+<path d="M 7.36 39.6 C 7.36 35.4 9.4 34.56 11.44 34.56" fill="none" stroke="#1F50C0" stroke-width="2" stroke-linecap="round"/>
+<path d="M10.6 31.92 L14.32 34.56 L10.6 37.44 Z" fill="#1F50C0"/>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="0" y1="8" x2="0" y2="15"><stop offset="0" stop-color="#EBC48C"/><stop offset="1" stop-color="#D29E5A"/></linearGradient>
+<clipPath id="c2"><path d="M15 15 L42 15 L44 8 L17 8 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="-1" y1="0" x2="15" y2="0"><stop offset="0" stop-color="#EBC48C"/><stop offset="1" stop-color="#A87436"/></linearGradient>
+<clipPath id="c4"><path d="M6 24 L15 15 L8 11.5 L-1 20.5 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="0" y1="15" x2="0" y2="24"><stop offset="0" stop-color="#4A2E10"/><stop offset="1" stop-color="#8A6030"/></linearGradient>
+<clipPath id="c6"><path d="M 0 0 H 48 V 22.5 H 0 Z M6 24 L15 15 L42 15 L33 24 Z"/></clipPath>
+<radialGradient id="r7" gradientUnits="userSpaceOnUse" cx="19.4" cy="11.4" r="16.8"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#DCE1E8"/><stop offset="1" stop-color="#AAB3C0"/></radialGradient>
+<clipPath id="c8"><path d="M 11 15 A 12 12 0 1 0 35 15 A 12 12 0 1 0 11 15 Z M 21.08 15 A 1.92 1.92 0 1 0 24.92 15 A 1.92 1.92 0 1 0 21.08 15 Z" clip-rule="evenodd"/></clipPath>
+<linearGradient id="l9" gradientUnits="userSpaceOnUse" x1="26.261" y1="2.829" x2="34.419" y2="9.675"><stop offset="0" stop-color="#7AF0FF" stop-opacity="0.55"/><stop offset="1" stop-color="#F58BFF" stop-opacity="0.55"/></linearGradient>
+<linearGradient id="l10" gradientUnits="userSpaceOnUse" x1="19.739" y1="27.171" x2="11.581" y2="20.325"><stop offset="0" stop-color="#FFF27A" stop-opacity="0.55"/><stop offset="1" stop-color="#6BF5A0" stop-opacity="0.55"/></linearGradient>
+<linearGradient id="l11" gradientUnits="userSpaceOnUse" x1="11.16" y1="10.691" x2="14.901" y2="5.348"><stop offset="0" stop-color="#FFB070" stop-opacity="0.55"/><stop offset="1" stop-color="#B48CFF" stop-opacity="0.55"/></linearGradient>
+<linearGradient id="l12" gradientUnits="userSpaceOnUse" x1="34.84" y1="19.309" x2="31.099" y2="24.652"><stop offset="0" stop-color="#9CD0FF" stop-opacity="0.55"/><stop offset="1" stop-color="#FF9CC8" stop-opacity="0.55"/></linearGradient>
+<clipPath id="c13"><path d="M 11 15 A 12 12 0 1 0 35 15 A 12 12 0 1 0 11 15 Z M 21.08 15 A 1.92 1.92 0 1 0 24.92 15 A 1.92 1.92 0 1 0 21.08 15 Z" clip-rule="evenodd"/></clipPath>
+<linearGradient id="l14" gradientUnits="userSpaceOnUse" x1="33" y1="0" x2="42" y2="0"><stop offset="0" stop-color="#A87436"/><stop offset="1" stop-color="#8F6028"/></linearGradient>
+<linearGradient id="l15" gradientUnits="userSpaceOnUse" x1="6" y1="24" x2="33" y2="45"><stop offset="0" stop-color="#EBC48C"/><stop offset="1" stop-color="#D29E5A"/></linearGradient>
+<clipPath id="c16"><path d="M6 45 L6 24 L15 15 L42 15 L42 36 L33 45 Z"/></clipPath>
+<linearGradient id="l17" gradientUnits="userSpaceOnUse" x1="33" y1="0" x2="49" y2="0"><stop offset="0" stop-color="#D29E5A"/><stop offset="1" stop-color="#EBC48C"/></linearGradient>
+<clipPath id="c18"><path d="M33 24 L42 15 L49 16 L40 25 Z"/></clipPath>
+<linearGradient id="l19" gradientUnits="userSpaceOnUse" x1="0" y1="24" x2="0" y2="31"><stop offset="0" stop-color="#F1D6AE"/><stop offset="1" stop-color="#EBC48C"/></linearGradient>
+<clipPath id="c20"><path d="M6 24 L33 24 L32 30.3 L5 30.3 Z"/></clipPath></defs>
+<g transform="translate(3 3)">
+<path d="M6 45 L6 24 L15 15 L42 15 L42 36 L33 45 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M15 15 L42 15 L44 8 L17 8 Z" fill="url(#l1)"/>
+<path d="M15 15 L42 15 L44 8 L17 8 Z" fill="none" stroke="#76501F" stroke-width="6" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M6 24 L15 15 L8 11.5 L-1 20.5 Z" fill="url(#l3)"/>
+<path d="M6 24 L15 15 L8 11.5 L-1 20.5 Z" fill="none" stroke="#76501F" stroke-width="6" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M6 24 L15 15 L42 15 L33 24 Z" fill="url(#l5)"/>
+<g clip-path="url(#c6)">
+<path d="M 11 15 A 12 12 0 1 0 35 15 A 12 12 0 1 0 11 15 Z M 21.08 15 A 1.92 1.92 0 1 0 24.92 15 A 1.92 1.92 0 1 0 21.08 15 Z" fill="url(#r7)" fill-rule="evenodd"/>
+<g clip-path="url(#c8)">
+<path d="M23 15 L26.261 2.829 L27.567 3.257 L28.818 3.824 L30 4.523 L31.099 5.348 L32.102 6.287 L32.996 7.33 L33.772 8.463 L34.419 9.675 Z" fill="url(#l9)"/>
+<path d="M23 15 L19.739 27.171 L18.433 26.743 L17.182 26.176 L16 25.477 L14.901 24.652 L13.898 23.713 L13.004 22.67 L12.228 21.537 L11.581 20.325 Z" fill="url(#l10)"/>
+<path d="M23 15 L11.16 10.691 L11.467 9.925 L11.824 9.182 L12.228 8.463 L12.679 7.773 L13.173 7.113 L13.71 6.488 L14.287 5.898 L14.901 5.348 Z" fill="url(#l11)"/>
+<path d="M23 15 L34.84 19.309 L34.533 20.075 L34.176 20.818 L33.772 21.537 L33.321 22.227 L32.827 22.887 L32.29 23.512 L31.713 24.102 L31.099 24.652 Z" fill="url(#l12)"/>
+<path d="M 18.68 15 A 4.32 4.32 0 1 0 27.32 15 A 4.32 4.32 0 1 0 18.68 15 Z" fill="#F4F6F9" opacity="0.85"/>
+<path d="M 18.68 15 A 4.32 4.32 0 1 0 27.32 15 A 4.32 4.32 0 1 0 18.68 15 Z" fill="none" stroke="#9AA3AE" stroke-width="2.4" opacity="0.8"/>
+<path d="M 20.12 15 A 2.88 2.88 0 1 0 25.88 15 A 2.88 2.88 0 1 0 20.12 15 Z" fill="#E3E8EE" opacity="0.9"/>
+</g>
+<path d="M 11 15 A 12 12 0 1 0 35 15 A 12 12 0 1 0 11 15 Z M 21.08 15 A 1.92 1.92 0 1 0 24.92 15 A 1.92 1.92 0 1 0 21.08 15 Z" fill="none" stroke="#6E7784" stroke-width="6" stroke-linejoin="round" clip-path="url(#c13)"/>
+</g>
+<path d="M33 24 L42 15 L42 36 L33 45 Z" fill="url(#l14)"/>
+<path d="M6 24 L33 24 L33 45 L6 45 Z" fill="url(#l15)"/>
+<path d="M6 45 L6 24 L15 15 L42 15 L42 36 L33 45 Z" fill="none" stroke="#76501F" stroke-width="6" stroke-linejoin="round" clip-path="url(#c16)"/>
+<path d="M33 24 L42 15 L49 16 L40 25 Z" fill="url(#l17)"/>
+<path d="M33 24 L42 15 L49 16 L40 25 Z" fill="none" stroke="#76501F" stroke-width="6" stroke-linejoin="round" clip-path="url(#c18)"/>
+<path d="M6 24 L33 24 L32 30.3 L5 30.3 Z" fill="url(#l19)"/>
+<path d="M6 24 L33 24 L32 30.3 L5 30.3 Z" fill="none" stroke="#76501F" stroke-width="6" stroke-linejoin="round" clip-path="url(#c20)"/>
+</svg>

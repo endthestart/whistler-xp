@@ -1,0 +1,55 @@
+# Maintainer: The Whistler Project
+pkgname=whistler-xp-originals
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Optional: import the original Windows XP artwork, fonts and sounds from your own XP media"
+arch=(any)
+license=(GPL-3.0-or-later)
+depends=(python python-pefile python-pillow 7zip libarchive xorg-xcursorgen polkit whistler-artwork whistler-desktop)
+install=whistler-xp-originals.install
+# This package contains only scripts and configuration. All Microsoft files
+# are read at run time from media the user supplies and stay on their machine.
+
+_files="$startdir/files"
+
+package() {
+  install -d "$pkgdir/usr/lib/whistler/whistler_originals"
+  cp -r "$_files/python/whistler_originals/." "$pkgdir/usr/lib/whistler/whistler_originals/"
+  find "$pkgdir/usr/lib/whistler" -name '__pycache__' -prune -exec rm -rf {} +
+  python -m compileall -q "$pkgdir/usr/lib/whistler/whistler_originals" -d /usr/lib/whistler/whistler_originals
+
+  install -Dm755 /dev/stdin "$pkgdir/usr/lib/whistler/whistler-import-xp-backend" <<'PY'
+#!/usr/bin/python3
+import sys
+sys.path.insert(0, "/usr/lib/whistler")
+from whistler_originals.importer import main
+sys.exit(main())
+PY
+  install -Dm755 /dev/stdin "$pkgdir/usr/bin/whistler-import-xp" <<'PY'
+#!/usr/bin/python3
+"""Import Windows XP Files from your own XP CD/ISO image or Windows folder."""
+import os
+import sys
+sys.path.insert(0, "/usr/lib/whistler")
+if len(sys.argv) > 1 and sys.argv[1] in ("-h", "--help"):
+    print("usage: whistler-import-xp [XP_ISO]          open the wizard (optionally preselecting XP_ISO)\n"
+          "       sudo whistler-import-xp --cli XP_ISO  import without the wizard\n"
+          "       sudo whistler-import-xp --remove      go back to the lookalike artwork\n"
+          "XP_ISO is your Windows XP CD image (.iso), a mounted CD, or a Windows folder.")
+    sys.exit(0)
+if len(sys.argv) > 1 and sys.argv[1] in ("--cli", "--remove"):
+    from whistler_originals.importer import main
+    sys.exit(main(sys.argv[2:] if sys.argv[1] == "--cli" else ["--remove"]))
+from whistler_originals.gui import main
+sys.exit(main())
+PY
+  install -Dm644 "$_files/applications/whistler-import-xp.desktop" \
+    "$pkgdir/usr/share/applications/whistler-import-xp.desktop"
+  install -Dm644 "$_files/polkit/org.whistler.import-xp.policy" \
+    "$pkgdir/usr/share/polkit-1/actions/org.whistler.import-xp.policy"
+
+  # Hooks that make the imported files visible to themes and pickers.
+  install -d "$pkgdir/usr/share/icons" "$pkgdir/usr/share/backgrounds" "$pkgdir/var/lib/whistler"
+  ln -s /var/lib/whistler/originals/icons "$pkgdir/usr/share/icons/whistler-xp-originals"
+  ln -s /var/lib/whistler/originals/wallpapers "$pkgdir/usr/share/backgrounds/whistler-xp"
+}

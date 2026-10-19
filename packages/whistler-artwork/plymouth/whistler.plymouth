@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Whistler
+Description=Black boot screen with the Whistler logo and a sliding blue progress bar
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/whistler
+ScriptFile=/usr/share/plymouth/themes/whistler/whistler.script

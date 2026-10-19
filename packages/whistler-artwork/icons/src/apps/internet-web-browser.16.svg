@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><clipPath id="c1"><path d="M-30 -14 L30 -14 L30 0 L-30 0 Z"/></clipPath>
+<linearGradient id="l2" gradientUnits="userSpaceOnUse" x1="-22" y1="-8" x2="22" y2="8"><stop offset="0" stop-color="#FFE08A"/><stop offset="0.5" stop-color="#FF9A1E"/><stop offset="1" stop-color="#D9600A"/></linearGradient>
+<radialGradient id="r3" gradientUnits="userSpaceOnUse" cx="17.05" cy="18.2" r="25.5"><stop offset="0" stop-color="#C9EEFF"/><stop offset="0.35" stop-color="#5DB0F2"/><stop offset="0.8" stop-color="#2167CC"/><stop offset="1" stop-color="#173F95"/></radialGradient>
+<clipPath id="c4"><path d="M 6 25 A 17 17 0 1 0 40 25 A 17 17 0 1 0 6 25 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="6" y1="8" x2="40" y2="42"><stop offset="0" stop-color="#9BE36B"/><stop offset="0.6" stop-color="#46A830"/><stop offset="1" stop-color="#2C7A1F"/></linearGradient>
+<clipPath id="c6"><path d="M 6 25 A 17 17 0 1 0 40 25 A 17 17 0 1 0 6 25 Z"/></clipPath>
+<linearGradient id="l7" gradientUnits="userSpaceOnUse" x1="0" y1="9.7" x2="0" y2="23.3"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<clipPath id="c8"><path d="M-30 0 L30 0 L30 14 L-30 14 Z"/></clipPath>
+<linearGradient id="l9" gradientUnits="userSpaceOnUse" x1="-22" y1="-8" x2="22" y2="8"><stop offset="0" stop-color="#FFE08A"/><stop offset="0.5" stop-color="#FF9A1E"/><stop offset="1" stop-color="#D9600A"/></linearGradient></defs>
+<g transform="translate(23 25) rotate(-28)">
+<g clip-path="url(#c1)">
+<path d="M -22 0 A 22 8.5 0 1 0 22 0 A 22 8.5 0 1 0 -22 0 Z" fill="none" stroke="#8A3A06" stroke-width="10.6"/>
+<path d="M -22 0 A 22 8.5 0 1 0 22 0 A 22 8.5 0 1 0 -22 0 Z" fill="none" stroke="url(#l2)" stroke-width="4.6"/>
+</g>
+</g>
+<g transform="translate(3 3)">
+<path d="M 6 25 A 17 17 0 1 0 40 25 A 17 17 0 1 0 6 25 Z" fill="#000000" fill-opacity="0.25"/>
+</g>
+<path d="M 6 25 A 17 17 0 1 0 40 25 A 17 17 0 1 0 6 25 Z" fill="url(#r3)"/>
+<g clip-path="url(#c4)">
+<path d="M 11.374 15.17 L 13.848 13.108 Q 15.444 11.778 17.501 12.072 L 19.999 12.428 Q 22.056 12.722 23.302 14.384 L 23.642 14.838 Q 24.889 16.5 23.42 17.969 L 22.488 18.901 Q 21.111 20.278 19.222 20.75 L 19.222 20.75 Q 17.333 21.222 17.715 23.131 L 17.87 23.907 Q 18.278 25.944 16.419 26.874 L 16.358 26.904 Q 14.5 27.833 12.838 26.587 L 12.384 26.247 Q 10.722 25 9.476 23.338 L 9.136 22.884 Q 7.889 21.222 8.661 19.293 L 9.006 18.429 Q 9.778 16.5 11.374 15.17 Z" fill="url(#l5)"/>
+<path d="M 21.069 28.162 L 22.918 27.546 Q 24.889 26.889 26.358 28.358 L 27.197 29.197 Q 28.667 30.667 28.325 32.716 L 28.064 34.284 Q 27.722 36.333 26.424 37.956 L 25.242 39.433 Q 23.944 41.056 22.475 39.586 L 21.636 38.747 Q 20.167 37.278 19.395 35.349 L 19.001 34.363 Q 18.278 32.556 18.75 30.667 L 18.75 30.667 Q 19.222 28.778 21.069 28.162 Z" fill="url(#l5)"/>
+<path d="M 30.638 12.435 L 32.362 13.01 Q 34.333 13.667 35.663 15.263 L 37.725 17.737 Q 39.056 19.333 38.284 21.263 L 37.938 22.126 Q 37.167 24.056 35.129 23.648 L 34.482 23.519 Q 32.444 23.111 31.515 21.253 L 31.485 21.192 Q 30.556 19.333 28.697 18.404 L 28.636 18.374 Q 26.778 17.444 27.435 15.473 L 28.01 13.749 Q 28.667 11.778 30.638 12.435 Z" fill="url(#l5)"/>
+<path d="M 34.494 28.436 L 36.062 28.175 Q 38.111 27.833 38.519 29.871 L 38.648 30.518 Q 39.056 32.556 37.197 33.485 L 37.136 33.515 Q 35.278 34.444 34.349 32.586 L 33.374 30.636 Q 32.444 28.778 34.494 28.436 Z" fill="url(#l5)"/>
+<path d="M 6 25 A 17 17 0 1 0 40 25 A 17 17 0 1 0 6 25 Z" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0"/>
+</g>
+<path d="M 6 25 A 17 17 0 1 0 40 25 A 17 17 0 1 0 6 25 Z" fill="none"/>
+<path d="M 6 25 A 17 17 0 1 0 40 25 A 17 17 0 1 0 6 25 Z" fill="none" stroke="#17418F" stroke-width="6" stroke-linejoin="round" clip-path="url(#c6)"/>
+<path d="M 9.4 16.5 A 10.54 6.46 0 1 0 30.48 16.5 A 10.54 6.46 0 1 0 9.4 16.5 Z" fill="url(#l7)"/>
+<g transform="translate(23 25) rotate(-28)">
+<g clip-path="url(#c8)">
+<path d="M -22 0 A 22 8.5 0 1 0 22 0 A 22 8.5 0 1 0 -22 0 Z" fill="none" stroke="#8A3A06" stroke-width="10.6"/>
+<path d="M -22 0 A 22 8.5 0 1 0 22 0 A 22 8.5 0 1 0 -22 0 Z" fill="none" stroke="url(#l9)" stroke-width="4.6"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Windows programs</title><link rel="stylesheet" href="help.css"></head>
+<body>
+<header><img src="/usr/share/icons/hicolor/48x48/apps/whistler-winecenter.png" alt=""><h1>Windows Programs<small>Running Windows software with Wine</small></h1></header>
+<nav><a href="index.html">Home</a><a href="tour.html">Tour Whistler XP</a><a href="wine.html">Windows programs</a><a href="users.html">User accounts</a></nav>
+<main class="single">
+<h2>How it works</h2>
+<p>Whistler XP runs programs made for Windows using <b>Wine</b>. Wine is not an emulator: Windows programs run directly, and many work exactly as they do on Windows. The first time you run one, Whistler prepares a <b>Windows environment</b> &mdash; a folder that acts like a Windows C: drive with its own registry and settings.</p>
+<h3 id="install">Installing a program</h3>
+<div class="step">1. Double-click the setup file (for example <b>setup.exe</b> or a <b>.msi</b> file) in Windows Explorer, <b>or</b></div>
+<div class="step">2. Open <b>Start &rarr; Wine Center</b> and click <b>Install a Windows program</b>. The wizard asks for the setup file, where to install it, and which extra Microsoft components the program needs.</div>
+<p>Installed programs appear in <b>Start &rarr; All Programs</b> in the same folders their setup program created, and in Wine Center.</p>
+<h3>Shared or separate environments</h3>
+<p>Most programs can share the default environment. Games and programs that need special components (such as an old .NET Framework or DirectX) work best in a <b>separate environment</b>, so changes made for them don't affect anything else. Create one from the install wizard or with <b>Environment &rarr; New Environment</b> in Wine Center.</p>
+<h3 id="games">Games</h3>
+<p>For Direct3D 9, 10 and 11 games, add the <b>DXVK</b> component in Wine Center. It translates graphics to Vulkan for much better speed on modern graphics cards.</p>
+<h3 id="troubleshoot">If a program doesn't work</h3>
+<ul>
+<li>Install it again in a <b>separate environment</b> and select the components it lists in its requirements (Visual C++ runtime, .NET Framework, DirectX).</li>
+<li>Try a different Windows version: Wine Center &rarr; <b>Change environment settings</b> &rarr; <i>Pretend to be</i>.</li>
+<li>Some programs run better inside a <b>virtual desktop</b> window (same settings dialog, Display tab).</li>
+<li>Look the program up in the Wine Application Database at <a href="https://appdb.winehq.org">appdb.winehq.org</a> for tips from other users.</li>
+<li>Click <b>Stop all Windows programs</b> in Wine Center if a program hangs.</li>
+</ul>
+<h3>Advanced tools</h3>
+<p>Wine Configuration (winecfg), the Registry Editor and Windows Task Manager are in <b>All Programs &rarr; Wine</b> and in each environment's Properties. Power users can use <code>winetricks</code> from Command Prompt.</p>
+</main>
+</body></html>

@@ -1,0 +1,20 @@
+[Configuration]
+FontName=Terminus 12
+ColorForeground=#C0C0C0
+ColorBackground=#000000
+ColorCursor=#C0C0C0
+ColorBold=#FFFFFF
+ColorBoldUseDefault=FALSE
+ColorPalette=#000000;#800000;#008000;#808000;#000080;#800080;#008080;#c0c0c0;#808080;#ff0000;#00ff00;#ffff00;#0000ff;#ff00ff;#00ffff;#ffffff
+TitleMode=TERMINAL_TITLE_HIDE
+MiscCursorShape=TERMINAL_CURSOR_SHAPE_UNDERLINE
+MiscCursorBlinks=TRUE
+MiscMenubarDefault=FALSE
+MiscToolbarDefault=FALSE
+MiscBordersDefault=TRUE
+MiscDefaultGeometry=80x25
+ScrollingBar=TERMINAL_SCROLLBAR_RIGHT
+ScrollingLines=300
+MiscConfirmClose=FALSE
+MiscShowUnsafePasteDialog=FALSE
+MiscUseShiftArrowsToScroll=FALSE

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+<!-- Whistler icon theme - original artwork -->
+<defs><linearGradient id="l1" gradientUnits="userSpaceOnUse" x1="0" y1="12" x2="0" y2="36"><stop offset="0" stop-color="#F4F6F8"/><stop offset="1" stop-color="#8F98A5"/></linearGradient>
+<clipPath id="c2"><path d="M 39.2 18 H 42.8 A 1.2 1.2 0 0 1 44 19.2 V 28.8 A 1.2 1.2 0 0 1 42.8 30 H 39.2 A 1.2 1.2 0 0 1 38 28.8 V 19.2 A 1.2 1.2 0 0 1 39.2 18 Z"/></clipPath>
+<linearGradient id="l3" gradientUnits="userSpaceOnUse" x1="0" y1="12" x2="0" y2="36"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#D9DEE5"/><stop offset="1" stop-color="#A9B2BF"/></linearGradient>
+<clipPath id="c4"><path d="M 6.4 12 H 37.6 A 2.4 2.4 0 0 1 40 14.4 V 33.6 A 2.4 2.4 0 0 1 37.6 36 H 6.4 A 2.4 2.4 0 0 1 4 33.6 V 14.4 A 2.4 2.4 0 0 1 6.4 12 Z"/></clipPath>
+<linearGradient id="l5" gradientUnits="userSpaceOnUse" x1="0" y1="16" x2="0" y2="32"><stop offset="0" stop-color="#86DD62"/><stop offset="0.5" stop-color="#3DAA2B"/><stop offset="1" stop-color="#25821A"/></linearGradient>
+<clipPath id="c6"><path d="M 6.4 12 H 37.6 A 2.4 2.4 0 0 1 40 14.4 V 33.6 A 2.4 2.4 0 0 1 37.6 36 H 6.4 A 2.4 2.4 0 0 1 4 33.6 V 14.4 A 2.4 2.4 0 0 1 6.4 12 Z"/></clipPath></defs>
+<g transform="translate(2 2)">
+<path d="M 6.4 12 H 37.6 A 2.4 2.4 0 0 1 40 14.4 V 33.6 A 2.4 2.4 0 0 1 37.6 36 H 6.4 A 2.4 2.4 0 0 1 4 33.6 V 14.4 A 2.4 2.4 0 0 1 6.4 12 Z" fill="#000000" fill-opacity="0.22"/>
+</g>
+<path d="M 39.2 18 H 42.8 A 1.2 1.2 0 0 1 44 19.2 V 28.8 A 1.2 1.2 0 0 1 42.8 30 H 39.2 A 1.2 1.2 0 0 1 38 28.8 V 19.2 A 1.2 1.2 0 0 1 39.2 18 Z" fill="url(#l1)"/>
+<path d="M 39.2 18 H 42.8 A 1.2 1.2 0 0 1 44 19.2 V 28.8 A 1.2 1.2 0 0 1 42.8 30 H 39.2 A 1.2 1.2 0 0 1 38 28.8 V 19.2 A 1.2 1.2 0 0 1 39.2 18 Z" fill="none" stroke="#3E4652" stroke-width="4" stroke-linejoin="round" clip-path="url(#c2)"/>
+<path d="M 6.4 12 H 37.6 A 2.4 2.4 0 0 1 40 14.4 V 33.6 A 2.4 2.4 0 0 1 37.6 36 H 6.4 A 2.4 2.4 0 0 1 4 33.6 V 14.4 A 2.4 2.4 0 0 1 6.4 12 Z" fill="url(#l3)"/>
+<path d="M 6.4 12 H 37.6 A 2.4 2.4 0 0 1 40 14.4 V 33.6 A 2.4 2.4 0 0 1 37.6 36 H 6.4 A 2.4 2.4 0 0 1 4 33.6 V 14.4 A 2.4 2.4 0 0 1 6.4 12 Z" fill="none" stroke="#3E4652" stroke-width="4" stroke-linejoin="round" clip-path="url(#c4)"/>
+<path d="M8 16 L36 16 L36 32 L8 32 Z" fill="#4A5260" opacity="0.35"/>
+<path d="M8 16 L24 16 L24 32 L8 32 Z" fill="url(#l5)"/>
+<path d="M8 16 L24 16 L24 22.4 L8 22.4 Z" fill="#FFFFFF" opacity="0.35"/>
+<g clip-path="url(#c6)">
+<path d="M4 12 L40 12 L40 20.4 L4 20.4 Z" fill="#FFFFFF" opacity="0.25"/>
+</g>
+</svg>

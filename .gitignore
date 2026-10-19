@@ -1,0 +1,15 @@
+out/
+test/disk.qcow2
+test/efivars.fd
+test/serial.log
+test/*.sock
+test/ssh/
+test/shots/
+/.xp-test/
+/colima/
+/test/winapp/*.exe
+/test/credentials.env
+/remote/local.env
+/NOTES.local.md
+test/qemu.log
+__pycache__/

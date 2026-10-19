@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Run a bash script on a remote x86_64 build host, inside ~/winxp, with the
+# isolated winxp Colima/Docker environment exported.
+#   remote/mp 'commands...'      or      remote/mp < script.sh
+# The host is $WHISTLER_REMOTE (an ssh host name); remote/local.env may set it.
+[ -f "$(dirname "$0")/local.env" ] && . "$(dirname "$0")/local.env"
+HOST=${WHISTLER_REMOTE:?set WHISTLER_REMOTE to your build host (ssh name)}
+prelude='set -o pipefail
+export COLIMA_HOME="$HOME/winxp/colima"
+export DOCKER_HOST="unix://$HOME/winxp/colima/winxp/docker.sock"
+export PATH="/usr/local/bin:$PATH"
+cd "$HOME/winxp"'
+if [ $# -gt 0 ]; then
+    printf '%s\n%s\n' "$prelude" "$*" | ssh -o BatchMode=yes "$HOST" 'bash -s'
+else
+    { printf '%s\n' "$prelude"; cat; } | ssh -o BatchMode=yes "$HOST" 'bash -s'
+fi

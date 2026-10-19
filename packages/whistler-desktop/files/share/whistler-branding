@@ -1,0 +1,16 @@
+#!/bin/sh
+# Whistler XP is CachyOS underneath; keep CachyOS in ID_LIKE so tools that
+# special-case CachyOS or Arch keep working.
+cat > /usr/lib/os-release <<'OS'
+NAME="Whistler XP"
+PRETTY_NAME="Whistler XP"
+ID=whistler
+ID_LIKE="cachyos arch"
+BUILD_ID=rolling
+VERSION_ID=1.0
+ANSI_COLOR="38;2;0;84;227"
+HOME_URL="https://cachyos.org/"
+LOGO=whistler-logo
+OS
+rm -f /etc/os-release
+ln -s ../usr/lib/os-release /etc/os-release

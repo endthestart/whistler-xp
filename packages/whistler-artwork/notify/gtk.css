@@ -1,0 +1,35 @@
+/* XP balloon tips for xfce4-notifyd */
+#XfceNotifyWindow {
+  background-color: #FFFFE1;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 9px;
+  box-shadow: none;
+  font-family: Tahoma, sans-serif;
+  font-size: 8pt;
+}
+#XfceNotifyWindow:hover {
+  background-color: #FFFFE1;
+}
+#XfceNotifyWindow label#summary {
+  font-weight: bold;
+  color: #000000;
+}
+#XfceNotifyWindow label#body {
+  color: #000000;
+}
+#XfceNotifyWindow button {
+  background-image: none;
+  background-color: #ECE9D8;
+  border: 1px solid #003C74;
+  border-radius: 3px;
+  color: #000000;
+  padding: 2px 8px;
+}
+#XfceNotifyWindow button:hover {
+  box-shadow: inset 0 0 0 2px #FFC73C;
+}
+#XfceNotifyWindow progressbar progress {
+  background-color: #2FB52F;
+  background-image: none;
+}
